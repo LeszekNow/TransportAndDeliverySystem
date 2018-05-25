@@ -1,22 +1,21 @@
 package com.leszeknowinski.controllers;
 
-import com.leszeknowinski.Cargo.Cargo;
 import com.leszeknowinski.DataBaseSupport.DBCargoHelper;
 import com.leszeknowinski.DataBaseSupport.DBHandler;
 import com.leszeknowinski.DataBaseSupport.DBOrderHelper;
 import com.leszeknowinski.GPS.GPSRandomDataGenerator;
 import com.leszeknowinski.GPS.GeoHelper;
 import com.leszeknowinski.GPS.Location;
-import com.leszeknowinski.Order.Order;
-import com.leszeknowinski.comparators.LatitudeComparator;
-import com.leszeknowinski.comparators.LongitudeComparator;
+import com.leszeknowinski.comparators.LatitudeComparatorN;
+import com.leszeknowinski.comparators.LatitudeComparatorS;
+import com.leszeknowinski.comparators.LongitudeComparatorE;
+import com.leszeknowinski.comparators.LongitudeComparatorW;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -80,58 +79,66 @@ public class GPSTestsController {
 
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude < " + (startLat - factor) + " AND latitude > " + (endLat + factor) + " AND longitude > " + startLon + " AND longitude < " + endLon + ";");
+            Collections.sort(distanceWayPoints, new LatitudeComparatorS());
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("SW")) {
             arrivalWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude < " + carLat + " AND latitude > " + startLat + " AND longitude < " + carLon + " AND longitude > " + startLon + ";");
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude < " + (startLat - factor) + " AND latitude > " + (endLat + factor) + " AND longitude < " + startLon + " AND longitude > " + endLon + ";");
+            Collections.sort(distanceWayPoints, new LatitudeComparatorS());
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("NE")) {
             arrivalWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude > " + carLat + " AND latitude < " + startLat + " AND longitude > " + carLon + " AND longitude < " + startLon + ";");
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude > " + (startLat + factor) + " AND latitude < " + (endLat - factor) + " AND longitude > " + startLon + " AND longitude < " + endLon + ";");
+            Collections.sort(distanceWayPoints, new LatitudeComparatorN());
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("NW")) {
             arrivalWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude > " + carLat + " AND latitude < " + startLat + " AND longitude < " + carLon + " AND longitude > " + startLon + ";");
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude > " + (startLat + factor) + " AND latitude < " + (endLat - factor) + " AND longitude < " + startLon + " AND longitude > " + endLon + ";");
+            Collections.sort(distanceWayPoints, new LatitudeComparatorN());
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("S")) {
             arrivalWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude < " + carLat + " AND latitude > " + startLat + " AND longitude = " + carLon + " AND longitude = " + startLon + ";");
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude < " + (startLat - factor) + " AND latitude > " + (endLat + factor) + ";");
+            Collections.sort(distanceWayPoints, new LatitudeComparatorS());
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("N")) {
             arrivalWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude > " + carLat + " AND latitude < " + startLat + " AND longitude = " + carLon + " AND longitude = " + startLon + ";");
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE latitude > " + (startLat + factor) + " AND latitude < " + (endLat - factor) + ";");
+            Collections.sort(distanceWayPoints, new LatitudeComparatorN());
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("E")) {
             arrivalWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE longitude > " + carLon + " AND longitude < " + startLat + " AND latitude = " + carLat + " AND latitude = " + startLat + ";");
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE longitude > " + (startLon + factor) + " AND longitude < " + (endLon - factor) + ";");
+            Collections.sort(distanceWayPoints, new LongitudeComparatorE());
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("W")) {
             arrivalWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE longitude < " + carLon + " AND longitude > " + startLat + " AND latitude = " + carLat + ";");
             distanceWayPoints = geoHelper.getAllLocations(
                     "SELECT * FROM tlocation WHERE longitude < " + (startLon - factor) + " AND longitude > " + (endLon + factor) + ";");
+            Collections.sort(distanceWayPoints, new LongitudeComparatorW());
         }
 
         distanceWayPoints.add(geoHelper.getLocation(startPoint.getText()));
         distanceWayPoints.add(geoHelper.getLocation(endPoint.getText()));
 
-//        for(Location location : distanceWayPoints){
-//            if(location.getLatitude() > startLat-0.5){
-//                distanceWayPoints.remove(location);
-//            }
-    //}
-
-        Collections.sort(distanceWayPoints, new LatitudeComparator());
-
+        int start = 0;
+        double totalDistance = 0;
+        for(int i = 1; i < distanceWayPoints.size(); i++){
+            totalDistance += geoHelper.getDistanceInKM(distanceWayPoints.get(start).getLatitude(), distanceWayPoints.get(i).getLatitude(),
+                    distanceWayPoints.get(start).getLongitude(), distanceWayPoints.get(i).getLongitude());
+            start = i;
+        }
 
         for(Location location : distanceWayPoints){
-            summary.appendText(location.toString() +"\n");
+            summary.appendText(location.toString() + "\n" + "\n" + totalDistance);
         }
+
 
 //
 //            for (Location location : wayPoints) {

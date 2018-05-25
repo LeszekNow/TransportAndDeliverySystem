@@ -4,13 +4,13 @@ import com.leszeknowinski.GPS.Location;
 
 import java.util.Comparator;
 
-public class LongitudeComparator implements Comparator<Location> {
+public class LatitudeComparatorN implements Comparator<Location> {
     public int compare(Location location1, Location location2) {
-        if(location1.getLongitude() < location2.getLongitude()){
-            return 1;
-        }
-        if(location1.getLongitude() > location2.getLongitude()){
+        if(location1.getLatitude() < location2.getLatitude()){
             return -1;
+        }
+        if(location1.getLatitude() > location2.getLatitude()){
+            return 1;
         }
         else{
             return 0;

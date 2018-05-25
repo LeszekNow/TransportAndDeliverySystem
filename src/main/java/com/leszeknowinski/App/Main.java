@@ -14,6 +14,8 @@ public class Main extends Application {
         launch(args);
 
     }
+    //modify simple directions such as S, N, E and W - and some kind of factor which won't be still fixed on one Latitude
+    
     //zmień GPS - http://www.mobility-services.in.tum.de/?p=2335
         //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
         //program further option of customer start menu - services, prices
