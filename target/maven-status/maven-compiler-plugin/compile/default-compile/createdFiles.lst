@@ -28,6 +28,7 @@ com\leszeknowinski\controllers\EmployeeMainMenuController.class
 com\leszeknowinski\controllers\EmployeeTypeChooseForRemoveController.class
 com\leszeknowinski\controllers\MotorcycleAddingController.class
 com\leszeknowinski\controllers\CustomerTypeChooseController.class
+com\leszeknowinski\controllers\GPSTestsController.class
 com\leszeknowinski\controllers\VehicleTypeChooseForDisplayController.class
 com\leszeknowinski\Vehicle\Truck.class
 com\leszeknowinski\controllers\PeopleOrderDataController.class
@@ -59,11 +60,13 @@ com\leszeknowinski\controllers\BusShowController.class
 com\leszeknowinski\User\Customer.class
 com\leszeknowinski\controllers\DriverAddingController.class
 com\leszeknowinski\controllers\PackageOrderDataController.class
+com\leszeknowinski\comparators\LatitudeComparatorN.class
 com\leszeknowinski\controllers\CarAddingController.class
 com\leszeknowinski\controllers\EmployeeMenuController.class
 com\leszeknowinski\User\Manager.class
 com\leszeknowinski\Vehicle\Van.class
 com\leszeknowinski\Vehicle\Motorcycle.class
+com\leszeknowinski\comparators\LongitudeComparatorE.class
 com\leszeknowinski\controllers\TruckAddingController.class
 com\leszeknowinski\User\UserDataWrapper.class
 com\leszeknowinski\controllers\CustomersDisplayController.class
@@ -85,6 +88,7 @@ com\leszeknowinski\controllers\VansDisplayCustomerController.class
 com\leszeknowinski\controllers\CustomerTypeChooseForRemoveController.class
 com\leszeknowinski\controllers\TrucksDisplayController.class
 com\leszeknowinski\GPS\GPSRandomDataGenerator.class
+com\leszeknowinski\comparators\LatitudeComparatorS.class
 com\leszeknowinski\controllers\DriverMainMenuController.class
 com\leszeknowinski\controllers\CustomerMainMenuForEmployeeController.class
 com\leszeknowinski\controllers\CarShowController.class
@@ -100,5 +104,6 @@ com\leszeknowinski\Vehicle\Bus.class
 com\leszeknowinski\Vehicle\VehicleHelper.class
 com\leszeknowinski\controllers\LocationShowController.class
 com\leszeknowinski\DataBaseSupport\DBVehicleHelper.class
+com\leszeknowinski\comparators\LongitudeComparatorW.class
 com\leszeknowinski\controllers\CargoOrderDataController.class
 com\leszeknowinski\controllers\CustomerB2BShowController.class

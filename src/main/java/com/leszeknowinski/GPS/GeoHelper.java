@@ -153,6 +153,7 @@ public class GeoHelper {
 
     public String setDirection(double startLat, double endLat, double startLon, double endLon){
         String direction = "";
+        double factor = 2.0;
         if(startLat == endLat){
             if(startLon > endLon){
                 direction = "W";
