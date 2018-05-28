@@ -19,8 +19,9 @@ public class Main extends Application {
     //popaczkuj kontrollery
     //wywal zbędne metody
     //dojazd do klienta z krakowa do startpoint
-    //full screen
+    //full screen (height 1366/width 768px)
     //refactoring
+    //add input hints/prompts in textfields
     //modify simple directions such as S, N, E and W - and some kind of factor which won't be still fixed on one Latitude
     //modify midpoints selection using distances between them - two loops probably
     //zmień GPS - http://www.mobility-services.in.tum.de/?p=2335
@@ -35,6 +36,7 @@ public class Main extends Application {
             Scene scene = new Scene(pane);
             primaryStage.setScene(scene);
             primaryStage.setFullScreen(true);
+            primaryStage.setMaximized(true);
             primaryStage.setTitle("TransportAndDeliverySystem");
             primaryStage.setResizable(true);
             primaryStage.show();

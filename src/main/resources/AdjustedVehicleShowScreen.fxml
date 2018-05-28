@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.AdjustedVehicleShowController">
+<AnchorPane prefHeight="768" prefWidth="1366" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.AdjustedVehicleShowController">
    <children>
       <TextArea fx:id="show" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="280.0" prefWidth="580.0" wrapText="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
       <HBox layoutX="444.0" layoutY="300.0" prefHeight="40.0" prefWidth="146.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
