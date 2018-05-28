@@ -8,13 +8,13 @@
 
 <Pane prefHeight="768" prefWidth="1366" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.StartMenuController">
    <children>
-      <Label alignment="CENTER" layoutX="26.0" layoutY="20.0" prefHeight="82.0" prefWidth="255.0" text="Welcome in com.leszeknowinski TRANSPORTATION SERVICES" textAlignment="CENTER" wrapText="true">
+      <Label alignment="CENTER" layoutX="500.0" layoutY="20.0" prefHeight="82.0" prefWidth="611.0" text="Welcome in com.leszeknowinski TRANSPORTATION SERVICES" textAlignment="CENTER" wrapText="true">
          <font>
-            <Font name="System Bold Italic" size="14.0" />
+            <Font name="System Bold Italic" size="18.0" />
          </font></Label>
-      <ChoiceBox fx:id="userType" layoutX="28.0" layoutY="118.0" onAction="#loadOptions" prefWidth="150.0" />
-      <Label layoutX="29.0" layoutY="101.0" text="Select an item:" />
-      <Button fx:id="go" layoutX="188.0" layoutY="118.0" mnemonicParsing="false" onAction="#displayUserMenu" prefWidth="85.0" text="Go" />
-      <Button fx:id="exit" layoutX="188.0" layoutY="297.0" mnemonicParsing="false" onAction="#getOut" prefWidth="85.0" text="Exit" />
+      <ChoiceBox fx:id="userType" layoutX="671.0" layoutY="212.0" onAction="#loadOptions" prefWidth="150.0" />
+      <Label layoutX="672.0" layoutY="195.0" text="Select an item:" />
+      <Button fx:id="go" layoutX="831.0" layoutY="212.0" mnemonicParsing="false" onAction="#displayUserMenu" prefWidth="85.0" text="Go" />
+      <Button fx:id="exit" layoutX="1254.0" layoutY="717.0" mnemonicParsing="false" onAction="#getOut" prefWidth="85.0" text="Exit" />
    </children>
 </Pane>

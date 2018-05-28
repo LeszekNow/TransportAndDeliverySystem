@@ -46,13 +46,13 @@ public class StartMenuController implements Initializable {
         Pane pane;
         Scene scene;
         if(user.equals("Customer")){
-            fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("CustomerStartScreen.fxml"));
+            fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("customerFXMLs/CustomerStartScreen.fxml"));
             pane = fxmlLoader.load();
             scene = new Scene(pane);
             ((Stage)userType.getScene().getWindow()).setScene(scene);
         }
         else if(user.equals("Employee")){
-            fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("EmployeeMenu.fxml"));
+            fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("adminManagerFXMLs/EmployeeMenu.fxml"));
             pane = fxmlLoader.load();
             scene = new Scene(pane);
             ((Stage)userType.getScene().getWindow()).setScene(scene);

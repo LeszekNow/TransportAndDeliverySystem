@@ -8,17 +8,17 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 //username - Admin1 password - 123abc# Employee - admin
+//customer - Darcy Darcy
 public class Main extends Application {
     public static void main(String[] args) {
         DBHandler.connect();
         launch(args);
 
-
     }
-    //singleton dla login żeby nie trzeba było podawać cały czas do waliacji
-    //popaczkuj kontrollery
-    //wywal zbędne metody
+    //change positions generation for only arrested cars
     //dojazd do klienta z krakowa do startpoint
+    //wywal zbędne metody
+
     //full screen (height 1366/width 768px)
     //refactoring
     //add input hints/prompts in textfields
@@ -26,7 +26,7 @@ public class Main extends Application {
     //modify midpoints selection using distances between them - two loops probably
     //zmień GPS - http://www.mobility-services.in.tum.de/?p=2335
         //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
-        //program further option of customer start menu - services, prices
+        //program further option of customer start menu - services, prices(mthod for calculation price in PLN/km)
         //program further option of customer main menu - edit, terms, delete account
 
         public void start (Stage primaryStage) throws Exception {
