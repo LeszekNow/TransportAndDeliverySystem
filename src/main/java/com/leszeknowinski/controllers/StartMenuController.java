@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -22,6 +23,9 @@ public class StartMenuController implements Initializable {
 
     @FXML
     Button exit;
+
+    @FXML
+    Label message;
 
 
     public void initialize(URL location, ResourceBundle resources) {
@@ -41,22 +45,23 @@ public class StartMenuController implements Initializable {
 
     @FXML
     public void displayUserMenu() throws Exception{
-        String user = userType.getValue();
         FXMLLoader fxmlLoader;
         Pane pane;
         Scene scene;
-        if(user.equals("Customer")){
+        if(userType.getValue() == null) {
+            message.setText("You have to choose an option before clicking go!");
+        }
+        else if(userType.getValue().equals("Customer")){
             fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("customerFXMLs/CustomerStartScreen.fxml"));
             pane = fxmlLoader.load();
             scene = new Scene(pane);
             ((Stage)userType.getScene().getWindow()).setScene(scene);
         }
-        else if(user.equals("Employee")){
+        else if(userType.getValue().equals("Employee")){
             fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("adminManagerFXMLs/EmployeeMenu.fxml"));
             pane = fxmlLoader.load();
             scene = new Scene(pane);
             ((Stage)userType.getScene().getWindow()).setScene(scene);
-
         }
 
     }

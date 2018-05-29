@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -21,6 +22,9 @@ public class EmployeeTypeChooseForRemoveController implements Initializable {
     @FXML
     Button back;
 
+    @FXML
+    Label message;
+
     ControllersHelper controllersHelper = new ControllersHelper();
 
     public void initialize(URL location, ResourceBundle resources) {
@@ -36,15 +40,17 @@ public class EmployeeTypeChooseForRemoveController implements Initializable {
 
     @FXML
     public void executeEmployeeDeleting()throws Exception{
-        String employee = employeeType.getValue();
         ControllersHelper controllersHelper = new ControllersHelper();
-        if(employee.equals("admin")) {
+        if(employeeType.getValue() == null){
+            message.setText("You have to choose an option before clicking select!");
+        }
+        else if(employeeType.getValue().equals("admin")) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/AdminShowScreen.fxml"));
         }
-        else if(employee.equals("driver")){
+        else if(employeeType.getValue().equals("driver")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("driverFXMLs/DriverShowScreen.fxml"));
         }
-        else if(employee.equals("manager")){
+        else if(employeeType.getValue().equals("manager")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/ManagerShowScreen.fxml"));
         }
     }

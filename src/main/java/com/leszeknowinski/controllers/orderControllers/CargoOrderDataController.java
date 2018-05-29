@@ -8,6 +8,7 @@ import com.leszeknowinski.DataBaseSupport.DBOrderHelper;
 import com.leszeknowinski.GPS.GPSRandomDataGenerator;
 import com.leszeknowinski.GPS.GeoHelper;
 import com.leszeknowinski.Order.Order;
+import com.leszeknowinski.Order.OrderHelper;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -61,6 +62,7 @@ public class CargoOrderDataController {
     GeoHelper geoHelper = new GeoHelper();
     DBOrderHelper dbOrderHelper = new DBOrderHelper();
     GPSRandomDataGenerator gpsRandomDataGenerator = new GPSRandomDataGenerator();
+    OrderHelper orderHelper = new OrderHelper();
 
 
     @FXML
@@ -90,6 +92,7 @@ public class CargoOrderDataController {
                 message.setText("Sorry, We don't support such connection!");
             } else {
                 double distance = geoHelper.getDistanceInKM(startLat, endLat, startLon, endLon);
+                double price = orderHelper.calculateOrderPrice(distance, "Cargo");
                 dbHandler.connectToDataBase("UPDATE tvehicle SET arrested = true WHERE id = " + adjustedVehicle + ";");
                 dbHandler.connectToDataBase("UPDATE tdriver SET arrested = true WHERE id = " + adjustedDriver + ";");
                 Order order = new Order("cargo", vehicleType, adjustedVehicle, Integer.parseInt(amount.getText()), customerId, customerType, startPoint.getText(), endPoint.getText(), distance, false, false, adjustedDriver);
@@ -108,7 +111,8 @@ public class CargoOrderDataController {
                         "\nDriver: " + dbHandler.getStringFromDB("SELECT name FROM tdriver WHERE id = " + adjustedDriver + ";","name") +
                         "\nVehicle: " + dbHandler.getStringFromDB("SELECT brand FROM tvehicle WHERE id = " + adjustedVehicle + ";", "brand") +
                         "-" + dbHandler.getStringFromDB("SELECT model FROM tvehicle WHERE id = " + adjustedVehicle + ";", "model") +
-                        ", Registration number: " + dbHandler.getStringFromDB("SELECT registrationNumber FROM tvehicle WHERE id = " + adjustedVehicle + ";", "registrationNumber"));
+                        ", Registration number: " + dbHandler.getStringFromDB("SELECT registrationNumber FROM tvehicle WHERE id = " + adjustedVehicle + ";", "registrationNumber") +
+                        "\nService price: " + price + " PLN.");
                 //add driverId and inProgress to an order
             }
         }

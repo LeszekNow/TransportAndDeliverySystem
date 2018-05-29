@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -21,8 +22,10 @@ public class VehicleTypeChooseForRemoveController implements Initializable {
     @FXML
     Button back;
 
+    @FXML
+    Label message;
+
     ControllersHelper controllersHelper = new ControllersHelper();
-    VehicleTypeChooseController vehicleTypeChooseController = new VehicleTypeChooseController();
 
     public void initialize(URL location, ResourceBundle resources) {
     loadOptions();
@@ -40,23 +43,25 @@ public class VehicleTypeChooseForRemoveController implements Initializable {
 
     @FXML
     public void executeVehicleTypeShow()throws Exception{
-        String vehicle = vehicleType.getValue();
-        if(vehicle.equals("Bus")) {
+        if(vehicleType.getValue() == null){
+            message.setText("You have to choose an option before clicking select!");
+        }
+        else if(vehicleType.getValue().equals("Bus")) {
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLAnchorPaneScreen("vehicleFXMLs/BusShowScreen.fxml"));
         }
-        else if(vehicle.equals("Car")){
+        else if(vehicleType.getValue().equals("Car")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/CarShowScreen.fxml"));
         }
-        else if(vehicle.equals("Motorcycle")){
+        else if(vehicleType.getValue().equals("Motorcycle")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/MotorcycleShowScreen.fxml"));
         }
-        else if(vehicle.equals("Truck")){
+        else if(vehicleType.getValue().equals("Truck")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/TruckShowScreen.fxml"));
         }
-        else if(vehicle.equals("Van")){
+        else if(vehicleType.getValue().equals("Van")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VanShowScreen.fxml"));
         }
-        else if(vehicle.equals("Delete all")){
+        else if(vehicleType.getValue().equals("Delete all")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehiclesShowScreen.fxml"));
         }
     }

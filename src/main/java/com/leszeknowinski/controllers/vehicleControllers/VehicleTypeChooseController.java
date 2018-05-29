@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -24,6 +25,9 @@ public class VehicleTypeChooseController implements Initializable {
     @FXML
     Button back;
 
+    @FXML
+    Label message;
+
 
     public void initialize(URL location, ResourceBundle resources) {
     loadOptions();
@@ -40,21 +44,23 @@ public class VehicleTypeChooseController implements Initializable {
 
     @FXML
     public void executeVehicleAdding()throws Exception{
-        String vehicle = vehicleType.getValue();
         ControllersHelper controllersHelper = new ControllersHelper();
-        if(vehicle.equals("Bus")) {
+        if(vehicleType.getValue() == null){
+            message.setText("You have to choose an option before clicking select!");
+        }
+        else if(vehicleType.getValue().equals("Bus")) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/BusAddingScreen.fxml"));
         }
-        else if(vehicle.equals("Car")){
+        else if(vehicleType.getValue().equals("Car")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/CarAddingScreen.fxml"));
         }
-        else if(vehicle.equals("Motorcycle")){
+        else if(vehicleType.getValue().equals("Motorcycle")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/MotorcycleAddingScreen.fxml"));
         }
-        else if(vehicle.equals("Truck")){
+        else if(vehicleType.getValue().equals("Truck")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/TruckAddingScreen.fxml"));
         }
-        else if(vehicle.equals("Van")){
+        else if(vehicleType.getValue().equals("Van")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VanAddingScreen.fxml"));
         }
     }

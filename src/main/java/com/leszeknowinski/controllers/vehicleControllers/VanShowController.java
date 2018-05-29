@@ -67,12 +67,14 @@ public class VanShowController implements Initializable {
 
     @FXML
     public void executeVehicleDeleting() {
-        String choice = choiceOption.getValue();
-        if (choice.equals("Id:")) {
+        if(choiceOption.getValue() == null){
+            message.setText("You have to choose an option before clicking delete!");
+        }
+        else if (choiceOption.getValue().equals("Id:")) {
             dbHandler.connectToDataBase("DELETE FROM tvehicle WHERE id = " + Integer.parseInt(idOrMileage.getText()) + ";");
             message.setText("Vehicle was removed successfully!");
             showRefreshedVansList();
-        } else if (choice.equals("Mileage:")) {
+        } else if (choiceOption.getValue().equals("Mileage:")) {
             dbHandler.connectToDataBase("DELETE FROM tvehicle WHERE mileage > " + Integer.parseInt(idOrMileage.getText()) + ";");
             message.setText("Vehicle was removed successfully!");
             showRefreshedVansList();

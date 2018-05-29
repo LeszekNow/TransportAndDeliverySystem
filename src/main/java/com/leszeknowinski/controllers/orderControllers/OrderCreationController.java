@@ -14,8 +14,6 @@ public class OrderCreationController implements Initializable {
     @FXML
     ChoiceBox<String>cargoType;
 
-    @FXML
-    TextField username;
 
     @FXML
     Button go;

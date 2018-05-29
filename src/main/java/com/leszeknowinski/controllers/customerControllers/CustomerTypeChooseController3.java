@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -24,6 +25,9 @@ public class CustomerTypeChooseController3 implements Initializable {
     @FXML
     Button back;
 
+    @FXML
+    Label message;
+
 
     public void initialize(URL location, ResourceBundle resources) {
     loadOptions();
@@ -37,12 +41,14 @@ public class CustomerTypeChooseController3 implements Initializable {
 
     @FXML
     public void executeRegistration()throws Exception{
-        String customer = customerType.getValue();
         ControllersHelper controllersHelper = new ControllersHelper();
-        if(customer.equals("Customer")) {
+        if(customerType.getValue() == null) {
+            message.setText("You have to choose an option before clicking select!");
+        }
+        else if(customerType.getValue().equals("Customer")) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerRegistrationScreen.fxml"));
         }
-        else if(customer.equals("Customer B2B / VAT")) {
+        else if(customerType.getValue().equals("Customer B2B / VAT")) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerB2BRegistrationScreen.fxml"));
         }
     }

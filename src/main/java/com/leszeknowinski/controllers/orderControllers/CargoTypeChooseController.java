@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -21,6 +22,9 @@ public class CargoTypeChooseController implements Initializable {
     @FXML
     Button back;
 
+    @FXML
+    Label message;
+
     ControllersHelper controllersHelper = new ControllersHelper();
 
     public void initialize(URL location, ResourceBundle resources) {
@@ -36,15 +40,17 @@ public class CargoTypeChooseController implements Initializable {
 
     @FXML
     public void executeChosenOption()throws Exception{
-        String cargo = cargoType.getValue();
         ControllersHelper controllersHelper = new ControllersHelper();
-        if(cargo.equals("Cargo")) {
+        if(cargoType.getValue() == null){
+            message.setText("You have to choose an option before clicking select!");
+        }
+        else if(cargoType.getValue().equals("Cargo")) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("orderFXMLs/CargoOrderDataScreen.fxml"));
         }
-        else if(cargo.equals("Package")){
+        else if(cargoType.getValue().equals("Package")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("orderFXMLs/PackageOrderDataScreen.fxml"));
         }
-        else if(cargo.equals("People")){
+        else if(cargoType.getValue().equals("People")){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("orderFXMLs/PeopleOrderDataScreen.fxml"));
         }
     }

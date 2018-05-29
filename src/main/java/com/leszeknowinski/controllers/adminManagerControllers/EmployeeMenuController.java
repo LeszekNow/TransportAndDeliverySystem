@@ -55,7 +55,10 @@ public class EmployeeMenuController implements Initializable {
         UserData.getInstance().setUsernameMemory(username.getText());
         UserData.getInstance().setUserTypeMemory(employeeType.getValue());
         if(LogIn.authenticate(username.getText(), password.getText(), employeeType.getValue())) {
-            if(employeeType.getValue().equals("admin")) {
+            if(employeeType.getValue() == null){
+                message.setText("You have to choose an option and fill form before clicking login!");
+            }
+            else if(employeeType.getValue().equals("admin")) {
                 ((Stage)go.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeMainMenu.fxml"));
             }
             else if(employeeType.getValue().equals("manager")){

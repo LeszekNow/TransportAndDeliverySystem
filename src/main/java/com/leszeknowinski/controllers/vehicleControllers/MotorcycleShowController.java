@@ -47,15 +47,15 @@ public class MotorcycleShowController implements Initializable {
 
     @FXML
     public void showMotorcycles() {
-        for(Motorcycle motorcycle: vehicleRepository.getMotorcycles()){
-            show.appendText(motorcycle.toString() +"\n");
+        for (Motorcycle motorcycle : vehicleRepository.getMotorcycles()) {
+            show.appendText(motorcycle.toString() + "\n");
         }
     }
 
-    public void showRefreshedMotorcyclesList(){
+    public void showRefreshedMotorcyclesList() {
         show.clear();
-        for(Motorcycle motorcycle: vehicleRepository.getMotorcycles()){
-            show.appendText(motorcycle.toString() +"\n");
+        for (Motorcycle motorcycle : vehicleRepository.getMotorcycles()) {
+            show.appendText(motorcycle.toString() + "\n");
         }
     }
 
@@ -67,12 +67,14 @@ public class MotorcycleShowController implements Initializable {
 
     @FXML
     public void executeVehicleDeleting() {
-        String choice = choiceOption.getValue();
-        if (choice.equals("Id:")) {
+
+        if (choiceOption.getValue() == null) {
+            message.setText("You have to choose an option before clicking delete!");
+        } else if (choiceOption.getValue().equals("Id:")) {
             dbHandler.connectToDataBase("DELETE FROM tvehicle WHERE id = " + Integer.parseInt(idOrMileage.getText()) + ";");
             message.setText("Vehicle was removed successfully!");
             showRefreshedMotorcyclesList();
-        } else if (choice.equals("Mileage:")) {
+        } else if (choiceOption.getValue().equals("Mileage:")) {
             dbHandler.connectToDataBase("DELETE FROM tvehicle WHERE mileage > " + Integer.parseInt(idOrMileage.getText()) + ";");
             message.setText("Vehicle was removed successfully!");
             showRefreshedMotorcyclesList();
@@ -80,12 +82,12 @@ public class MotorcycleShowController implements Initializable {
     }
 
     @FXML
-    public void getBack()throws Exception{
+    public void getBack() throws Exception {
         ((Stage) delete.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeMainMenu.fxml"));
     }
 
     @FXML
-    public void getOut(){
+    public void getOut() {
         Platform.exit();
     }
 }
