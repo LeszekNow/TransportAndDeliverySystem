@@ -1,6 +1,6 @@
 package com.leszeknowinski.App;
 
-public class UserData {
+public final class UserData {
 
     private static UserData userData = null;
     private String usernameMemory;

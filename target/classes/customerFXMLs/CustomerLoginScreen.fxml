@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerLoginController">
+<Pane prefHeight="450.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerLoginController">
     <children>
         <Label alignment="CENTER" layoutX="26.0" layoutY="20.0" prefHeight="82.0" prefWidth="255.0" text="Customer login center:" textAlignment="CENTER" wrapText="true">
          <font>

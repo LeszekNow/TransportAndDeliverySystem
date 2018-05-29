@@ -9,37 +9,6 @@ import static com.leszeknowinski.DataBaseSupport.DBHandler.connect;
 
 public class UserRepository {
 
-    public static void showCustomersB2B(ArrayList<CustomerB2B>list) {
-        for (CustomerB2B b2b : list) {
-            System.out.println(b2b.toString());
-        }
-    }
-
-    public static void showCustomers(ArrayList<Customer>list) {
-        for (Customer customer : list) {
-            System.out.println(customer.toString());
-        }
-    }
-
-
-    public static void showDrivers(ArrayList<Driver>list) {
-        for (Driver driver : list) {
-            System.out.println(driver.toString());
-        }
-    }
-
-    public static void showManagers(ArrayList<Manager>list) {
-        for (Manager manager : list) {
-            System.out.println(manager.toString());
-        }
-    }
-
-    public static void showAdmins(ArrayList<Admin>list) {
-        for (Admin admin : list) {
-            System.out.println(admin.toString());
-        }
-    }
-
     public ArrayList<Driver> getDriver(){
         ResultSet resultSet = null;
         Statement statement = null;

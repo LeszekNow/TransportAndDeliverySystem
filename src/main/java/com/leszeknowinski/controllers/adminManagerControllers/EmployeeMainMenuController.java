@@ -3,10 +3,15 @@ package com.leszeknowinski.controllers.adminManagerControllers;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-public class EmployeeMainMenuController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class EmployeeMainMenuController implements Initializable {
 
     @FXML
     Button addNewCar;
@@ -16,9 +21,6 @@ public class EmployeeMainMenuController {
 
     @FXML
     Button addNewLocation;
-
-    @FXML
-    Button addNewRoute;
 
     @FXML
     Button addNewCustomer;
@@ -57,12 +59,19 @@ public class EmployeeMainMenuController {
     Button driverMenu;
 
     @FXML
+    TextArea alert;
+
+    @FXML
     Button back;
 
     @FXML
     Button exit;
 
     ControllersHelper controllersHelper = new ControllersHelper();
+
+    public void initialize(URL location, ResourceBundle resources) {
+            displayAlerts();
+    }
 
     @FXML
     public void chooseVehicleType() throws Exception{
@@ -85,8 +94,10 @@ public class EmployeeMainMenuController {
     }
 
     @FXML
-    public void addRoute(){
-
+    public void displayAlerts(){
+        //change addRoute into AlertDisplay - display of cars list for service after exceed 15000km
+        //other info
+        //loaded automatically
     }
 
 
@@ -110,10 +121,6 @@ public class EmployeeMainMenuController {
         ((Stage)deleteLocation.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/LocationShowScreen.fxml"));
     }
 
-    @FXML
-    public void deleteRoute()throws Exception{
-        ((Stage)deleteRoute.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("RouteChooseForRemoveScreen.fxml"));
-    }
 
     @FXML
     public void showVehicleTypeChooseScreen()throws Exception{
@@ -129,7 +136,6 @@ public class EmployeeMainMenuController {
         ((Stage)trackVehicle.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/VehicleTrackChooseScreen.fxml"));
 
     }
-
 
     @FXML
     public void loadCustomerMenu()throws Exception{
@@ -152,5 +158,6 @@ public class EmployeeMainMenuController {
     }
 
 
-    }
+
+}
 

@@ -7,15 +7,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerMainMenuController">
+<Pane prefHeight="450.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerMainMenuController">
    <children>
       <VBox alignment="CENTER" layoutX="75.0" layoutY="85.0" prefHeight="176.0" prefWidth="159.0" spacing="5.0">
          <children>
-            <Button fx:id="newOrder" onAction="#loadCargoTypeChooseScreen" mnemonicParsing="false"  prefWidth="125.0" text="New order" />
-            <Button fx:id="myOrders" onAction="#loadOrderSummaryScreen" mnemonicParsing="false"  prefWidth="125.0" text="My orders" />
-            <Button fx:id="editOrder" mnemonicParsing="false"  prefWidth="125.0" text="Edit order" />
-            <Button fx:id="terms" mnemonicParsing="false"  prefWidth="125.0" text="Terms" />
-            <Button fx:id="deleteAccount" mnemonicParsing="false"  prefWidth="125.0" text="Delete account" />
+            <Button fx:id="newOrder" mnemonicParsing="false" onAction="#loadCargoTypeChooseScreen" prefWidth="125.0" text="New order" />
+            <Button fx:id="myOrders" mnemonicParsing="false" onAction="#loadOrderSummaryScreen" prefWidth="125.0" text="My orders" />
+            <Button fx:id="editOrder" mnemonicParsing="false" onAction="#loadOrderEditScreen" prefWidth="125.0" text="Edit order" />
+            <Button fx:id="editAccount" layoutX="27.0" layoutY="131.0" mnemonicParsing="false" onAction="#loadAccountEditScreen" prefWidth="125.0" text="Edit account" />
+            <Button fx:id="deleteAccount" mnemonicParsing="false" onAction="#loadConfirmationScreen" prefWidth="125.0" text="Delete account" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -41,6 +41,7 @@
             <Insets left="50.0" top="50.0" />
          </opaqueInsets>
       </VBox>
+      <Label fx:id="message" layoutX="234.0" layoutY="189.0" prefHeight="32.0" prefWidth="455.0" textAlignment="CENTER" textFill="#f41212" />
    </children>
    <opaqueInsets>
       <Insets />

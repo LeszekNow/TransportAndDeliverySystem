@@ -13,7 +13,6 @@ public class DriverMainMenuForEmployeeController {
 
     @FXML
     Button startOrder;
-    //inside show adjusted vehicle
 
     @FXML
     Button finishOrder;
@@ -50,6 +49,5 @@ public class DriverMainMenuForEmployeeController {
         Platform.exit();
     }
 
-    //usuń wybór rodzaju klienta przy logowaniu customera
     }
 

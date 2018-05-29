@@ -1,21 +1,16 @@
 package com.leszeknowinski.GPS;
 
-import com.leszeknowinski.DataBaseSupport.DBHandler;
-import com.leszeknowinski.DataBaseSupport.DBUserHelper;
-import com.leszeknowinski.Vehicle.VehicleHelper;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import static com.leszeknowinski.DataBaseSupport.DBHandler.connect;
 
 public class GeoHelper {
 
-    // double el1, double el2
+    // double el1, double el2 elevation above sea level
     public double getDistanceInKM(double lat1, double lat2, double lon1, double lon2) {
 
         final int R = 6371; // Radius of the earth

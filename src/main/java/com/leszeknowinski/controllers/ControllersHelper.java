@@ -13,8 +13,6 @@ import java.util.Scanner;
 
 public class ControllersHelper {
 
-    //Pane is the highest point on the ladder so is will be fit for every pane
-
     public Scene loadFXMLScreen(String fileName)throws Exception{
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource(fileName));
         Pane pane = fxmlLoader.load();
@@ -29,24 +27,9 @@ public class ControllersHelper {
         return scene;
     }
 
-    public static int intScanner(String parameterName) {
-        int result = 0;
-        while (true) {
-            try {
-                Scanner scanner = new Scanner(System.in);
-                System.out.print(parameterName);
-                result = scanner.nextInt();
-            } catch (InputMismatchException e) {
-                System.out.print("Improper value entered! You must use integers!");
-                continue;
-            }
-            break;
-        }
-        return result;
-    }
 
     public double doubleCheck(double input) {
-        double result = 0;
+        double result = 0.0;
         while (true) {
             try {
                 result = input;

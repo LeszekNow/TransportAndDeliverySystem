@@ -3,7 +3,9 @@ com\leszeknowinski\User\Driver.class
 com\leszeknowinski\Vehicle\Car.class
 com\leszeknowinski\controllers\adminManagerControllers\EmployeeTypeChooseController.class
 com\leszeknowinski\controllers\customerControllers\CustomerB2BShowController.class
+com\leszeknowinski\controllers\customerControllers\CustomerEditingController.class
 com\leszeknowinski\Cargo\CargoType.class
+com\leszeknowinski\controllers\customerControllers\CustomerB2BEditingController.class
 com\leszeknowinski\controllers\vehicleControllers\MotorcycleAddingController.class
 com\leszeknowinski\User\CustomerB2B.class
 com\leszeknowinski\controllers\orderControllers\PackageOrderDataController.class
@@ -62,6 +64,7 @@ com\leszeknowinski\User\Manager.class
 com\leszeknowinski\Vehicle\Van.class
 com\leszeknowinski\controllers\adminManagerControllers\CustomerMainMenuForEmployeeController.class
 com\leszeknowinski\Vehicle\Motorcycle.class
+com\leszeknowinski\Order\OrderHelper.class
 com\leszeknowinski\comparators\LongitudeComparatorE.class
 com\leszeknowinski\controllers\vehicleControllers\MotorcyclesDisplayCustomerController.class
 com\leszeknowinski\controllers\orderControllers\OrderSummaryController.class
@@ -80,6 +83,7 @@ com\leszeknowinski\controllers\StartMenuController.class
 com\leszeknowinski\User\CustomerType.class
 com\leszeknowinski\GPS\GeoHelper.class
 com\leszeknowinski\controllers\vehicleControllers\VehiclesDisplayController.class
+com\leszeknowinski\controllers\orderControllers\OrderEditingController.class
 com\leszeknowinski\controllers\vehicleControllers\VehiclesDisplayCustomerController.class
 com\leszeknowinski\GPS\GPSRandomDataGenerator.class
 com\leszeknowinski\App\UserData.class
@@ -90,7 +94,6 @@ com\leszeknowinski\controllers\customerControllers\CustomerTypeChooseController3
 com\leszeknowinski\controllers\customerControllers\CustomerAddingController.class
 com\leszeknowinski\controllers\vehicleControllers\VanAddingController.class
 com\leszeknowinski\controllers\orderControllers\OrderCreationController.class
-com\leszeknowinski\Vehicle\PriceCategory.class
 com\leszeknowinski\controllers\vehicleControllers\VehicleTypeChooseController.class
 com\leszeknowinski\controllers\vehicleControllers\CarsDisplayController.class
 com\leszeknowinski\controllers\vehicleControllers\CarAddingController.class
@@ -101,10 +104,10 @@ com\leszeknowinski\controllers\driverControllers\DriverShowController.class
 com\leszeknowinski\Vehicle\Bus.class
 com\leszeknowinski\controllers\vehicleControllers\TrucksDisplayController.class
 com\leszeknowinski\controllers\vehicleControllers\VehicleTypeChooseController2.class
-com\leszeknowinski\Vehicle\VehicleHelper.class
 com\leszeknowinski\controllers\customerControllers\CustomerTypeChooseController2.class
 com\leszeknowinski\controllers\locationControllers\VehicleTrackChooseController.class
 com\leszeknowinski\controllers\vehicleControllers\TruckAddingController.class
 com\leszeknowinski\controllers\vehicleControllers\TrucksDisplayCustomerController.class
 com\leszeknowinski\DataBaseSupport\DBVehicleHelper.class
 com\leszeknowinski\comparators\LongitudeComparatorW.class
+com\leszeknowinski\controllers\customerControllers\AccountDeletingConfirmationController.class

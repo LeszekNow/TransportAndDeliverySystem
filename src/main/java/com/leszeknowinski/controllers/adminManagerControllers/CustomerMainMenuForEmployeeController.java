@@ -51,6 +51,5 @@ public class CustomerMainMenuForEmployeeController {
         Platform.exit();
     }
 
-    //usuń wybór rodzaju klienta przy logowaniu customera
     }
 

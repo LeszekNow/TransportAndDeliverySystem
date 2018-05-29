@@ -18,9 +18,6 @@ public class CustomerStartController {
     Button services;
 
     @FXML
-    Button prices;
-
-    @FXML
     Button vehicles;
 
     @FXML
@@ -46,10 +43,6 @@ public class CustomerStartController {
 
     }
 
-    @FXML
-    public void showPricesList(){
-
-    }
 
     public void showVehicleTypeChooseScreen() throws Exception{
         ((Stage)vehicles.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml"));

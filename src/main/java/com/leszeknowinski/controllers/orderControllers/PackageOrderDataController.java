@@ -18,6 +18,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.text.DecimalFormat;
+
 public class PackageOrderDataController {
 
     @FXML
@@ -65,7 +67,7 @@ public class PackageOrderDataController {
     OrderHelper orderHelper = new OrderHelper();
 
     @FXML
-    public void createOrder() throws Exception {
+    public void createOrder() {
         String vehicleType;
         int adjustedVehicle;
         int adjustedDriver;
@@ -112,7 +114,6 @@ public class PackageOrderDataController {
                         "-" + dbHandler.getStringFromDB("SELECT model FROM tvehicle WHERE id = " + adjustedVehicle + ";", "model") +
                         ", Registration number: " + dbHandler.getStringFromDB("SELECT registrationNumber FROM tvehicle WHERE id = " + adjustedVehicle + ";", "registrationNumber") +
                         "\nService price: " + price + " PLN.");
-                //price
             }
         }
 

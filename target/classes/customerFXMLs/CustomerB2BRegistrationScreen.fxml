@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerB2BRegistrationController">
+<Pane prefHeight="450.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerB2BRegistrationController">
    <children>
       <VBox alignment="TOP_RIGHT" layoutX="8.0" layoutY="23.0" prefHeight="279.0" prefWidth="161.0" spacing="13.0">
          <children>

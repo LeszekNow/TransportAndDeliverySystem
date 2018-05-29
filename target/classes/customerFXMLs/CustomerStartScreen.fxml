@@ -7,14 +7,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerStartController">
+<Pane prefHeight="450.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.customerControllers.CustomerStartController">
    <children>
       <VBox alignment="CENTER" layoutX="75.0" layoutY="85.0" prefHeight="176.0" prefWidth="159.0" spacing="5.0">
          <children>
             <Button fx:id="login" mnemonicParsing="false" onAction="#loadCustomerLoginScreen" prefWidth="125.0" text="Login" />
             <Button fx:id="register" mnemonicParsing="false" onAction="#loadCustomerRegistrationScreen" prefWidth="125.0" text="Register" />
             <Button fx:id="services" mnemonicParsing="false" onAction="#showServicesList" prefWidth="125.0" text="Services" />
-            <Button fx:id="prices" mnemonicParsing="false" onAction="#showPricesList" prefWidth="125.0" text="Prices" />
             <Button fx:id="vehicles" mnemonicParsing="false" onAction="#showVehicleTypeChooseScreen" prefWidth="125.0" text="Vehicles" />
          </children>
          <padding>

@@ -18,7 +18,7 @@ public class DriverMainMenuController implements Initializable {
 
     @FXML
     Button showOrders;
-    //inside show adjusted vehicle
+
     @FXML
     Button finishOrder;
 

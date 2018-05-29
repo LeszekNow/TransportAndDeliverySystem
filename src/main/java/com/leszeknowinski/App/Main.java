@@ -10,6 +10,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 //username - Admin1 password - 123abc# Employee - admin
+//driver -
 //customer - Darcy Darcy
 public class Main extends Application {
     public static void main(String[] args) {
@@ -17,15 +18,16 @@ public class Main extends Application {
         launch(args);
 
     }
-    //t do klienta z krakowa do startpoint
-    //wywal zbędne metody
+    //full size ??
+    //OrderEditingController - loading order details on textarea
+    //program further option of customer start menu - services
     //pozmieniaj cośType na enumy
     //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
-    //program further option of customer start menu - services
-    //program further option of customer main menu - edit, terms, delete account
-    //refactoring
-    //add input hints/prompts in textfields
 
+    //refactoring
+    //obsłużyć wyjątek jak jakiś username już istnieje w bazie
+
+    //add input hints/prompts in textfields
     //modify simple directions such as S, N, E and W - and some kind of factor which won't be still fixed on one Latitude
     //modify midpoints selection using distances between them - two loops probably
     //zmień GPS - http://www.mobility-services.in.tum.de/?p=2335
@@ -36,16 +38,16 @@ public class Main extends Application {
             Pane pane = fxmlLoader.load();
             Scene scene = new Scene(pane);
             primaryStage.setScene(scene);
-            primaryStage.setFullScreen(true);
-            primaryStage.setMaximized(true);
+           // primaryStage.setFullScreen(true);
+           // primaryStage.setMaximized(true);
             primaryStage.setTitle("TransportAndDeliverySystem");
             primaryStage.setResizable(true);
-            Screen screen = Screen.getPrimary();
-            Rectangle2D bounds = screen.getVisualBounds();
-            primaryStage.setX(bounds.getMinX());
-            primaryStage.setY(bounds.getMinY());
-            primaryStage.setWidth(bounds.getWidth());
-            primaryStage.setHeight(bounds.getHeight());
+//            Screen screen = Screen.getPrimary();
+//            Rectangle2D bounds = screen.getVisualBounds();
+//            primaryStage.setX(bounds.getMinX());
+//            primaryStage.setY(bounds.getMinY());
+//            primaryStage.setWidth(bounds.getWidth());
+//            primaryStage.setHeight(bounds.getHeight());
             primaryStage.show();
 //  StartMenu.fxml  GPSTestsScreen.fxml
         }

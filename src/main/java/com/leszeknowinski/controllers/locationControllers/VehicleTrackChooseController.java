@@ -15,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 
 public class VehicleTrackChooseController implements Initializable {
@@ -47,6 +48,7 @@ public class VehicleTrackChooseController implements Initializable {
     DBHandler dbHandler = new DBHandler();
     ControllersHelper controllersHelper = new ControllersHelper();
     GPSRandomDataGenerator gpsRandomDataGenerator = new GPSRandomDataGenerator();
+    DecimalFormat dF = new DecimalFormat("#.#");
 
     @FXML
     public void showAllArrestedVehicles() {
@@ -59,10 +61,11 @@ public class VehicleTrackChooseController implements Initializable {
     public void trackSelectedVehicle() {
         int id = Integer.parseInt(vehicleId.getText());
         int location = gpsRandomDataGenerator.getRandomIdOfLocation();
+        double distance = geoHelper.getDistanceInKM(geoHelper.getLatitude("Krakow"), geoHelper.getLatitude(location), geoHelper.getLongitude("Krakow"), geoHelper.getLongitude(location));
         show.clear();
         show.appendText(vehicleRepository.getVehicle(id).toString() + "\nLocation: " +
-                dbHandler.getStringFromDB("SELECT city FROM tlocation WHERE id = " + location + ";", "city" ) + "\nDistance from base: " +
-        geoHelper.getDistanceInKM(geoHelper.getLatitude("Krakow"), geoHelper.getLatitude(location), geoHelper.getLongitude("Krakow"), geoHelper.getLongitude(location)) + "km");
+                dbHandler.getStringFromDB("SELECT city FROM tlocation WHERE id = " + location + ";", "city" ) + "\nDistance from base: " + Double.valueOf(dF.format(distance))
+         + " km");
     }
 
     @FXML

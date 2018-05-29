@@ -2,47 +2,220 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d9439a-56c5-41ed-94da-5bfa0c331a1c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/AccountDeletingConfirmationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BEditingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerEditingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/AccountDeletingConfirmationScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BEditingScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerEditingScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderEditingScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/StartMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/StartMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserDataWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserDataWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/PriceCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleDataWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleDataWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/ControllersHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/ControllersHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerStartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerStartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/locationControllers/VehicleTrackChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/locationControllers/VehicleTrackChooseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderCreationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/StartMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StartMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/CustomerTypeChooseForRemoveScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/CustomerTypeChooseForRemoveScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseForRemoveScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseForRemoveScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/ManagerAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/ManagerAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/ManagerShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/ManagerShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BRegistrationScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BRegistrationScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerLoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerLoginScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerMainMenuScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerMainMenuScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerRegistrationScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerRegistrationScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerStartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerStartScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen2.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersB2BDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersB2BDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/driverFXMLs/AdjustedVehicleShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/driverFXMLs/AdjustedVehicleShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverOrderAcceptationScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverOrderAcceptationScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverOrderFinishScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverOrderFinishScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/locationFXMLs/LocationAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/locationFXMLs/LocationAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/locationFXMLs/LocationShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/locationFXMLs/LocationShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/locationFXMLs/VehicleTrackChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/locationFXMLs/VehicleTrackChooseScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orderFXMLs/AllOrdersScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/AllOrdersScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoOrderDataScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoOrderDataScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoTypeChooseScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderCreationMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderCreationMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderSummaryScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderSummaryScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orderFXMLs/PackageOrderDataScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/PackageOrderDataScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orderFXMLs/PeopleOrderDataScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orderFXMLs/PeopleOrderDataScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusesDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusesDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusesDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusesDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/StartMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StartMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/AdminAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/AdminAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/AdminShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/AdminShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/CustomerTypeChooseForRemoveScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/CustomerTypeChooseForRemoveScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeMainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeMainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeTypeChooseForRemoveScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeTypeChooseForRemoveScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeTypeChooseScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/ManagerAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/ManagerAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/ManagerShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/ManagerShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/LogIn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/UserData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/GeoHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/GeoHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/LocationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/LocationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserDataWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserDataWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/PriceCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleDataWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleDataWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/ControllersHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/ControllersHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/StartMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/StartMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerStartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerStartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/VehicleTrackChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/VehicleTrackChooseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/OrderCreationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/OrderCreationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusShowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarShowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VanShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VanShowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerB2BAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerB2BAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerB2BRegistrationScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerB2BRegistrationScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerB2BShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerB2BShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerLoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerLoginScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerMainMenuScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerMainMenuScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerRegistrationScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerRegistrationScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerStartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerStartScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerTypeChooseScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerTypeChooseScreen2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerTypeChooseScreen2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerTypeChooseScreen3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomerTypeChooseScreen3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomersB2BDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomersB2BDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomersDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customerFXMLs/CustomersDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverFXMLs/AdjustedVehicleShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverFXMLs/AdjustedVehicleShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverMainMenuScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverMainMenuScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverOrderAcceptationScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverOrderAcceptationScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverOrderFinishScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverOrderFinishScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/locationFXMLs/LocationAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/locationFXMLs/LocationAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/locationFXMLs/LocationShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/locationFXMLs/LocationShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/locationFXMLs/VehicleTrackChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/locationFXMLs/VehicleTrackChooseScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderFXMLs/AllOrdersScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderFXMLs/AllOrdersScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderFXMLs/CargoOrderDataScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderFXMLs/CargoOrderDataScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderFXMLs/CargoTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderFXMLs/CargoTypeChooseScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderFXMLs/OrderCreationMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderFXMLs/OrderCreationMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderFXMLs/OrderSummaryScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderFXMLs/OrderSummaryScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderFXMLs/PackageOrderDataScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderFXMLs/PackageOrderDataScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orderFXMLs/PeopleOrderDataScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orderFXMLs/PeopleOrderDataScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusesDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusesDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusesDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/BusesDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarsDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarsDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarsDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/CarsDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcycleAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcycleAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcycleShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcycleShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcyclesDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcyclesDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcyclesDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/MotorcyclesDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TruckAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TruckAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TruckShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TruckShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TrucksDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TrucksDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TrucksDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/TrucksDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VanAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VanAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VanShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VanShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VansDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VansDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VansDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VansDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseScreen2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehicleTypeChooseScreen2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehiclesDisplayCustomerScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehiclesDisplayCustomerScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehiclesDisplayScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehiclesDisplayScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehiclesShowScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vehicleFXMLs/VehiclesShowScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,11 +242,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state relative-caret-position="157">
+              <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderEditingController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+              <folding>
+                <element signature="e#1521#1522#0" expanded="true" />
+                <element signature="e#1554#1555#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,57 +282,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusesDisplayCustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarsDisplayController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarsDisplayCustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcyclesDisplayCustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TrucksDisplayController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VansDisplayCustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehiclesDisplayCustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehiclesShowController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminAddingScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerStartScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerMainMenuScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/StartMenu.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/StartMenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen3.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen2.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseForRemoveScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/CustomerTypeChooseForRemoveScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoTypeChooseScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen2.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusShowScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusShowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarShowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanShowController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderCreationMenu.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderCreationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderSummaryScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/PackageOrderDataScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/PeopleOrderDataScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/StartMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusAddingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusesDisplayCustomerScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusesDisplayScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusShowScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarAddingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayCustomerScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarShowScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleAddingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayCustomerScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleShowScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckAddingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayCustomerScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckShowScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanAddingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayCustomerScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanShowScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayCustomerScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesShowScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen2.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerStartScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerStartController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/AccountDeletingConfirmationScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/AccountDeletingConfirmationController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerEditingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BEditingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BEditingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerEditingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerMainMenuScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderEditingScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java" />
       </list>
     </option>
   </component>
@@ -236,6 +422,33 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="Cargo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="comparators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,7 +456,108 @@
               <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="adminManagerControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="customerControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="driverControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="locationControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="orderControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="DataBaseSupport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="GPS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="Order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="adminManagerFXMLs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="customerFXMLs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="orderFXMLs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -261,21 +575,25 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources" />
-      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\OrderFXMLs" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.leszeknowinski.comparators" />
-      <recent name="com.leszeknowinski.controllers" />
-      <recent name="com.leszeknowinski.controllers.OrderControllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\adminManagerFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\driverFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\locationFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\orderFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\customerFXMLs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leszeknowinski.controllers.orderControllers" />
+      <recent name="com.leszeknowinski.controllers.customerControllers" />
+      <recent name="com.leszeknowinski.comparators" />
+      <recent name="com.leszeknowinski.controllers" />
+      <recent name="com.leszeknowinski.controllers.OrderControllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\orderFXMLs" />
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\customerFXMLs" />
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources" />
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\OrderFXMLs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +738,7 @@
       <workItem from="1527437957614" duration="3081000" />
       <workItem from="1527512219232" duration="314000" />
       <workItem from="1527514790267" duration="17811000" />
-      <workItem from="1527588211193" duration="9507000" />
+      <workItem from="1527588211193" duration="31814000" />
     </task>
     <task id="LOCAL-00006" summary="Actualised 24.04.2018">
       <created>1524579498249</created>
@@ -769,7 +1087,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="509836000" />
+    <option name="totallyTimeSpent" value="532143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -793,12 +1111,13 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.20726173" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49621785" weight="0.32888147" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.10183639" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.41402337" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49546143" weight="0.32888147" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32980332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="6" />
@@ -809,7 +1128,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -901,266 +1219,394 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusShowScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleShowScreen.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarAddingScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayCustomerScreen.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarsDisplayScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/CarShowScreen.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleAddingScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayCustomerScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcyclesDisplayScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/MotorcycleShowScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckAddingScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayCustomerScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TrucksDisplayScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/TruckShowScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanAddingScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayCustomerScreen.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VansDisplayScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanShowScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayCustomerScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesDisplayScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehiclesShowScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForDisplayScreen.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="156" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="156" />
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-          <folding>
-            <element signature="e#2675#2676#0" expanded="true" />
-            <element signature="e#2706#2707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="70" column="80" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="70" column="80" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehiclesShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/AllOrdersScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoOrderDataScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/PackageOrderDataScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/PeopleOrderDataScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderSummaryScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoTypeChooseScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderCreationMenu.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderCreationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VehicleTypeChooseScreen2.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/AdjustedVehicleShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverAddingScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverOrderAcceptationScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverOrderFinishScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerStartScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersDisplayScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersB2BDisplayScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerRegistrationScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerMainMenuScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerLoginScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BRegistrationScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BAddingScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerAddingScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/ManagerShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/ManagerAddingScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerStartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminShowScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminAddingScreen.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="58" column="75" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
+        <state relative-caret-position="-34">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMenu.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/AccountDeletingConfirmationScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="124" selection-start-line="15" selection-start-column="124" selection-end-line="15" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/AccountDeletingConfirmationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="37" column="107" selection-start-line="37" selection-start-column="107" selection-end-line="37" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderCreationMenu.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerLoginScreen.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BAddingScreen.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BEditingScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="114" column="61" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="61" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerEditingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+        <state relative-caret-position="446">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BEditingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+        <state relative-caret-position="344">
+          <caret line="48" column="126" selection-start-line="48" selection-start-column="126" selection-end-line="48" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerEditingScreen.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="11" column="213" lean-forward="true" selection-start-line="11" selection-start-column="213" selection-end-line="11" selection-end-column="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeTypeChooseScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="135" selection-start-line="22" selection-start-column="128" selection-end-line="22" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerMainMenuScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoOrderDataScreen.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding>
+            <element signature="e#3022#3023#0" expanded="true" />
+            <element signature="e#3053#3054#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/orderFXMLs/OrderEditingScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="47" column="100" selection-start-line="47" selection-start-column="100" selection-end-line="47" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="110" column="119" selection-start-line="110" selection-start-column="119" selection-end-line="110" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerStartScreen.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="111" column="119" selection-start-line="111" selection-start-column="119" selection-end-line="111" selection-end-column="119" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="157">
+          <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+          <folding>
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -51,6 +51,25 @@ public class DBHandler {
         return customerId;
     }
 
+    public boolean getSthBooleanFromDB(String sqlAccess, String label) {
+        ResultSet resultSet = null;
+        Statement statement = null;
+        boolean bool = false;
+        try {
+            statement = connect.createStatement();
+            resultSet = statement.executeQuery(sqlAccess);
+            while (resultSet.next()) {
+                bool = resultSet.getBoolean(label);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (NullPointerException n) {
+            n.printStackTrace();
+        }
+
+        return bool;
+    }
+
     public String getStringFromDB(String sqlAccess, String string) {
         ResultSet resultSet = null;
         Statement statement = null;
