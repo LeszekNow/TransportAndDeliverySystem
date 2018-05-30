@@ -40,7 +40,7 @@ public class AdjustedVehicleShowController implements Initializable {
 
     @FXML
     public void showAllVehicles() {
-        for (Car car : vehicleRepository.getAllVehicles()) {
+        for (Car car : vehicleRepository.getAllFreeVehicles()) {
             show.appendText(car.toString() + "\n");
         }
     }

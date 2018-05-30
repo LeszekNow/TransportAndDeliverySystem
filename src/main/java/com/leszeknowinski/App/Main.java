@@ -11,25 +11,22 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 //username - Admin1 password - 123abc# Employee - admin
-//driver -
+//driver - Jason Jason
 //customer - Darcy Darcy
 public class Main extends Application {
     public static void main(String[] args) {
         DBHandler.connect();
         launch(args);
-
-
     }
 
     //program further option of customer start menu - services - list of services
-    //program alerts in employee main menu
+    //program alerts in employee main menu -ogarnij daty
     //pozmieniaj cośType na enumy
     //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
 
     //refactoring
     //obsłużyć wyjątek jak jakiś username już istnieje w bazie
 
-    //add input hints/prompts in textfields
     //modify simple directions such as S, N, E and W - and some kind of factor which won't be still fixed on one Latitude
     //modify midpoints selection using distances between them - two loops probably
     //zmień GPS - http://www.mobility-services.in.tum.de/?p=2335

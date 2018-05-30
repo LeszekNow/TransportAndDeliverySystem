@@ -12,6 +12,7 @@ public class Car {
     private String registrationNumber;
     private String vehicleType;
     private boolean arrested;
+    private String inspectionDate;
 
     public Car(String brand, String model, String colour, int mileage, int engineCapacity,
                double fuelConsumption, String vin, String registrationNumber, String vehicleType, boolean arrested) {
@@ -29,7 +30,7 @@ public class Car {
     }
 
     public Car(int id, String brand, String model, String colour, int mileage, int engineCapacity,
-               double fuelConsumption, String vin, String registrationNumber, String vehicleType, boolean arrested){
+               double fuelConsumption, String vin, String registrationNumber, String vehicleType, boolean arrested, String inspectionDate){
         this.id = id;
         this.brand = brand;
         this.model = model;
@@ -41,6 +42,7 @@ public class Car {
         this.registrationNumber = registrationNumber;
         this.vehicleType = vehicleType;
         this.arrested = arrested;
+        this.inspectionDate = inspectionDate;
     }
 
     public Car(VehicleDataWrapper vehicleDataWrapper){
@@ -146,6 +148,14 @@ public class Car {
 
     public void setVehicleType(String vehicleType) {
         this.vehicleType = vehicleType;
+    }
+
+    public String getInspectionDate() {
+        return inspectionDate;
+    }
+
+    public void setInspectionDate(String inspectionDate) {
+        this.inspectionDate = inspectionDate;
     }
 
     @Override

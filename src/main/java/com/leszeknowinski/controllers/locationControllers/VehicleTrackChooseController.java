@@ -48,7 +48,6 @@ public class VehicleTrackChooseController implements Initializable {
     DBHandler dbHandler = new DBHandler();
     ControllersHelper controllersHelper = new ControllersHelper();
     GPSRandomDataGenerator gpsRandomDataGenerator = new GPSRandomDataGenerator();
-    DecimalFormat dF = new DecimalFormat("#.#");
 
     @FXML
     public void showAllArrestedVehicles() {
@@ -64,8 +63,7 @@ public class VehicleTrackChooseController implements Initializable {
         double distance = geoHelper.getDistanceInKM(geoHelper.getLatitude("Krakow"), geoHelper.getLatitude(location), geoHelper.getLongitude("Krakow"), geoHelper.getLongitude(location));
         show.clear();
         show.appendText(vehicleRepository.getVehicle(id).toString() + "\nLocation: " +
-                dbHandler.getStringFromDB("SELECT city FROM tlocation WHERE id = " + location + ";", "city" ) + "\nDistance from base: " + Double.valueOf(dF.format(distance))
-         + " km");
+                dbHandler.getStringFromDB("SELECT city FROM tlocation WHERE id = " + location + ";", "city" ) + "\nDistance from base: " + controllersHelper.roundDouble(distance) + " km");
     }
 
     @FXML

@@ -70,7 +70,5 @@ public class DriverMainMenuController implements Initializable {
     }
 
 
-
-    //usuń wybór rodzaju klienta przy logowaniu customera
 }
 

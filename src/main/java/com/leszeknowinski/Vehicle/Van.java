@@ -19,8 +19,8 @@ public class Van extends Car {
 
     public Van(int id, String brand, String model, String colour, int mileage, int engineCapacity,
                double fuelConsumption, String vin, String registrationNumber,
-               int maxCargoHeight, int maxCargoLength, int maxCargoWidth, int maxCargoWeight, String vehicleType, boolean arrested) {
-        super(id, brand, model, colour, mileage, engineCapacity, fuelConsumption, vin, registrationNumber, vehicleType, arrested);
+               int maxCargoHeight, int maxCargoLength, int maxCargoWidth, int maxCargoWeight, String vehicleType, boolean arrested, String inspectionDate) {
+        super(id, brand, model, colour, mileage, engineCapacity, fuelConsumption, vin, registrationNumber, vehicleType, arrested, inspectionDate);
         this.maxCargoHeight = maxCargoHeight;
         this.maxCargoLength = maxCargoLength;
         this.maxCargoWidth = maxCargoWidth;

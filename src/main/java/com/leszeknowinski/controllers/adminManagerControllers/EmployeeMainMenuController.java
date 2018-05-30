@@ -9,11 +9,22 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import jdk.nashorn.internal.parser.DateParser;
+import org.apache.commons.codec.language.bm.Lang;
 import org.joda.time.DateTime;
-import org.joda.time.JodaTimePermission;
+import org.joda.time.LocalDate;
+import org.joda.time.LocalDateTime;
+import org.joda.time.format.DateTimeFormatter;
+import org.joda.time.format.DateTimePrinter;
 
 import java.net.URL;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
 
 public class EmployeeMainMenuController implements Initializable {
 
@@ -74,100 +85,117 @@ public class EmployeeMainMenuController implements Initializable {
     ControllersHelper controllersHelper = new ControllersHelper();
 
     public void initialize(URL location, ResourceBundle resources) {
-            displayAlerts();
+        setDailyInfo();
     }
 
     @FXML
-    public void chooseVehicleType() throws Exception{
-        ((Stage)addNewCar.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehicleTypeChooseScreen.fxml"));
+    public void chooseVehicleType() throws Exception {
+        ((Stage) addNewCar.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehicleTypeChooseScreen.fxml"));
     }
 
     @FXML
-    public void chooseEmployeeType()throws Exception{
-        ((Stage)addNewEmployee.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeTypeChooseScreen.fxml"));
+    public void chooseEmployeeType() throws Exception {
+        ((Stage) addNewEmployee.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeTypeChooseScreen.fxml"));
     }
 
     @FXML
-    public void chooseCustomerType()throws Exception{
-        ((Stage)addNewCustomer.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerTypeChooseScreen.fxml"));
+    public void chooseCustomerType() throws Exception {
+        ((Stage) addNewCustomer.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerTypeChooseScreen.fxml"));
     }
 
     @FXML
-    public void addLocation()throws Exception{
-        ((Stage)addNewLocation.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/LocationAddingScreen.fxml"));
+    public void addLocation() throws Exception {
+        ((Stage) addNewLocation.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/LocationAddingScreen.fxml"));
     }
 
     @FXML
-    public void displayAlerts(){
+    public void setDailyInfo() {
+        alert.setText("Welcome!\nToday we have: " + LocalDateTime.now());
+        displayAlerts();
+       // displayInspectionInfo();
+    }
 
+    @FXML
+    public void displayInspectionInfo() {
         VehicleRepository vehicleRepository = new VehicleRepository();
-        final int serviceInterval = 15000;
-        for(Car car : vehicleRepository.getAllVehicles()){
-            while(car.getMileage()%serviceInterval > 14000 || car.getMileage()%serviceInterval < 1000){
-                alert.appendText("Vehicles for service: " + "\n" + car.toString() +"\n");
+        String now = DateTime.now().toString();
+        alert.appendText("\n\nVehicles for technical inspection: \n");
+        for (Car car : vehicleRepository.getAllVehicles()) {
+            if (controllersHelper.incrementDateByYear(car.getInspectionDate()).compareTo(controllersHelper.transformDate(now)) == 1) {
+                alert.appendText("Vehicle id - " + car.getId() + " : " + car.getBrand() + " " + car.getModel() + ", technical inspection date - " + DateTime.parse(car.getInspectionDate()).plusDays(365) + ".\n");
             }
         }
+    }
 
-        //technical inspection - include timeStamp in db when car is added
+    @FXML
+    public void displayAlerts() {
+        alert.appendText("\n\nVehicles for service: \n");
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        final int serviceInterval = 15000;
+        for (Car car : vehicleRepository.getAllVehicles()) {
+            if (car.getMileage() % serviceInterval > 14000) {
+                alert.appendText("Vehicle id - " + car.getId() + " : " + car.getBrand() + " " + car.getModel() + ", mileage - " + car.getMileage() + "km.\n");
+            }
+        }
     }
 
 
     @FXML
-    public void deleteVehicle() throws Exception{
-        ((Stage)deleteVehicle.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml"));
+    public void deleteVehicle() throws Exception {
+        ((Stage) deleteVehicle.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehicleTypeChooseForRemoveScreen.fxml"));
     }
 
     @FXML
-    public void deleteEmployee()throws Exception{
-        ((Stage)deleteEmployee.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeTypeChooseForRemoveScreen.fxml"));
+    public void deleteEmployee() throws Exception {
+        ((Stage) deleteEmployee.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeTypeChooseForRemoveScreen.fxml"));
     }
 
     @FXML
-    public void deleteCustomer()throws Exception{
-        ((Stage)deleteCustomer.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/CustomerTypeChooseForRemoveScreen.fxml"));
+    public void deleteCustomer() throws Exception {
+        ((Stage) deleteCustomer.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/CustomerTypeChooseForRemoveScreen.fxml"));
     }
 
     @FXML
-    public void deleteLocation()throws Exception{
-        ((Stage)deleteLocation.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/LocationShowScreen.fxml"));
+    public void deleteLocation() throws Exception {
+        ((Stage) deleteLocation.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/LocationShowScreen.fxml"));
     }
 
 
     @FXML
-    public void showVehicleTypeChooseScreen()throws Exception{
-        ((Stage)deleteRoute.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehicleTypeChooseScreen2.fxml"));
-    }
-    @FXML
-    public void showCustomers()throws Exception{
-        ((Stage)deleteRoute.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerTypeChooseScreen2.fxml"));
+    public void showVehicleTypeChooseScreen() throws Exception {
+        ((Stage) showVehicles.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehicleTypeChooseScreen2.fxml"));
     }
 
     @FXML
-    public void loadVehicleShowScreen()throws Exception{
-        ((Stage)trackVehicle.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/VehicleTrackChooseScreen.fxml"));
+    public void showCustomers() throws Exception {
+        ((Stage) showCustomers.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerTypeChooseScreen2.fxml"));
+    }
+
+    @FXML
+    public void loadVehicleShowScreen() throws Exception {
+        ((Stage) trackVehicle.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("locationFXMLs/VehicleTrackChooseScreen.fxml"));
 
     }
 
     @FXML
-    public void loadCustomerMenu()throws Exception{
-        ((Stage)customerMenu.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml"));
+    public void loadCustomerMenu() throws Exception {
+        ((Stage) customerMenu.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml"));
     }
 
     @FXML
-    public void loadDriverMenu()throws Exception{
-        ((Stage)driverMenu.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml"));
+    public void loadDriverMenu() throws Exception {
+        ((Stage) driverMenu.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml"));
     }
 
     @FXML
-    public void getBack()throws Exception{
+    public void getBack() throws Exception {
         ((Stage) back.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("StartMenu.fxml"));
     }
 
     @FXML
-    public void getOut(){
+    public void getOut() {
         Platform.exit();
     }
-
 
 
 }

@@ -197,4 +197,23 @@ public class GeoHelper {
         }
         return location;
     }
+
+    public Location getLocation(int id) {
+        ResultSet resultSet = null;
+        Statement statement = null;
+        Location location = new Location();
+        try {
+            statement = connect.createStatement();
+            resultSet = statement.executeQuery("SELECT * FROM tlocation WHERE id = " + id + ";");
+            while (resultSet.next()) {
+                location.setId(resultSet.getInt("id"));
+                location.setCity(resultSet.getString("city"));
+                location.setLongitude(resultSet.getDouble("longitude"));
+                location.setLatitude(resultSet.getDouble("latitude"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return location;
+    }
     }

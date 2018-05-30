@@ -36,6 +36,7 @@ public class CustomerEditingController {
     Label message;
 
     DBHandler dbHandler = new DBHandler();
+
     @FXML
     public void updateCustomer(){
         dbHandler.connectToDataBase("UPDATE tclient SET (name, surname, phone) VALUES('" + name.getText() + "', '" + surname.getText() + "', '" + phone.getText() + "') WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");

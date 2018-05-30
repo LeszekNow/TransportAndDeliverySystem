@@ -59,6 +59,7 @@ public class DriverOrderFinishController implements Initializable {
         dbHandler.connectToDataBase("UPDATE tdriver SET arrested = false WHERE id = " + driverId + ";");
         dbHandler.connectToDataBase("UPDATE tvehicle SET arrested = false WHERE id = " + vehicleId + ";");
         dbHandler.connectToDataBase("DELETE FROM tcargo WHERE vehicleId = " + vehicleId + ";");
+        dbHandler.connectToDataBase("DELETE FROM torder WHERE driverId = " + driverId + ";");
         show.clear();
         show.setText("Order realisation has ended!\nDriver and Vehicle released!\nGreat job!.");
     }

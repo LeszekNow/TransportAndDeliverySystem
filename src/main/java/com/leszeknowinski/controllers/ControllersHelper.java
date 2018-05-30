@@ -8,6 +8,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -44,6 +47,31 @@ public class ControllersHelper {
     public double roundDouble(double input){
         double result = Math.round(input);
         return result;
+    }
+
+    public String transformDate(String dateStamp){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar c = Calendar.getInstance();
+        try {
+            c.setTime(sdf.parse(dateStamp));
+            dateStamp = sdf.format(c.getTime());
+        }catch (ParseException e){
+            e.printStackTrace();
+        }
+        return dateStamp;
+    }
+
+    public String incrementDateByYear(String dateStamp) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar c = Calendar.getInstance();
+        try {
+            c.setTime(sdf.parse(dateStamp));
+            c.add(Calendar.DATE, 372);  // number of days to add
+            dateStamp = sdf.format(c.getTime());  // dt is now the new date
+        }catch (ParseException e){
+            e.printStackTrace();
+        }
+        return dateStamp;
     }
 
 }

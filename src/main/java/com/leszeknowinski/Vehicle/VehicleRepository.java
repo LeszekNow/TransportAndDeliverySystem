@@ -181,7 +181,7 @@ public class VehicleRepository {
         }
         return vansList;
     }
-//zrób kwerendę pozwalającą wybrać auta z listy po ich typie!!!!!
+
     public ArrayList<Car> getAllVehicles(){
         ResultSet resultSet = null;
         Statement statement = null;
@@ -199,6 +199,7 @@ public class VehicleRepository {
                 car.setEngineCapacity(resultSet.getInt("engineCapacity"));
                 car.setRegistrationNumber(resultSet.getString("registrationNumber"));
                 car.setVehicleType(resultSet.getString("vehicleType"));
+                car.setInspectionDate(resultSet.getString("dateInspection"));
                 vehiclesList.add(car);
             }
         }catch(SQLException e){
@@ -229,6 +230,7 @@ public class VehicleRepository {
         }
         return car;
     }
+    
     public ArrayList<Car> getAllArrestedVehicles(){
         ResultSet resultSet = null;
         Statement statement = null;
@@ -236,6 +238,31 @@ public class VehicleRepository {
         try{
             statement = connect.createStatement();
             resultSet = statement.executeQuery("SELECT * FROM tvehicle WHERE arrested = true;");
+            while(resultSet.next()) {
+                Car car = new Car();
+                car.setId(resultSet.getInt("id"));
+                car.setBrand(resultSet.getString("brand"));
+                car.setModel(resultSet.getString("model"));
+                car.setColour(resultSet.getString("colour"));
+                car.setMileage(resultSet.getInt("mileage"));
+                car.setEngineCapacity(resultSet.getInt("engineCapacity"));
+                car.setRegistrationNumber(resultSet.getString("registrationNumber"));
+                car.setVehicleType(resultSet.getString("vehicleType"));
+                vehiclesList.add(car);
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        return vehiclesList;
+    }
+
+    public ArrayList<Car> getAllFreeVehicles(){
+        ResultSet resultSet = null;
+        Statement statement = null;
+        ArrayList<Car>vehiclesList = new ArrayList<Car>();
+        try{
+            statement = connect.createStatement();
+            resultSet = statement.executeQuery("SELECT * FROM tvehicle WHERE arrested = false;");
             while(resultSet.next()) {
                 Car car = new Car();
                 car.setId(resultSet.getInt("id"));

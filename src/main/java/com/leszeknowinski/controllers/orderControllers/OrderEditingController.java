@@ -73,7 +73,7 @@ public class OrderEditingController implements Initializable {
                 "\nCargo amount - " + order.getCargoAmount() +
                 "\nDelivery time - " + geoHelper.calculateTimeFromDistance(order.getDistance()) + "\nDriver - " + dbHandler.getStringFromDB("SELECT name FROM tdriver WHERE id = " + order.getDriverId() + ";", "name") +
                 "\nVehicle - " + vehicleRepository.getVehicle(order.getVehicleId()).getBrand() + " " + vehicleRepository.getVehicle(order.getVehicleId()).getModel() +
-                " Registration number - " + vehicleRepository.getVehicle(order.getVehicleId()).getRegistrationNumber() +
+                ", Registration number - " + vehicleRepository.getVehicle(order.getVehicleId()).getRegistrationNumber() +
                 "\nService price - " + orderHelper.calculateOrderPrice(order.getDistance(), order.getCargoType()) + " PLN.");
     }
 
