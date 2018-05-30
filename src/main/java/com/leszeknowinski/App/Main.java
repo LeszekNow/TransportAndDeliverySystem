@@ -1,6 +1,7 @@
 package com.leszeknowinski.App;
 
 import com.leszeknowinski.DataBaseSupport.DBHandler;
+import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -17,10 +18,11 @@ public class Main extends Application {
         DBHandler.connect();
         launch(args);
 
+
     }
-    //full size ??
-    //OrderEditingController - loading order details on textarea
-    //program further option of customer start menu - services
+
+    //program further option of customer start menu - services - list of services
+    //program alerts in employee main menu
     //pozmieniaj cośType na enumy
     //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
 

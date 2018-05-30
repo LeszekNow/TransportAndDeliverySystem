@@ -9,6 +9,7 @@ import com.leszeknowinski.GPS.GPSRandomDataGenerator;
 import com.leszeknowinski.GPS.GeoHelper;
 import com.leszeknowinski.Order.Order;
 import com.leszeknowinski.Order.OrderHelper;
+import com.leszeknowinski.Vehicle.VehicleRepository;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -56,6 +57,8 @@ public class OrderEditingController implements Initializable {
     DBHandler dbHandler = new DBHandler();
     GeoHelper geoHelper = new GeoHelper();
     OrderHelper orderHelper = new OrderHelper();
+    DBOrderHelper dbOrderHelper = new DBOrderHelper();
+    VehicleRepository vehicleRepository = new VehicleRepository();
 
     public void initialize(URL location, ResourceBundle resources) {
         loadOrderScreen();
@@ -64,7 +67,14 @@ public class OrderEditingController implements Initializable {
     @FXML
     public void loadOrderScreen(){
         int userId = dbHandler.getSthIdFromDB("SELECT id FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");
-       // summary.appendText();
+        Order order = dbOrderHelper.getOrder(userId);
+        summary.appendText("Order date: " + order.getStartDate() + "\nStart point - " + order.getStartPoint() +
+                "\nEnd point - " + order.getEndPoint() + "\nDistance - " + controllersHelper.roundDouble(order.getDistance()) + " km" +
+                "\nCargo amount - " + order.getCargoAmount() +
+                "\nDelivery time - " + geoHelper.calculateTimeFromDistance(order.getDistance()) + "\nDriver - " + dbHandler.getStringFromDB("SELECT name FROM tdriver WHERE id = " + order.getDriverId() + ";", "name") +
+                "\nVehicle - " + vehicleRepository.getVehicle(order.getVehicleId()).getBrand() + " " + vehicleRepository.getVehicle(order.getVehicleId()).getModel() +
+                " Registration number - " + vehicleRepository.getVehicle(order.getVehicleId()).getRegistrationNumber() +
+                "\nService price - " + orderHelper.calculateOrderPrice(order.getDistance(), order.getCargoType()) + " PLN.");
     }
 
     @FXML
@@ -84,8 +94,8 @@ public class OrderEditingController implements Initializable {
             message.setText("Order updated successfully!");
             summary.setText("Order updates: " +
                     dbHandler.getStringFromDB("SELECT orderDate FROM torder WHERE customerId = " + userId + ";", "orderDate") +
-                    "\nDelivery time: " + geoHelper.calculateTimeFromDistance(distance) + "\nDistance: " + distance + " km. " +
-                    "\nService price: " + price + " PLN.");
+                    "\nDelivery time: " + geoHelper.calculateTimeFromDistance(distance) + "\nDistance: " + controllersHelper.roundDouble(distance) + " km. " +
+                    "\nService price: " + controllersHelper.roundDouble(price) + " PLN.");
         }
     }
 

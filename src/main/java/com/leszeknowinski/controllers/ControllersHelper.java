@@ -41,4 +41,9 @@ public class ControllersHelper {
         return result;
     }
 
+    public double roundDouble(double input){
+        double result = Math.round(input);
+        return result;
+    }
+
 }

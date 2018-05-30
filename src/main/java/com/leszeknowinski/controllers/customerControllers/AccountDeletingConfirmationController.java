@@ -11,6 +11,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.util.concurrent.TimeUnit;
+
 public class AccountDeletingConfirmationController {
 
     @FXML
@@ -37,6 +39,8 @@ public class AccountDeletingConfirmationController {
         if(LogIn.authenticate(username.getText(), password.getText(), "client")) {
             dbHandler.connectToDataBase("DELETE FROM tclient WHERE username = '" + username.getText() + "';");
             message.setText("Account removed successfully");
+            TimeUnit.SECONDS.sleep(3);
+            ((Stage)delete.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerStartScreen.fxml"));
                 } else{
             message.setText("Invalid username or password!\nTry again.");
         }
@@ -44,7 +48,7 @@ public class AccountDeletingConfirmationController {
 
     @FXML
     public void getBack()throws Exception{
-        ((Stage) back.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerStartScreen.fxml"));
+        ((Stage) back.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerMainMenuScreen.fxml"));
 
     }
 

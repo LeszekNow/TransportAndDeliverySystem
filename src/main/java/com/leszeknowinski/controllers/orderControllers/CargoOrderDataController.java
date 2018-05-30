@@ -109,12 +109,13 @@ public class CargoOrderDataController {
                 String arrivalTime = geoHelper.calculateTimeFromDistance(arrivalDistance);
                 summary.setText("Arrival time: " + arrivalTime + "\nOrder date: " +
                         dbHandler.getStringFromDB("SELECT orderDate FROM torder WHERE customerId = " + customerId + ";", "orderDate") +
-                        "\nDelivery time: " + geoHelper.calculateTimeFromDistance(distance) + "\nDistance: " + distance + " km. " +
+                        "\nDelivery time: " + geoHelper.calculateTimeFromDistance(distance) + "\nDistance: " + controllersHelper.roundDouble(distance) + " km. " +
+                        "\nStart point - " + startPoint.getText() + "\nDestination pount - " + endPoint.getText() +
                         "\nDriver: " + dbHandler.getStringFromDB("SELECT name FROM tdriver WHERE id = " + adjustedDriver + ";","name") +
                         "\nVehicle: " + dbHandler.getStringFromDB("SELECT brand FROM tvehicle WHERE id = " + adjustedVehicle + ";", "brand") +
                         "-" + dbHandler.getStringFromDB("SELECT model FROM tvehicle WHERE id = " + adjustedVehicle + ";", "model") +
                         ", Registration number: " + dbHandler.getStringFromDB("SELECT registrationNumber FROM tvehicle WHERE id = " + adjustedVehicle + ";", "registrationNumber") +
-                        "\nService price: " + price + " PLN.");
+                        "\nService price: " + controllersHelper.roundDouble(price) + " PLN.");
             }
         }
     }

@@ -1,5 +1,7 @@
 package com.leszeknowinski.controllers.adminManagerControllers;
 
+import com.leszeknowinski.Vehicle.Car;
+import com.leszeknowinski.Vehicle.VehicleRepository;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -7,6 +9,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import org.joda.time.DateTime;
+import org.joda.time.JodaTimePermission;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -95,9 +99,16 @@ public class EmployeeMainMenuController implements Initializable {
 
     @FXML
     public void displayAlerts(){
-        //change addRoute into AlertDisplay - display of cars list for service after exceed 15000km
-        //other info
-        //loaded automatically
+
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        final int serviceInterval = 15000;
+        for(Car car : vehicleRepository.getAllVehicles()){
+            while(car.getMileage()%serviceInterval > 14000 || car.getMileage()%serviceInterval < 1000){
+                alert.appendText("Vehicles for service: " + "\n" + car.toString() +"\n");
+            }
+        }
+
+        //technical inspection - include timeStamp in db when car is added
     }
 
 

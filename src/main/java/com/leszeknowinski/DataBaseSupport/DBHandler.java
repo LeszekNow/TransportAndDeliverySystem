@@ -70,7 +70,7 @@ public class DBHandler {
         return bool;
     }
 
-    public String getStringFromDB(String sqlAccess, String string) {
+    public String getStringFromDB(String sqlAccess, String label) {
         ResultSet resultSet = null;
         Statement statement = null;
         String stringInDB = "";
@@ -78,7 +78,7 @@ public class DBHandler {
             statement = connect.createStatement();
             resultSet = statement.executeQuery(sqlAccess);
             while (resultSet.next()) {
-                stringInDB = resultSet.getString(string);
+                stringInDB = resultSet.getString(label);
             }
         } catch (SQLException e) {
             e.printStackTrace();
