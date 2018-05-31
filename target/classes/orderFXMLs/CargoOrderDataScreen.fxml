@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.orderControllers.CargoOrderDataController">
    <children>
-      <VBox alignment="TOP_RIGHT" layoutX="8.0" layoutY="45.0" prefHeight="279.0" prefWidth="161.0" spacing="13.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="45.0">
+      <VBox alignment="TOP_RIGHT" layoutX="8.0" layoutY="45.0" prefHeight="211.0" prefWidth="161.0" spacing="13.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="45.0">
          <children>
             <Label text="Length in cm:" />
             <Label text="Height in cm:" />
@@ -23,7 +23,7 @@
             <Label text="Destination point:" />
          </children>
       </VBox>
-      <VBox alignment="TOP_CENTER" layoutX="172.0" layoutY="41.0" prefHeight="288.0" prefWidth="161.0" spacing="5.0" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="41.0">
+      <VBox alignment="TOP_CENTER" layoutX="172.0" layoutY="41.0" prefHeight="218.0" prefWidth="161.0" spacing="5.0" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="41.0">
          <children>
             <TextField fx:id="length" />
             <TextField fx:id="height" />
@@ -34,17 +34,17 @@
             <TextField fx:id="endPoint" layoutX="10.0" layoutY="160.0" />
          </children>
       </VBox>
-      <HBox layoutX="454.0" layoutY="311.0" prefHeight="35.0" prefWidth="195.0" spacing="10.0" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="1.0">
+      <HBox layoutX="53.0" layoutY="325.0" prefHeight="35.0" prefWidth="288.0" spacing="10.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="53.0">
          <children>
             <Button fx:id="back" mnemonicParsing="false" onAction="#getBack" prefWidth="85.0" text="Back" />
             <Button fx:id="exit" mnemonicParsing="false" onAction="#getOut" prefWidth="85.0" text="Exit" />
+            <Button fx:id="submit" mnemonicParsing="false" onAction="#createOrder" prefWidth="85.0" text="Submit" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </HBox>
-      <Button fx:id="submit" layoutX="247.0" layoutY="316.0" mnemonicParsing="false" onAction="#createOrder" prefWidth="85.0" text="Sumbit" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="247.0" />
-      <Label fx:id="message" alignment="CENTER_RIGHT" layoutX="27.0" layoutY="260.0" prefHeight="49.0" prefWidth="306.0" textAlignment="CENTER" textFill="#6eff60fc" wrapText="true" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="27.0">
+      <Label fx:id="message" alignment="CENTER_RIGHT" layoutX="27.0" layoutY="256.0" prefHeight="63.0" prefWidth="306.0" textAlignment="CENTER" textFill="#6eff60fc" wrapText="true" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="517.0" AnchorPane.topAnchor="256.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>

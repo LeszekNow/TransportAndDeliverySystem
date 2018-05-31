@@ -9,6 +9,15 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+import org.joda.time.format.DateTimePrinter;
+
+import javax.naming.ldap.Control;
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 //username - Admin1 password - 123abc# Employee - admin
 //driver - Jason Jason
@@ -19,8 +28,8 @@ public class Main extends Application {
         launch(args);
     }
 
-    //program further option of customer start menu - services - list of services
-    //program alerts in employee main menu -ogarnij daty
+    //program further option of customer start menu - services - list of services - z pliku...
+    //program car service and technical inspection in driver main menu and in employee main menu - order
     //pozmieniaj cośType na enumy
     //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
 

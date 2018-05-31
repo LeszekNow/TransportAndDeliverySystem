@@ -10,7 +10,7 @@
 <Pane prefHeight="450.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leszeknowinski.controllers.orderControllers.CargoTypeChooseController">
    <children>
       <Label layoutX="45.0" layoutY="109.0" text="Select cargo type:" />
-      <Button fx:id="back" layoutX="204.0" layoutY="245.0" mnemonicParsing="false" onAction="#getBack" prefWidth="55.0" text="Back" />
+      <Button fx:id="back" layoutX="263.0" layoutY="126.0" mnemonicParsing="false" onAction="#getBack" prefWidth="55.0" text="Back" />
       <HBox layoutX="34.0" layoutY="126.0" prefHeight="50.0" prefWidth="237.0" spacing="10.0">
          <children>
             <ChoiceBox fx:id="cargoType" onAction="#loadOptions" prefWidth="150.0" />

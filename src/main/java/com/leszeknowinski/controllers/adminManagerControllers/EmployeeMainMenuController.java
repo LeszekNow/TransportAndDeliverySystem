@@ -9,22 +9,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
-import jdk.nashorn.internal.parser.DateParser;
-import org.apache.commons.codec.language.bm.Lang;
 import org.joda.time.DateTime;
-import org.joda.time.LocalDate;
-import org.joda.time.LocalDateTime;
-import org.joda.time.format.DateTimeFormatter;
-import org.joda.time.format.DateTimePrinter;
-
 import java.net.URL;
-import java.sql.Date;
-import java.sql.Timestamp;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
+
 
 public class EmployeeMainMenuController implements Initializable {
 
@@ -110,22 +98,22 @@ public class EmployeeMainMenuController implements Initializable {
 
     @FXML
     public void setDailyInfo() {
-        alert.setText("Welcome!\nToday we have: " + LocalDateTime.now());
+        alert.setText("Welcome!\nToday we have: " + controllersHelper.transformDate(DateTime.now()));
         displayAlerts();
-       // displayInspectionInfo();
+        displayInspectionInfo();
     }
 
     @FXML
     public void displayInspectionInfo() {
         VehicleRepository vehicleRepository = new VehicleRepository();
-        String now = DateTime.now().toString();
         alert.appendText("\n\nVehicles for technical inspection: \n");
         for (Car car : vehicleRepository.getAllVehicles()) {
-            if (controllersHelper.incrementDateByYear(car.getInspectionDate()).compareTo(controllersHelper.transformDate(now)) == 1) {
-                alert.appendText("Vehicle id - " + car.getId() + " : " + car.getBrand() + " " + car.getModel() + ", technical inspection date - " + DateTime.parse(car.getInspectionDate()).plusDays(365) + ".\n");
+            if (controllersHelper.transformStringOnDate(car.getInspectionDate()).compareTo(DateTime.now().minusDays(358)) < 0) {
+                alert.appendText("Vehicle id - " + car.getId() + " : " + car.getBrand() + " " + car.getModel() + ", technical inspection date - " + controllersHelper.transformDate(controllersHelper.transformStringOnDate(car.getInspectionDate()).plusDays(365)) + ".\n");
             }
         }
     }
+
 
     @FXML
     public void displayAlerts() {

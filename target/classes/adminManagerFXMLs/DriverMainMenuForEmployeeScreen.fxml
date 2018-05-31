@@ -11,9 +11,10 @@
    <children>
       <VBox alignment="CENTER" layoutX="75.0" layoutY="85.0" prefHeight="176.0" prefWidth="159.0" spacing="5.0">
          <children>
-            <Button fx:id="showOrders" onAction="#loadCargoTypeChooseScreen" mnemonicParsing="false"  prefWidth="125.0" text="New order" />
-            <Button fx:id="startOrder" onAction="#loadOrderSummaryScreen" mnemonicParsing="false"  prefWidth="125.0" text="My orders" />
-            <Button fx:id="finishOrder" mnemonicParsing="false"  prefWidth="125.0" text="Edit order" />
+            <Button fx:id="showOrder" mnemonicParsing="false" onAction="#loadAllOrdersScreen" prefWidth="125.0" text="Start order" />
+            <Button fx:id="startOrder" mnemonicParsing="false" onAction="#loadStartOrderScreen" prefWidth="125.0" text="Show orders" />
+            <Button fx:id="finishOrder" mnemonicParsing="false" onAction="#loadFinishOrderScreen" prefWidth="125.0" text="Finish order" />
+            <Button fx:id="showVehicle" layoutX="27.0" layoutY="116.0" mnemonicParsing="false" onAction="#loadVehiclesShowScreen" prefWidth="125.0" text="Show vehicle" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -22,7 +23,7 @@
             <Insets left="50.0" top="50.0" />
          </opaqueInsets>
       </VBox>
-      <Label layoutX="89.0" layoutY="46.0" text="Customer Main Menu">
+      <Label layoutX="89.0" layoutY="46.0" text="Driver's Main Menu">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>

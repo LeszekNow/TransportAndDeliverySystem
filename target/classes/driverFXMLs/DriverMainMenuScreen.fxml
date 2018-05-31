@@ -14,7 +14,8 @@
             <Button fx:id="startOrder" mnemonicParsing="false" onAction="#loadStartOrderScreen" prefWidth="125.0" text="Start order" />
             <Button fx:id="showOrders" mnemonicParsing="false" onAction="#loadAllOrdersScreen" prefWidth="125.0" text="Show orders" />
             <Button fx:id="finishOrder" mnemonicParsing="false" onAction="#loadFinishOrderScreen" prefWidth="125.0" text="Finish order" />
-            <Button fx:id="showVehicle" onAction="#loadVehiclesShowScreen" layoutX="27.0" layoutY="116.0" mnemonicParsing="false" prefWidth="125.0" text="Show vehicle" />
+            <Button fx:id="showVehicle" layoutX="27.0" layoutY="116.0" mnemonicParsing="false" onAction="#loadVehiclesShowScreen" prefWidth="125.0" text="Show vehicle" />
+            <Button fx:id="carService" layoutX="27.0" layoutY="131.0" mnemonicParsing="false" prefWidth="125.0" text="Car service" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

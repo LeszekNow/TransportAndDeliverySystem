@@ -47,13 +47,13 @@ public class EmployeeTypeChooseController implements Initializable {
             message.setText("You have to choose an option before clicking select!");
         }
         else if(employeeType.getValue().equals("admin")) {
-            ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/AdminAddingScreen.fxml"));
+            ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLAnchorPaneScreen("adminManagerFXMLs/AdminAddingScreen.fxml"));
         }
         else if(employeeType.getValue().equals("driver")){
-            ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("driverFXMLs/DriverAddingScreen.fxml"));
+            ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLAnchorPaneScreen("driverFXMLs/DriverAddingScreen.fxml"));
         }
         else if(employeeType.getValue().equals("manager")){
-            ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/ManagerAddingScreen.fxml"));
+            ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLAnchorPaneScreen("adminManagerFXMLs/ManagerAddingScreen.fxml"));
         }
     }
 

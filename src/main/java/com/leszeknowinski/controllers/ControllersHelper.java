@@ -7,6 +7,9 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -49,29 +52,15 @@ public class ControllersHelper {
         return result;
     }
 
-    public String transformDate(String dateStamp){
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Calendar c = Calendar.getInstance();
-        try {
-            c.setTime(sdf.parse(dateStamp));
-            dateStamp = sdf.format(c.getTime());
-        }catch (ParseException e){
-            e.printStackTrace();
-        }
-        return dateStamp;
-    }
+    public String transformDate(DateTime dateTime){
+       String date = dateTime.toString("EEEE, yyyy-MM-dd HH:mm");
+        return date;
+}
+    public DateTime transformStringOnDate(String dateStamp) {
+        DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss.m");
+        DateTime date = formatter.parseDateTime(dateStamp);
 
-    public String incrementDateByYear(String dateStamp) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Calendar c = Calendar.getInstance();
-        try {
-            c.setTime(sdf.parse(dateStamp));
-            c.add(Calendar.DATE, 372);  // number of days to add
-            dateStamp = sdf.format(c.getTime());  // dt is now the new date
-        }catch (ParseException e){
-            e.printStackTrace();
-        }
-        return dateStamp;
+        return date;
     }
 
 }

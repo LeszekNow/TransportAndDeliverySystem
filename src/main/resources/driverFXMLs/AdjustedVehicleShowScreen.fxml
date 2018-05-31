@@ -18,6 +18,6 @@
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </HBox>
-      <Button fx:id="display" layoutX="14.0" layoutY="722.0" mnemonicParsing="false" onAction="#showAdjustedVehicle" prefWidth="150.0" text="Show adjusted vehicle" />
+      <Button fx:id="display" layoutX="14.0" layoutY="701.0" mnemonicParsing="false" onAction="#showAdjustedVehicle" prefWidth="150.0" text="Show adjusted vehicle" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="14.0" />
    </children>
 </AnchorPane>
