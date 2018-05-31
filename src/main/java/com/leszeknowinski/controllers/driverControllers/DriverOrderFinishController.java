@@ -30,8 +30,6 @@ public class DriverOrderFinishController implements Initializable {
     @FXML
     Button exit;
 
-
-    VehicleRepository vehicleRepository = new VehicleRepository();
     DBHandler dbHandler = new DBHandler();
     ControllersHelper controllersHelper = new ControllersHelper();
     OrderRepository orderRepository = new OrderRepository();

@@ -40,6 +40,7 @@ public class CustomerB2BRegistrationController {
     Label message;
 
     DBUserHelper dbUserHelper = new DBUserHelper();
+    ControllersHelper controllersHelper = new ControllersHelper();
 
     @FXML
     public void createCustomerB2B(){
@@ -51,7 +52,6 @@ public class CustomerB2BRegistrationController {
 
     @FXML
     public void getBack() throws Exception{
-        ControllersHelper controllersHelper = new ControllersHelper();
         ((Stage)submit.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerStartScreen.fxml"));
     }
 

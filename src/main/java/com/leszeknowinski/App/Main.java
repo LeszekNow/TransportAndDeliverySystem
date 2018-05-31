@@ -37,16 +37,8 @@ public class Main extends Application {
             Pane pane = fxmlLoader.load();
             Scene scene = new Scene(pane);
             primaryStage.setScene(scene);
-           // primaryStage.setFullScreen(true);
-           // primaryStage.setMaximized(true);
             primaryStage.setTitle("TransportAndDeliverySystem");
             primaryStage.setResizable(true);
-//            Screen screen = Screen.getPrimary();
-//            Rectangle2D bounds = screen.getVisualBounds();
-//            primaryStage.setX(bounds.getMinX());
-//            primaryStage.setY(bounds.getMinY());
-//            primaryStage.setWidth(bounds.getWidth());
-//            primaryStage.setHeight(bounds.getHeight());
             primaryStage.show();
 //  StartMenu.fxml  GPSTestsScreen.fxml
         }

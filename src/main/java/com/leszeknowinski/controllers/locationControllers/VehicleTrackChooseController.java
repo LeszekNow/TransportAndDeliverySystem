@@ -45,7 +45,6 @@ public class VehicleTrackChooseController implements Initializable {
 
     VehicleRepository vehicleRepository = new VehicleRepository();
     GeoHelper geoHelper = new GeoHelper();
-    DBHandler dbHandler = new DBHandler();
     ControllersHelper controllersHelper = new ControllersHelper();
     GPSRandomDataGenerator gpsRandomDataGenerator = new GPSRandomDataGenerator();
 
@@ -63,7 +62,8 @@ public class VehicleTrackChooseController implements Initializable {
         double distance = geoHelper.getDistanceInKM(geoHelper.getLatitude("Krakow"), geoHelper.getLatitude(location), geoHelper.getLongitude("Krakow"), geoHelper.getLongitude(location));
         show.clear();
         show.appendText(vehicleRepository.getVehicle(id).toString() + "\nLocation: " +
-                dbHandler.getStringFromDB("SELECT city FROM tlocation WHERE id = " + location + ";", "city" ) + "\nDistance from base: " + controllersHelper.roundDouble(distance) + " km");
+                 geoHelper.getLocation(location).getCity() + "\nDistance from base: " + controllersHelper.roundDouble(distance) + " km");
+
     }
 
     @FXML

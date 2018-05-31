@@ -40,10 +40,15 @@ public class AccountDeletingConfirmationController {
             dbHandler.connectToDataBase("DELETE FROM tclient WHERE username = '" + username.getText() + "';");
             message.setText("Account removed successfully");
             TimeUnit.SECONDS.sleep(3);
-            ((Stage)delete.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerStartScreen.fxml"));
+            loadCustomerStartScreen();
                 } else{
             message.setText("Invalid username or password!\nTry again.");
         }
+    }
+
+    @FXML
+    public void loadCustomerStartScreen()throws Exception{
+        ((Stage)delete.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerStartScreen.fxml"));
     }
 
     @FXML

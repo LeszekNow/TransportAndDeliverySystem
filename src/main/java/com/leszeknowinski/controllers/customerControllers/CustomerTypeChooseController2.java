@@ -28,6 +28,7 @@ public class CustomerTypeChooseController2 implements Initializable {
     @FXML
     Label message;
 
+    ControllersHelper controllersHelper = new ControllersHelper();
 
     public void initialize(URL location, ResourceBundle resources) {
     loadOptions();
@@ -41,7 +42,6 @@ public class CustomerTypeChooseController2 implements Initializable {
 
     @FXML
     public void executeCustomersDisplay()throws Exception{
-        ControllersHelper controllersHelper = new ControllersHelper();
         if(customerType.getValue() == null){
             message.setText("You have to choose an option before clicking select!");
         }

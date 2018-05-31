@@ -43,6 +43,7 @@ public class ManagerAddingController {
     Label message;
 
     DBUserHelper dbUserHelper = new DBUserHelper();
+    ControllersHelper controllersHelper = new ControllersHelper();
 
     @FXML
     public void createManager(){
@@ -54,7 +55,7 @@ public class ManagerAddingController {
 
     @FXML
     public void getBack() throws Exception{
-        ControllersHelper controllersHelper = new ControllersHelper();
+
         ((Stage)submit.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeMainMenu.fxml"));
     }
 

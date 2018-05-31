@@ -3,8 +3,8 @@ package com.leszeknowinski.App;
 public final class UserData {
 
     private static UserData userData = null;
-    private String usernameMemory;
-    private String userTypeMemory;
+    private static String usernameMemory;
+    private static String userTypeMemory;
 
     private UserData(){}
 

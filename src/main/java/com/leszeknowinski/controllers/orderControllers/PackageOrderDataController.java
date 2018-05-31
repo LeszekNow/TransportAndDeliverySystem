@@ -85,10 +85,10 @@ public class PackageOrderDataController {
         } else {
             int customerId = dbHandler.getSthIdFromDB("SELECT id FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");
             String customerType = dbHandler.getStringFromDB("SELECT customerType FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';", "customerType");
-            double startLat = geoHelper.getDoubleFromDB("SELECT latitude FROM tlocation WHERE city = '" + startPoint.getText() + "';", "latitude");
-            double startLon = geoHelper.getDoubleFromDB("SELECT longitude FROM tlocation WHERE city = '" + startPoint.getText() + "';", "longitude");
-            double endLat = geoHelper.getDoubleFromDB("SELECT latitude FROM tlocation WHERE city = '" + endPoint.getText() + "';", "latitude");
-            double endLon = geoHelper.getDoubleFromDB("SELECT longitude FROM tlocation WHERE city = '" + endPoint.getText() + "';", "longitude");
+            double startLat = geoHelper.getLocation(startPoint.getText()).getLatitude();
+            double startLon = geoHelper.getLocation(startPoint.getText()).getLongitude();
+            double endLat = geoHelper.getLocation(endPoint.getText()).getLatitude();
+            double endLon = geoHelper.getLocation(endPoint.getText()).getLongitude();
             if (startLat == 0.0 || endLat == 0.0 || startLon == 0.0 || endLon == 0.0) {
                 message.setText("Sorry, We don't support such connection!");
             } else {

@@ -40,7 +40,6 @@ public class CargoTypeChooseController implements Initializable {
 
     @FXML
     public void executeChosenOption()throws Exception{
-        ControllersHelper controllersHelper = new ControllersHelper();
         if(cargoType.getValue() == null){
             message.setText("You have to choose an option before clicking select!");
         }

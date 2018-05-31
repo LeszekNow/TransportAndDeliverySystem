@@ -40,7 +40,6 @@ public class CustomerMainMenuForEmployeeController {
         ((Stage) myOrders.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("orderFXMLs/OrderSummaryScreen.fxml"));
     }
 
-
     @FXML
     public void getBack()throws Exception{
         ((Stage) back.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeMainMenu.fxml"));

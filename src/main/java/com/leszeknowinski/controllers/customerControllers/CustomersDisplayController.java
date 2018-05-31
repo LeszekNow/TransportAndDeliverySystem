@@ -27,7 +27,6 @@ public class CustomersDisplayController implements Initializable {
 
 
     UserRepository userRepository = new UserRepository();
-    DBHandler dbHandler = new DBHandler();
     ControllersHelper controllersHelper = new ControllersHelper();
 
     public void initialize(URL location, ResourceBundle resources) {

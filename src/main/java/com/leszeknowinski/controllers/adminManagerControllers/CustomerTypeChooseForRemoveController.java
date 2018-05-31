@@ -39,7 +39,6 @@ public class CustomerTypeChooseForRemoveController implements Initializable {
 
     @FXML
     public void executeCustomerDeleting()throws Exception{
-        ControllersHelper controllersHelper = new ControllersHelper();
         if(customerType.getValue() == null){
             message.setText("You have to choose an option before clicking select!");
         }

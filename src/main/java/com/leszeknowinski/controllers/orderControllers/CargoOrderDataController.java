@@ -9,6 +9,7 @@ import com.leszeknowinski.GPS.GPSRandomDataGenerator;
 import com.leszeknowinski.GPS.GeoHelper;
 import com.leszeknowinski.Order.Order;
 import com.leszeknowinski.Order.OrderHelper;
+import com.leszeknowinski.User.UserRepository;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -65,6 +66,7 @@ public class CargoOrderDataController {
     DBOrderHelper dbOrderHelper = new DBOrderHelper();
     GPSRandomDataGenerator gpsRandomDataGenerator = new GPSRandomDataGenerator();
     OrderHelper orderHelper = new OrderHelper();
+    UserRepository userRepository = new UserRepository();
 
 
     @FXML
@@ -84,12 +86,14 @@ public class CargoOrderDataController {
         if(adjustedVehicle == 0 || adjustedDriver == 0){
             message.setText("Sorry, Currently all vehicles or drivers are arrested! Try again later. ");
         }else {
-            int customerId = dbHandler.getSthIdFromDB("SELECT id FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");
-            String customerType = dbHandler.getStringFromDB("SELECT customerType FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';", "customerType");
-            double startLat = geoHelper.getDoubleFromDB("SELECT latitude FROM tlocation WHERE city = '" + startPoint.getText() + "';", "latitude");
-            double startLon = geoHelper.getDoubleFromDB("SELECT longitude FROM tlocation WHERE city = '" + startPoint.getText() + "';", "longitude");
-            double endLat = geoHelper.getDoubleFromDB("SELECT latitude FROM tlocation WHERE city = '" + endPoint.getText() + "';", "latitude");
-            double endLon = geoHelper.getDoubleFromDB("SELECT longitude FROM tlocation WHERE city = '" + endPoint.getText() + "';", "longitude");
+            int customerId = dbHandler.getSthIdFromDB(
+                    "SELECT id FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");
+            String customerType = dbHandler.getStringFromDB(
+                    "SELECT customerType FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';", "customerType");
+            double startLat = geoHelper.getLocation(startPoint.getText()).getLatitude();
+            double startLon = geoHelper.getLocation(startPoint.getText()).getLongitude();
+            double endLat = geoHelper.getLocation(endPoint.getText()).getLatitude();
+            double endLon = geoHelper.getLocation(endPoint.getText()).getLongitude();
             if (startLat == 0.0 || endLat == 0.0 || endLon == 0.0 || startLon == 0.0) {
                 message.setText("Sorry, We don't support such connection!");
             } else {

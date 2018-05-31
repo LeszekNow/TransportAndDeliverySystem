@@ -65,7 +65,7 @@ public class OrderEditingController implements Initializable {
     }
 
     @FXML
-    public void loadOrderScreen(){
+    public void loadOrderScreen() {
         int userId = dbHandler.getSthIdFromDB("SELECT id FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");
         Order order = dbOrderHelper.getOrder(userId);
         summary.appendText("Order date: " + order.getStartDate() + "\nStart point - " + order.getStartPoint() +
@@ -79,10 +79,10 @@ public class OrderEditingController implements Initializable {
 
     @FXML
     public void editOrder() {
-        double startLat = geoHelper.getDoubleFromDB("SELECT latitude FROM tlocation WHERE city = '" + startPoint.getText() + "';", "latitude");
-        double startLon = geoHelper.getDoubleFromDB("SELECT longitude FROM tlocation WHERE city = '" + startPoint.getText() + "';", "longitude");
-        double endLat = geoHelper.getDoubleFromDB("SELECT latitude FROM tlocation WHERE city = '" + endPoint.getText() + "';", "latitude");
-        double endLon = geoHelper.getDoubleFromDB("SELECT longitude FROM tlocation WHERE city = '" + endPoint.getText() + "';", "longitude");
+        double startLat = geoHelper.getLocation(startPoint.getText()).getLatitude();
+        double startLon = geoHelper.getLocation(startPoint.getText()).getLongitude();
+        double endLat = geoHelper.getLocation(endPoint.getText()).getLatitude();
+        double endLon = geoHelper.getLocation(endPoint.getText()).getLongitude();
         if (startLat == 0.0 || endLat == 0.0 || endLon == 0.0 || startLon == 0.0) {
             message.setText("Sorry, We don't support such connection!");
         } else {

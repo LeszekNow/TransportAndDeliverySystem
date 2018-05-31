@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 public class CustomerTypeChooseController implements Initializable {
 
     @FXML
-    ChoiceBox<String>customerType;
+    ChoiceBox<String> customerType;
 
     @FXML
     Button select;
@@ -28,36 +28,34 @@ public class CustomerTypeChooseController implements Initializable {
     @FXML
     Label message;
 
+    ControllersHelper controllersHelper = new ControllersHelper();
 
     public void initialize(URL location, ResourceBundle resources) {
-    loadOptions();
+        loadOptions();
     }
 
     @FXML
-    public void loadOptions(){
+    public void loadOptions() {
         customerType.getItems().add("Customer");
         customerType.getItems().add("Customer B2B / VAT");
     }
 
     @FXML
-    public void executeCustomerAdding()throws Exception{
-        ControllersHelper controllersHelper = new ControllersHelper();
-        if(customerType.getValue() == null){
+    public void executeCustomerAdding() throws Exception {
+        if (customerType.getValue() == null) {
             message.setText("You have to choose an option before clicking select!");
-        }
-        else if(customerType.getValue().equals("Customer")) {
+        } else if (customerType.getValue().equals("Customer")) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerAddingScreen.fxml"));
-        }
-        else if(customerType.getValue().equals("Customer B2B / VAT")) {
+        } else if (customerType.getValue().equals("Customer B2B / VAT")) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerB2BAddingScreen.fxml"));
         }
     }
 
     @FXML
-    public void getBack() throws Exception{
-       FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("adminManagerFXMLs/EmployeeMainMenu.fxml"));
-       Pane pane = fxmlLoader.load();
-       Scene scene = new Scene(pane);
-        ((Stage)back.getScene().getWindow()).setScene(scene);
+    public void getBack() throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("adminManagerFXMLs/EmployeeMainMenu.fxml"));
+        Pane pane = fxmlLoader.load();
+        Scene scene = new Scene(pane);
+        ((Stage) back.getScene().getWindow()).setScene(scene);
     }
 }

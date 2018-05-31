@@ -36,6 +36,7 @@ public class CustomerB2BEditingController {
     Label message;
 
     DBHandler dbHandler = new DBHandler();
+    ControllersHelper controllersHelper = new ControllersHelper();
 
     @FXML
     public void updateCustomerB2B(){
@@ -45,7 +46,7 @@ public class CustomerB2BEditingController {
 
     @FXML
     public void getBack() throws Exception{
-        ControllersHelper controllersHelper = new ControllersHelper();
+
         ((Stage)submit.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerMainMenuScreen.fxml"));
     }
 
