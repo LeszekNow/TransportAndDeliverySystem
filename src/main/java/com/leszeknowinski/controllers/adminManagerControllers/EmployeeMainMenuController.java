@@ -38,9 +38,6 @@ public class EmployeeMainMenuController implements Initializable {
     Button deleteLocation;
 
     @FXML
-    Button deleteRoute;
-
-    @FXML
     Button deleteCustomer;
 
     @FXML
@@ -71,6 +68,7 @@ public class EmployeeMainMenuController implements Initializable {
     Button exit;
 
     ControllersHelper controllersHelper = new ControllersHelper();
+    VehicleRepository vehicleRepository = new VehicleRepository();
 
     public void initialize(URL location, ResourceBundle resources) {
         setDailyInfo();
@@ -105,7 +103,6 @@ public class EmployeeMainMenuController implements Initializable {
 
     @FXML
     public void displayInspectionInfo() {
-        VehicleRepository vehicleRepository = new VehicleRepository();
         alert.appendText("\n\nVehicles for technical inspection: \n");
         for (Car car : vehicleRepository.getAllVehicles()) {
             if (controllersHelper.transformStringOnDate(car.getInspectionDate()).compareTo(DateTime.now().minusDays(358)) < 0) {
@@ -114,11 +111,9 @@ public class EmployeeMainMenuController implements Initializable {
         }
     }
 
-
     @FXML
     public void displayAlerts() {
         alert.appendText("\n\nVehicles for service: \n");
-        VehicleRepository vehicleRepository = new VehicleRepository();
         final int serviceInterval = 15000;
         for (Car car : vehicleRepository.getAllVehicles()) {
             if (car.getMileage() % serviceInterval > 14000) {
