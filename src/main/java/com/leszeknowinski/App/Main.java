@@ -28,8 +28,6 @@ public class Main extends Application {
         launch(args);
     }
 
-    //program further option of customer start menu - services - list of services - z pliku...
-    //program car service and technical inspection in driver main menu and in employee main menu - order
     //pozmieniaj cośType na enumy
     //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
 

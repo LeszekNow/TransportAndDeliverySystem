@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d9439a-56c5-41ed-94da-5bfa0c331a1c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceDeletingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceEditingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceAddingScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceDeletingScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceEditingScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeMainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adminManagerFXMLs/EmployeeMainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/OrderHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/OrderHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverMainMenuScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driverFXMLs/DriverMainMenuScreen.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,36 +50,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+            <state relative-caret-position="177">
+              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriverMainMenuController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-              <folding>
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriverMainMenuScreen.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -82,17 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/ManagerAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/AccountDeletingConfirmationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BEditingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BRegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerEditingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerRegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomersB2BDisplayController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomersDisplayController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.java" />
@@ -107,7 +91,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/ControllersHelper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/CustomerMainMenuForEmployeeScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/CargoTypeChooseScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/BusAddingScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/orderFXMLs/PeopleOrderDataScreen.fxml" />
@@ -130,9 +113,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/vehicleFXMLs/VanAddingScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverAddingScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceAddingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceEditingController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceEditingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceDeletingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceDeletingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" />
       </list>
     </option>
   </component>
@@ -180,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,7 +253,54 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="orderControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="DataBaseSupport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
               <item name="GPS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="Order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
@@ -283,22 +324,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="driverFXMLs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="vehicleFXMLs" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceFXMLs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,25 +344,26 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\serviceFXMLs" />
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\orderFXMLs" />
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\customerFXMLs" />
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources" />
+      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\OrderFXMLs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leszeknowinski.controllers.serviceControllers" />
+      <recent name="com.leszeknowinski.controllers.orderControllers" />
+      <recent name="com.leszeknowinski.controllers.customerControllers" />
+      <recent name="com.leszeknowinski.comparators" />
+      <recent name="com.leszeknowinski.controllers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\adminManagerFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\driverFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\locationFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\orderFXMLs" />
       <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\customerFXMLs" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.leszeknowinski.controllers.orderControllers" />
-      <recent name="com.leszeknowinski.controllers.customerControllers" />
-      <recent name="com.leszeknowinski.comparators" />
-      <recent name="com.leszeknowinski.controllers" />
-      <recent name="com.leszeknowinski.controllers.OrderControllers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\orderFXMLs" />
-      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\customerFXMLs" />
-      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources" />
-      <recent name="C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\resources\OrderFXMLs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -480,6 +515,7 @@
       <workItem from="1527744316876" duration="29924000" />
       <workItem from="1527840837070" duration="1124000" />
       <workItem from="1527841146238" duration="3295000" />
+      <workItem from="1527859528183" duration="12353000" />
     </task>
     <task id="LOCAL-00006" summary="Actualised 24.04.2018">
       <created>1524579498249</created>
@@ -828,7 +864,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="596136000" />
+    <option name="totallyTimeSpent" value="608489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -844,6 +880,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32888147" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32554257" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -855,7 +892,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49546143" weight="0.32888147" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31694403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3214826" />
       <window_info anchor="right" id="Database" order="7" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -868,36 +905,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32554257" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32980332" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.34557596" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30786687" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32888147" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49621785" weight="0.32888147" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25542572" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49546143" weight="0.32888147" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50378215" side_tool="true" weight="0.32888147" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32554257" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.20726173" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -960,99 +968,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/AccountDeletingConfirmationScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BAddingScreen.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerAddingScreen.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BEditingScreen.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BRegistrationScreen.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerB2BShowScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerEditingScreen.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerLoginScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerMainMenuScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerRegistrationScreen.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersB2BDisplayScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomersDisplayScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerShowScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerStartScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/customerFXMLs/CustomerTypeChooseScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminAddingScreen.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminShowScreen.fxml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
@@ -1065,10 +981,6 @@
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/DriverMainMenuForEmployeeScreen.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
@@ -1190,27 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/ControllersHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="113" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/AdjustedVehicleShowScreen.fxml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
@@ -1233,7 +1124,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="264">
           <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
         </state>
       </provider>
@@ -1241,12 +1132,165 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="187">
+          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
           <folding>
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#3982#3983#0" expanded="true" />
+            <element signature="e#4013#4014#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBVehicleHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1237">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="57" column="134" selection-start-line="57" selection-start-column="134" selection-end-line="57" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="37" column="24" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminShowScreen.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceAddingScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/AdminAddingScreen.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceEditingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+          <folding>
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceEditingScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceDeletingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceDeletingScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3121">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/ControllersHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
         </state>
       </provider>
     </entry>

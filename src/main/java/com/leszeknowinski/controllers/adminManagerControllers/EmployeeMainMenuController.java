@@ -1,5 +1,7 @@
 package com.leszeknowinski.controllers.adminManagerControllers;
 
+import com.leszeknowinski.Order.Order;
+import com.leszeknowinski.Order.OrderRepository;
 import com.leszeknowinski.Vehicle.Car;
 import com.leszeknowinski.Vehicle.VehicleRepository;
 import com.leszeknowinski.controllers.ControllersHelper;
@@ -9,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import jdk.nashorn.internal.runtime.ECMAException;
 import org.joda.time.DateTime;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -27,6 +30,18 @@ public class EmployeeMainMenuController implements Initializable {
 
     @FXML
     Button addNewCustomer;
+
+    @FXML
+    Button addNewService;
+
+    @FXML
+    Button editService;
+
+    @FXML
+    Button deleteService;
+
+    @FXML
+    Button showOrders;
 
     @FXML
     Button deleteVehicle;
@@ -69,9 +84,27 @@ public class EmployeeMainMenuController implements Initializable {
 
     ControllersHelper controllersHelper = new ControllersHelper();
     VehicleRepository vehicleRepository = new VehicleRepository();
+    OrderRepository orderRepository = new OrderRepository();
 
     public void initialize(URL location, ResourceBundle resources) {
         setDailyInfo();
+    }
+
+    @FXML
+    public void loadServiceAddingScreen()throws Exception {
+        ((Stage) addNewService.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("serviceFXMLs/ServiceAddingScreen.fxml"));
+    }
+
+    @FXML
+    public void loadServiceEditingScreen()throws Exception{
+        ((Stage) editService.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("serviceFXMLs/ServiceEditingScreen.fxml"));
+
+    }
+
+    @FXML
+    public void loadServiceDeletingScreen()throws Exception{
+        ((Stage) deleteService.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("serviceFXMLs/ServiceDeletingScreen.fxml"));
+
     }
 
     @FXML
@@ -122,6 +155,13 @@ public class EmployeeMainMenuController implements Initializable {
         }
     }
 
+    @FXML
+    public void loadOrdersScreen(){
+        alert.clear();
+        for(Order order : orderRepository.getAllOrders()){
+            alert.appendText(order.toString2() + "\n");
+        }
+    }
 
     @FXML
     public void deleteVehicle() throws Exception {

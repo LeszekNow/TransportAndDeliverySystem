@@ -16,6 +16,8 @@
             <Button fx:id="addNewEmployee" mnemonicParsing="false" onAction="#chooseEmployeeType" prefWidth="125.0" text="Add new employee" />
             <Button fx:id="addNewCustomer" mnemonicParsing="false" onAction="#chooseCustomerType" prefWidth="125.0" text="Add new customer" />
             <Button fx:id="addNewLocation" mnemonicParsing="false" onAction="#addLocation" prefWidth="125.0" text="Add new location" />
+            <Button fx:id="addNewService" onAction="#loadServiceAddingScreen" mnemonicParsing="false" prefWidth="125.0" text="Add new service" />
+            <Button fx:id="editService" onAction="#loadServiceEditingScreen" mnemonicParsing="false" prefWidth="125.0" text="Edit service" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -30,6 +32,8 @@
             <Button fx:id="deleteEmployee" mnemonicParsing="false" onAction="#deleteEmployee" prefWidth="125.0" text="Delete employee" />
             <Button fx:id="deleteCustomer" mnemonicParsing="false" onAction="#deleteCustomer" prefWidth="125.0" text="Delete customer" />
             <Button fx:id="deleteLocation" mnemonicParsing="false" onAction="#deleteLocation" prefWidth="125.0" text="Delete location" />
+            <Button fx:id="deleteService" onAction="#loadServiceDeletingScreen" mnemonicParsing="false" prefWidth="125.0" text="Delete service" />
+            <Button fx:id="showOrders" onAction="#loadOrdersScreen" mnemonicParsing="false" prefWidth="125.0" text="Show orders" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -38,7 +42,7 @@
             <Insets />
          </opaqueInsets>
       </VBox>
-      <VBox alignment="CENTER" layoutX="45.0" layoutY="235.0" prefHeight="176.0" prefWidth="159.0" spacing="5.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="45.0">
+      <VBox alignment="CENTER" layoutX="45.0" layoutY="257.0" prefHeight="176.0" prefWidth="159.0" spacing="5.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="45.0">
          <children>
             <Button fx:id="showVehicles" mnemonicParsing="false" onAction="#showVehicleTypeChooseScreen" prefWidth="125.0" text="Show vehicles" />
             <Button fx:id="showCustomers" mnemonicParsing="false" onAction="#showCustomers" prefWidth="125.0" text="Show customers" />
@@ -57,8 +61,10 @@
             <Font name="System Italic" size="14.0" />
          </font>
       </Label>
-      <VBox alignment="CENTER" layoutX="225.0" layoutY="314.0" prefHeight="78.0" prefWidth="159.0" spacing="5.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="225.0">
+      <VBox alignment="CENTER" layoutX="225.0" layoutY="283.0" prefHeight="78.0" prefWidth="159.0" spacing="5.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="225.0">
          <children>
+            <Button fx:id="driverMenu" mnemonicParsing="false" onAction="#loadDriverMenu" prefWidth="125.0" text="Driver Menu" />
+            <Button fx:id="customerMenu" mnemonicParsing="false" onAction="#loadCustomerMenu" prefWidth="125.0" text="Customer Menu" />
             <Button fx:id="back" mnemonicParsing="false" onAction="#getBack" prefWidth="125.0" text="Back">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -73,18 +79,6 @@
          </padding>
          <opaqueInsets>
             <Insets left="50.0" top="50.0" />
-         </opaqueInsets>
-      </VBox>
-      <VBox alignment="CENTER" layoutX="225.0" layoutY="249.0" prefHeight="89.0" prefWidth="159.0" spacing="5.0" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="225.0">
-         <children>
-            <Button fx:id="customerMenu" mnemonicParsing="false" onAction="#loadCustomerMenu" prefWidth="125.0" text="Customer Menu" />
-            <Button fx:id="driverMenu" mnemonicParsing="false" onAction="#loadDriverMenu" prefWidth="125.0" text="Driver Menu" />
-         </children>
-         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </padding>
-         <opaqueInsets>
-            <Insets />
          </opaqueInsets>
       </VBox>
       <TextArea fx:id="alert" layoutX="384.0" layoutY="116.0" prefHeight="266.0" prefWidth="374.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="384.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="116.0" />

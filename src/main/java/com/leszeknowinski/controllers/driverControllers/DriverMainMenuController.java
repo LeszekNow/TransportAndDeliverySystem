@@ -1,5 +1,6 @@
 package com.leszeknowinski.controllers.driverControllers;
 
+import com.leszeknowinski.DataBaseSupport.DBHandler;
 import com.leszeknowinski.Vehicle.Car;
 import com.leszeknowinski.Vehicle.VehicleRepository;
 import com.leszeknowinski.controllers.ControllersHelper;
@@ -50,8 +51,10 @@ public class DriverMainMenuController implements Initializable {
 
     ControllersHelper controllersHelper = new ControllersHelper();
     VehicleRepository vehicleRepository = new VehicleRepository();
+    DBHandler dbHandler = new DBHandler();
 
     public void initialize(URL location, ResourceBundle resources) {
+
         setDailyInfo();
     }
 
@@ -77,7 +80,12 @@ public class DriverMainMenuController implements Initializable {
 
     @FXML
     public void serviceAndInspectVehicle(){
-
+        if(vehicleId.getText() == null){
+            message.setText("Enter id of a vehicle need to be serviced!");
+        }else {
+            dbHandler.connectToDataBase("UPDATE tvehicle SET dateInspection = DATE_ADD(dateInspection, INTERVAL 1 YEAR) WHERE id = " + Integer.parseInt(vehicleId.getText()) + ";");
+            message.setText("Vehicle serviced and technically inspected!");
+        }
     }
 
     @FXML
