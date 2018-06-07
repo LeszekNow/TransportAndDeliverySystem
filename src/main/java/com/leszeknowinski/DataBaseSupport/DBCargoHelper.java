@@ -14,7 +14,7 @@ public class DBCargoHelper {
         String sqlInsert = "INSERT INTO tcargo (cargoType, customerId, vehicleId, amount, cargoLength, cargoHeight, cargoWidth, cargoWeight)" +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
         PreparedStatement preparedStatement = connect.prepareStatement(sqlInsert);
-        preparedStatement.setString(1, cargo.getCargoType());
+        preparedStatement.setString(1, String.valueOf(cargo.getCargoType()));
         preparedStatement.setInt(2, cargo.getCustomerId());
         preparedStatement.setInt(3, cargo.getVehicleId());
         preparedStatement.setInt(4, cargo.getAmount());
@@ -36,7 +36,7 @@ public class DBCargoHelper {
             PreparedStatement preparedStatement = connect.prepareStatement(sqlInsert);
             preparedStatement.setInt(1, cargo.getCustomerId());
             preparedStatement.setInt(2, cargo.getCustomerId());
-            preparedStatement.setString(3, cargo.getCargoType());
+            preparedStatement.setString(3, String.valueOf(cargo.getCargoType()));
             preparedStatement.setInt(4, cargo.getAmount());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {

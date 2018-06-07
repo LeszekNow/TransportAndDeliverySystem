@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 
 import static com.leszeknowinski.DataBaseSupport.DBHandler.connect;
 
@@ -27,18 +28,18 @@ public class GeoHelper {
 
         distance = Math.pow(distance, 2); // + Math.pow(height, 2);
 
-        return (Math.sqrt(distance))/1000;
+        return (Math.sqrt(distance)) / 1000;
     }
 
     public String calculateTimeFromDistance(double distance) {
         //avg speed in km/h
         int avgSpeed = 70;
-        double base = distance/avgSpeed;
+        double base = distance / avgSpeed;
         int hours = (int) base;
         double modulo = base - hours;
-        double f = modulo*60;
+        double f = modulo * 60;
         int minutes = (int) f;
-        return  hours +" hours and " + minutes + " minutes.";
+        return hours + " hours and " + minutes + " minutes.";
     }
 
 
@@ -146,38 +147,33 @@ public class GeoHelper {
         return list;
     }
 
-    public String setDirection(double startLat, double endLat, double startLon, double endLon){
+    public String setDirection(double startLat, double endLat, double startLon, double endLon) {
         String direction = "";
         double factor = 2.0;
-        if(startLat == endLat){
-            if(startLon > endLon){
+        if (startLat == endLat) {
+            if (startLon > endLon) {
                 direction = "W";
-            }else{
+            } else {
                 direction = "E";
             }
-        }
-        else if(startLon == endLon){
-            if(startLat > endLat){
+        } else if (startLon == endLon) {
+            if (startLat > endLat) {
                 direction = "S";
-            }else{
+            } else {
                 direction = "N";
             }
-        }
-        else if(startLat > endLat && startLon > endLon){
+        } else if (startLat > endLat && startLon > endLon) {
             direction = "SW";
-        }
-        else if(startLat > endLat && startLon < endLon){
+        } else if (startLat > endLat && startLon < endLon) {
             direction = "SE";
-        }
-        else if(startLat < endLat && startLon > endLon){
+        } else if (startLat < endLat && startLon > endLon) {
             direction = "NW";
-        }
-        else if(startLat < endLat && startLon < endLon){
+        } else if (startLat < endLat && startLon < endLon) {
             direction = "NE";
         }
         return direction;
 
-        }
+    }
 
     public Location getLocation(String city) {
         ResultSet resultSet = null;
@@ -216,4 +212,24 @@ public class GeoHelper {
         }
         return location;
     }
+
+    public Location setClosestLocation(List<Location> list, Location start, Location end) {
+        double distance;
+        Location startLocation = start;
+        Location closestLocation = list.get(0);
+        double minDistance = getDistanceInKM(startLocation.getLatitude(), closestLocation.getLatitude(), startLocation.getLongitude(), closestLocation.getLongitude());
+            for (int i = 1; i < list.size(); i++ ) {
+                distance = getDistanceInKM(startLocation.getLatitude(), list.get(i).getLatitude(), startLocation.getLongitude(), list.get(i).getLongitude());
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestLocation = list.get(i);
+                }
+        }
+        return closestLocation;
     }
+
+    //metody z Dijkstra algorithm for java
+
+
+}
+

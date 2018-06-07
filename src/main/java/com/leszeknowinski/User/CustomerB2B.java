@@ -7,9 +7,9 @@ public class CustomerB2B {
     private String phone;
     private String username;
     private String password;
-    private String customerType;
+    private CustomerType customerType;
 
-    public CustomerB2B(String company, String nip, String phone, String username, String password, String customerType){
+    public CustomerB2B(String company, String nip, String phone, String username, String password, CustomerType customerType){
         this.company = company;
         this.nip = nip;
         this.phone = phone;
@@ -19,7 +19,7 @@ public class CustomerB2B {
         this.customerType = customerType;
     }
 
-    public CustomerB2B(int id, String company, String nip, String phone, String username, String password, String customerType){
+    public CustomerB2B(int id, String company, String nip, String phone, String username, String password, CustomerType customerType){
         this.id = id;
         this.company = company;
         this.nip = nip;
@@ -33,11 +33,11 @@ public class CustomerB2B {
     public CustomerB2B() {
     }
 
-    public String getCustomerType() {
+    public CustomerType getCustomerType() {
         return customerType;
     }
 
-    public void setCustomerType(String customerType) {
+    public void setCustomerType(CustomerType customerType) {
         this.customerType = customerType;
     }
 

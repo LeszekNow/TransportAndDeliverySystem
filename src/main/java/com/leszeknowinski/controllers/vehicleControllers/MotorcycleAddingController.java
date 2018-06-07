@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.vehicleControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBVehicleHelper;
 import com.leszeknowinski.Vehicle.Motorcycle;
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -55,7 +56,7 @@ public class MotorcycleAddingController {
     public void createMotorcycle(){
         Motorcycle motorcycle = new Motorcycle(brand.getText(), model.getText(), colour.getText(), Integer.parseInt(mileage.getText()),
                 Integer.parseInt(engineCapacity.getText()), Double.parseDouble(fuelConsumption.getText()),
-                vin.getText(), registrationNumber.getText(), Integer.parseInt(maxPackageWeight.getText()), "motorcycle", false);
+                vin.getText(), registrationNumber.getText(), Integer.parseInt(maxPackageWeight.getText()), VehicleType.MOTORCYCLE, false);
         DBVehicleHelper.insertMotorcycle(motorcycle);
         message.setText("New motorcycle added successfully!");
     }

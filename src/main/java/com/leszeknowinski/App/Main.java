@@ -1,6 +1,7 @@
 package com.leszeknowinski.App;
 
 import com.leszeknowinski.DataBaseSupport.DBHandler;
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -26,6 +27,7 @@ public class Main extends Application {
     public static void main(String[] args) {
         DBHandler.connect();
         launch(args);
+
     }
 
     //pozmieniaj cośType na enumy
@@ -40,7 +42,7 @@ public class Main extends Application {
 
         public void start (Stage primaryStage) throws Exception {
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(this.getClass().getClassLoader().getResource("StartMenu.fxml"));
+            fxmlLoader.setLocation(this.getClass().getClassLoader().getResource("GPSTestsScreen.fxml"));
             Pane pane = fxmlLoader.load();
             Scene scene = new Scene(pane);
             primaryStage.setScene(scene);

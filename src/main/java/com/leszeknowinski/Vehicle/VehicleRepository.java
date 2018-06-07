@@ -28,7 +28,7 @@ public class VehicleRepository {
                 car.setFuelConsumption(resultSet.getDouble("fuelConsumption"));
                 car.setVin(resultSet.getString("vin"));
                 car.setRegistrationNumber(resultSet.getString("registrationNumber"));
-                car.setVehicleType(resultSet.getString("vehicleType"));
+                car.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 carsList.add(car);
                 vehiclesList.add(car);
             }
@@ -55,7 +55,7 @@ public class VehicleRepository {
                 car.setFuelConsumption(resultSet.getDouble("fuelConsumption"));
                 car.setVin(resultSet.getString("vin"));
                 car.setRegistrationNumber(resultSet.getString("registrationNumber"));
-                car.setVehicleType(resultSet.getString("vehicleType"));
+                car.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -82,7 +82,7 @@ public class VehicleRepository {
                 truck.setFuelConsumption(resultSet.getDouble("fuelConsumption"));
                 truck.setVin(resultSet.getString("vin"));
                 truck.setRegistrationNumber(resultSet.getString("registrationNumber"));
-                truck.setVehicleType(resultSet.getString("vehicleType"));
+                truck.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 trucksList.add(truck);
                 vehiclesList.add(truck);
             }
@@ -111,7 +111,7 @@ public class VehicleRepository {
                 bus.setVin(resultSet.getString("vin"));
                 bus.setRegistrationNumber(resultSet.getString("registrationNumber"));
                 bus.setPlaces(resultSet.getInt("places"));
-                bus.setVehicleType(resultSet.getString("vehicleType"));
+                bus.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 busesList.add(bus);
                 vehiclesList.add(bus);
             }
@@ -140,7 +140,7 @@ public class VehicleRepository {
                 motorcycle.setVin(resultSet.getString("vin"));
                 motorcycle.setRegistrationNumber(resultSet.getString("registrationNumber"));
                 motorcycle.setMaxPackageWeight(resultSet.getInt("maxPackageWeight"));
-                motorcycle.setVehicleType(resultSet.getString("vehicleType"));
+                motorcycle.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 motorcyclesList.add(motorcycle);
                 vehiclesList.add(motorcycle);
             }
@@ -172,7 +172,7 @@ public class VehicleRepository {
                 van.setMaxCargoLength(resultSet.getInt("maxCargoLength"));
                 van.setMaxCargoWidth(resultSet.getInt("maxCargoWidth"));
                 van.setMaxCargoWeight(resultSet.getInt("maxCargoWeight"));
-                van.setVehicleType(resultSet.getString("vehicleType"));
+                van.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 vansList.add(van);
                 vehiclesList.add(van);
             }
@@ -198,7 +198,7 @@ public class VehicleRepository {
                 car.setMileage(resultSet.getInt("mileage"));
                 car.setEngineCapacity(resultSet.getInt("engineCapacity"));
                 car.setRegistrationNumber(resultSet.getString("registrationNumber"));
-                car.setVehicleType(resultSet.getString("vehicleType"));
+                car.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 car.setInspectionDate(resultSet.getString("dateInspection"));
                 vehiclesList.add(car);
             }
@@ -223,7 +223,7 @@ public class VehicleRepository {
                 car.setMileage(resultSet.getInt("mileage"));
                 car.setEngineCapacity(resultSet.getInt("engineCapacity"));
                 car.setRegistrationNumber(resultSet.getString("registrationNumber"));
-                car.setVehicleType(resultSet.getString("vehicleType"));
+                car.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
             }
         }catch(SQLException e){
             e.printStackTrace();
@@ -247,7 +247,7 @@ public class VehicleRepository {
                 car.setMileage(resultSet.getInt("mileage"));
                 car.setEngineCapacity(resultSet.getInt("engineCapacity"));
                 car.setRegistrationNumber(resultSet.getString("registrationNumber"));
-                car.setVehicleType(resultSet.getString("vehicleType"));
+                car.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 vehiclesList.add(car);
             }
         }catch(SQLException e){
@@ -272,7 +272,7 @@ public class VehicleRepository {
                 car.setMileage(resultSet.getInt("mileage"));
                 car.setEngineCapacity(resultSet.getInt("engineCapacity"));
                 car.setRegistrationNumber(resultSet.getString("registrationNumber"));
-                car.setVehicleType(resultSet.getString("vehicleType"));
+                car.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 vehiclesList.add(car);
             }
         }catch(SQLException e){

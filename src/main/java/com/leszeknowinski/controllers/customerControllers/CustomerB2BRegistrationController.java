@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.customerControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBUserHelper;
 import com.leszeknowinski.User.CustomerB2B;
+import com.leszeknowinski.User.CustomerType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -45,7 +46,7 @@ public class CustomerB2BRegistrationController {
     @FXML
     public void createCustomerB2B(){
         CustomerB2B b2B = new CustomerB2B(company.getText(), nip.getText(), phone.getText(),
-                username.getText(), password.getText(), "customerb2b");
+                username.getText(), password.getText(), CustomerType.CUSTOMERB2B);
         dbUserHelper.insertB2BCustomer(b2B);
         message.setText("Customer added successfully!");
     }

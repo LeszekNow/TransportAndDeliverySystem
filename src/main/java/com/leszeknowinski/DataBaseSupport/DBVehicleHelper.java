@@ -23,7 +23,7 @@ public class DBVehicleHelper {
             preparedStatement.setDouble(6, car.getFuelConsumption());
             preparedStatement.setString(7, car.getVin());
             preparedStatement.setString(8, car.getRegistrationNumber());
-            preparedStatement.setString(9, car.getVehicleType());
+            preparedStatement.setString(9, String.valueOf(car.getVehicleType()));
             preparedStatement.setBoolean(10,false);
             preparedStatement.executeUpdate();
         }catch (SQLException e){
@@ -44,7 +44,7 @@ public class DBVehicleHelper {
             preparedStatement.setDouble(6, truck.getFuelConsumption());
             preparedStatement.setString(7, truck.getVin());
             preparedStatement.setString(8, truck.getRegistrationNumber());
-            preparedStatement.setString(9, truck.getVehicleType());
+            preparedStatement.setString(9, String.valueOf(truck.getVehicleType()));
             preparedStatement.setBoolean(10,false);
             preparedStatement.executeUpdate();
         }catch (SQLException e){
@@ -67,7 +67,7 @@ public class DBVehicleHelper {
             preparedStatement.setString(7, motorcycle.getVin());
             preparedStatement.setString(8, motorcycle.getRegistrationNumber());
             preparedStatement.setInt(9, motorcycle.getMaxPackageWeight());
-            preparedStatement.setString(10, motorcycle.getVehicleType());
+            preparedStatement.setString(10, String.valueOf(motorcycle.getVehicleType()));
             preparedStatement.setBoolean(11,false);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -92,7 +92,7 @@ public class DBVehicleHelper {
                 preparedStatement.setInt(10, van.getMaxCargoLength());
                 preparedStatement.setInt(11, van.getMaxCargoWidth());
                 preparedStatement.setInt(12, van.getMaxCargoWeight());
-                preparedStatement.setString(13, van.getVehicleType());
+                preparedStatement.setString(13, String.valueOf(van.getVehicleType()));
                 preparedStatement.setBoolean(14,false);
                 preparedStatement.executeUpdate();
             } catch (SQLException e) {
@@ -114,7 +114,7 @@ public class DBVehicleHelper {
             preparedStatement.setString(7, bus.getVin());
             preparedStatement.setString(8, bus.getRegistrationNumber());
             preparedStatement.setInt(9, bus.getPlaces());
-            preparedStatement.setString(10, bus.getVehicleType());
+            preparedStatement.setString(10, String.valueOf(bus.getVehicleType()));
             preparedStatement.setBoolean(11,false);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {

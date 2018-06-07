@@ -18,9 +18,6 @@ public class CustomerMainMenuForEmployeeController {
     Button editOrder;
 
     @FXML
-    Button terms;
-
-    @FXML
     Button deleteAccount;
 
     @FXML

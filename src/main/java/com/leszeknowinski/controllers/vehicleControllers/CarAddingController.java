@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.vehicleControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBVehicleHelper;
 import com.leszeknowinski.Vehicle.Car;
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -57,7 +58,7 @@ public class CarAddingController {
         try {
             Car car = new Car(brand.getText(), model.getText(), colour.getText(), Integer.parseInt(mileage.getText()),
                     Integer.parseInt(engineCapacity.getText()), Double.parseDouble(fuelConsumption.getText()),
-                    vin.getText(), registrationNumber.getText(), "car", false);
+                    vin.getText(), registrationNumber.getText(), VehicleType.CAR, false);
             DBVehicleHelper.insertCar(car);
             message.setText("New vehicle added successfully!");
         }catch (InputMismatchException e){

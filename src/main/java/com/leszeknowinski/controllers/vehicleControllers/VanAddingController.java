@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.vehicleControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBVehicleHelper;
 import com.leszeknowinski.Vehicle.Van;
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -48,7 +49,6 @@ public class VanAddingController {
     @FXML
     TextField maxCargoWeight;
 
-
     @FXML
     Button submit;
 
@@ -67,7 +67,7 @@ public class VanAddingController {
                 Integer.parseInt(engineCapacity.getText()), Double.parseDouble(fuelConsumption.getText()),
                 vin.getText(), registrationNumber.getText(), Integer.parseInt(maxCargoHeight.getText()),
                 Integer.parseInt(maxCargoLength.getText()), Integer.parseInt(maxCargoWidth.getText()),
-                Integer.parseInt(maxCargoWeight.getText()), "van", false);
+                Integer.parseInt(maxCargoWeight.getText()), VehicleType.VAN, false);
         DBVehicleHelper.insertVan(van);
         message.setText("New vehicle added successfully!");
 

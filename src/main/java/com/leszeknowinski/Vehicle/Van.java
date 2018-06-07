@@ -8,7 +8,7 @@ public class Van extends Car {
 
     public Van(String brand, String model, String colour, int mileage, int engineCapacity,
                double fuelConsumption, String vin, String registrationNumber,
-               int maxCargoHeight, int maxCargoLength, int maxCargoWidth, int maxCargoWeight, String vehicleType, boolean arrested) {
+               int maxCargoHeight, int maxCargoLength, int maxCargoWidth, int maxCargoWeight, VehicleType vehicleType, boolean arrested) {
         super(brand, model, colour, mileage, engineCapacity, fuelConsumption, vin, registrationNumber, vehicleType, arrested);
         this.maxCargoHeight = maxCargoHeight;
         this.maxCargoLength = maxCargoLength;
@@ -19,17 +19,8 @@ public class Van extends Car {
 
     public Van(int id, String brand, String model, String colour, int mileage, int engineCapacity,
                double fuelConsumption, String vin, String registrationNumber,
-               int maxCargoHeight, int maxCargoLength, int maxCargoWidth, int maxCargoWeight, String vehicleType, boolean arrested, String inspectionDate) {
+               int maxCargoHeight, int maxCargoLength, int maxCargoWidth, int maxCargoWeight, VehicleType vehicleType, boolean arrested, String inspectionDate) {
         super(id, brand, model, colour, mileage, engineCapacity, fuelConsumption, vin, registrationNumber, vehicleType, arrested, inspectionDate);
-        this.maxCargoHeight = maxCargoHeight;
-        this.maxCargoLength = maxCargoLength;
-        this.maxCargoWidth = maxCargoWidth;
-        this.maxCargoWeight = maxCargoWeight;
-    }
-
-    public Van(VehicleDataWrapper vehicleDataWrapper, int maxCargoHeight, int maxCargoLength,
-               int maxCargoWidth, int maxCargoWeight) {
-        super(vehicleDataWrapper);
         this.maxCargoHeight = maxCargoHeight;
         this.maxCargoLength = maxCargoLength;
         this.maxCargoWidth = maxCargoWidth;

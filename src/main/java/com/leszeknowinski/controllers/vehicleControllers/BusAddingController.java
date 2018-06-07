@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.vehicleControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBVehicleHelper;
 import com.leszeknowinski.Vehicle.Bus;
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -57,7 +58,7 @@ public class BusAddingController {
     public void createBus(){
         Bus bus = new Bus(brand.getText(), model.getText(), colour.getText(), Integer.parseInt(mileage.getText()),
                 Integer.parseInt(engineCapacity.getText()), controllerHelper.doubleCheck(Double.parseDouble(fuelConsumption.getText())),
-                vin.getText(), registrationNumber.getText(), Integer.parseInt(places.getText()), "bus", false);
+                vin.getText(), registrationNumber.getText(), Integer.parseInt(places.getText()), VehicleType.BUS, false);
         DBVehicleHelper.insertBus(bus);
         message.setText("New vehicle added successfully!");
     }

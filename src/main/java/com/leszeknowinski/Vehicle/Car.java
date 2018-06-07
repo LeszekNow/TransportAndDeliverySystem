@@ -10,12 +10,12 @@ public class Car {
     private double fuelConsumption;
     private String vin;
     private String registrationNumber;
-    private String vehicleType;
+    private VehicleType vehicleType;
     private boolean arrested;
     private String inspectionDate;
 
     public Car(String brand, String model, String colour, int mileage, int engineCapacity,
-               double fuelConsumption, String vin, String registrationNumber, String vehicleType, boolean arrested) {
+               double fuelConsumption, String vin, String registrationNumber, VehicleType vehicleType, boolean arrested) {
         this.brand = brand;
         this.model = model;
         this.colour = colour;
@@ -30,7 +30,7 @@ public class Car {
     }
 
     public Car(int id, String brand, String model, String colour, int mileage, int engineCapacity,
-               double fuelConsumption, String vin, String registrationNumber, String vehicleType, boolean arrested, String inspectionDate){
+               double fuelConsumption, String vin, String registrationNumber, VehicleType vehicleType, boolean arrested, String inspectionDate){
         this.id = id;
         this.brand = brand;
         this.model = model;
@@ -43,20 +43,6 @@ public class Car {
         this.vehicleType = vehicleType;
         this.arrested = arrested;
         this.inspectionDate = inspectionDate;
-    }
-
-    public Car(VehicleDataWrapper vehicleDataWrapper){
-        this.id = id;
-        this.brand = vehicleDataWrapper.brand;
-        this.model = vehicleDataWrapper.model;
-        this.colour = vehicleDataWrapper.colour;
-        this.mileage = vehicleDataWrapper.mileage;
-        this.engineCapacity = vehicleDataWrapper.engineCapacity;
-        this.fuelConsumption = vehicleDataWrapper.fuelConsumption;
-        this.vin = vehicleDataWrapper.vin;
-        this.registrationNumber = vehicleDataWrapper.registrationNumber;
-        this.vehicleType = vehicleDataWrapper.vehicleType;
-        this.arrested = vehicleDataWrapper.arrested;
     }
 
     public Car(){
@@ -142,11 +128,11 @@ public class Car {
         return registrationNumber;
     }
 
-    public String getVehicleType() {
+    public VehicleType getVehicleType() {
         return vehicleType;
     }
 
-    public void setVehicleType(String vehicleType) {
+    public void setVehicleType(VehicleType vehicleType) {
         this.vehicleType = vehicleType;
     }
 

@@ -1,6 +1,9 @@
 package com.leszeknowinski.Order;
 
+import com.leszeknowinski.Cargo.CargoType;
+import com.leszeknowinski.User.CustomerType;
 import com.leszeknowinski.Vehicle.Car;
+import com.leszeknowinski.Vehicle.VehicleType;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,9 +24,9 @@ public class OrderRepository {
             while (resultSet.next()) {
                 Order order = new Order();
                 order.setId(resultSet.getInt("id"));
-                order.setCargoType(resultSet.getString("cargoType"));
+                order.setCargoType(CargoType.valueOf(resultSet.getString("cargoType")));
                 order.setVehicleId(resultSet.getInt("vehicleId"));
-                order.setCustomerType(resultSet.getString("customerType"));
+                order.setCustomerType(CustomerType.valueOf(resultSet.getString("customerType")));
                 order.setCustomerId(resultSet.getInt("customerId"));
                 order.setCargoAmount(resultSet.getInt("cargoAmount"));
                 order.setStartPoint(resultSet.getString("startPoint"));
@@ -33,7 +36,7 @@ public class OrderRepository {
                 order.setCompleted(resultSet.getBoolean("completed"));
                 order.setDriverId(resultSet.getInt("driverId"));
                 order.setInProgress(resultSet.getBoolean("inProgress"));
-                order.setVehicleType(resultSet.getString("vehicleType"));
+                order.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 ordersList.add(order);
             }
         } catch (SQLException e) {
@@ -52,9 +55,9 @@ public class OrderRepository {
             while (resultSet.next()) {
                 Order order = new Order();
                 order.setId(resultSet.getInt("id"));
-                order.setCargoType(resultSet.getString("cargoType"));
+                order.setCargoType(CargoType.valueOf(resultSet.getString("cargoType")));
                 order.setVehicleId(resultSet.getInt("vehicleId"));
-                order.setCustomerType(resultSet.getString("customerType"));
+                order.setCustomerType(CustomerType.valueOf(resultSet.getString("customerType")));
                 order.setCustomerId(resultSet.getInt("customerId"));
                 order.setCargoAmount(resultSet.getInt("cargoAmount"));
                 order.setStartPoint(resultSet.getString("startPoint"));
@@ -64,7 +67,7 @@ public class OrderRepository {
                 order.setCompleted(resultSet.getBoolean("completed"));
                 order.setDriverId(resultSet.getInt("driverId"));
                 order.setInProgress(resultSet.getBoolean("inProgress"));
-                order.setVehicleType(resultSet.getString("vehicleType"));
+                order.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 ordersList.add(order);
             }
         } catch (SQLException e) {
@@ -83,9 +86,9 @@ public class OrderRepository {
             while (resultSet.next()) {
                 Order order = new Order();
                 order.setId(resultSet.getInt("id"));
-                order.setCargoType(resultSet.getString("cargoType"));
+                order.setCargoType(CargoType.valueOf(resultSet.getString("cargoType")));
                 order.setVehicleId(resultSet.getInt("vehicleId"));
-                order.setCustomerType(resultSet.getString("customerType"));
+                order.setCustomerType(CustomerType.valueOf(resultSet.getString("customerType")));
                 order.setCustomerId(resultSet.getInt("customerId"));
                 order.setCargoAmount(resultSet.getInt("cargoAmount"));
                 order.setStartPoint(resultSet.getString("startPoint"));
@@ -95,7 +98,7 @@ public class OrderRepository {
                 order.setCompleted(resultSet.getBoolean("completed"));
                 order.setDriverId(resultSet.getInt("driverId"));
                 order.setInProgress(resultSet.getBoolean("inProgress"));
-                order.setVehicleType(resultSet.getString("vehicleType"));
+                order.setVehicleType(VehicleType.valueOf(resultSet.getString("vehicleType")));
                 ordersList.add(order);
             }
         } catch (SQLException e) {

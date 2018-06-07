@@ -4,14 +4,14 @@ public class Cargo {
     private int id;
     private int customerId;
     private int vehicleId;
-    private String cargoType;
+    private CargoType cargoType;
     private int amount;
     private int cargoLength;
     private int cargoHeight;
     private int cargoWidth;
     private int cargoWeight;
 
-    public Cargo(int id, int customerId, int vehicleId, String cargoType, int amount, int cargoLength, int cargoHeight, int cargoWidth, int cargoWeight) {
+    public Cargo(int id, int customerId, int vehicleId, CargoType cargoType, int amount, int cargoLength, int cargoHeight, int cargoWidth, int cargoWeight) {
         this.id = id;
         this.customerId = customerId;
         this.vehicleId = vehicleId;
@@ -23,7 +23,7 @@ public class Cargo {
         this.cargoWeight = cargoWeight;
     }
 
-    public Cargo(int customerId, int vehicleId, String cargoType, int amount, int cargoLength, int cargoHeight, int cargoWidth, int cargoWeight) {
+    public Cargo(int customerId, int vehicleId, CargoType cargoType, int amount, int cargoLength, int cargoHeight, int cargoWidth, int cargoWeight) {
         this.customerId = customerId;
         this.vehicleId = vehicleId;
         this.cargoType = cargoType;
@@ -35,14 +35,14 @@ public class Cargo {
         CargoRepository.cargoList.add(this);
     }
 
-    public Cargo(int customerId, int vehicleId, String cargoType, int amount){
+    public Cargo(int customerId, int vehicleId, CargoType cargoType, int amount){
         this.customerId = customerId;
         this.vehicleId = vehicleId;
         this.cargoType = cargoType;
         this.amount = amount;
     }
 
-    public Cargo(int customerId, int vehicleId, String cargoType, int amount, int cargoWeight){
+    public Cargo(int customerId, int vehicleId, CargoType cargoType, int amount, int cargoWeight){
         this.customerId = customerId;
         this.vehicleId = vehicleId;
         this.cargoType = cargoType;
@@ -66,7 +66,7 @@ public class Cargo {
         this.vehicleId = vehicleId;
     }
 
-    public void setCargoType(String cargoType) {
+    public void setCargoType(CargoType cargoType) {
         this.cargoType = cargoType;
     }
 
@@ -94,7 +94,7 @@ public class Cargo {
         this.cargoWeight = cargoWeight;
     }
 
-    public String getCargoType() {
+    public CargoType getCargoType() {
         return cargoType;
     }
 

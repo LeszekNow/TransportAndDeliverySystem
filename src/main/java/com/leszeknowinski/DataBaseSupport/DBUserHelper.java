@@ -57,7 +57,7 @@ public class DBUserHelper {
             preparedStatement.setString(4, customer.getPhone());
             preparedStatement.setString(5, customer.getUsername());
             preparedStatement.setString(6, DigestUtils.md5Hex(customer.getPassword()));
-            preparedStatement.setString(7, customer.getCustomerType());
+            preparedStatement.setString(7, String.valueOf(customer.getCustomerType()));
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -74,7 +74,7 @@ public class DBUserHelper {
             preparedStatement.setString(3, customerB2B.getPhone());
             preparedStatement.setString(4, customerB2B.getUsername());
             preparedStatement.setString(5, DigestUtils.md5Hex(customerB2B.getPassword()));
-            preparedStatement.setString(6, customerB2B.getCustomerType());
+            preparedStatement.setString(6, String.valueOf(customerB2B.getCustomerType()));
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

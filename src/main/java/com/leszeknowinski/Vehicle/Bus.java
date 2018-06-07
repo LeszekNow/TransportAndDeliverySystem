@@ -4,21 +4,17 @@ public class Bus extends Car {
     private int places;
 
     public Bus(String brand, String model, String colour, int mileage, int engineCapacity,
-               double fuelConsumption, String vin, String registrationNumber, int places, String vehicleType, boolean arrested) {
+               double fuelConsumption, String vin, String registrationNumber, int places, VehicleType vehicleType, boolean arrested) {
         super(brand, model, colour, mileage, engineCapacity, fuelConsumption, vin, registrationNumber, vehicleType, arrested);
         this.places = places;
     }
 
     public Bus(int id, String brand, String model, String colour, int mileage, int engineCapacity,
-               double fuelConsumption, String vin, String registrationNumber, int places, String vehicleType, boolean arrested, String inspectionDate) {
+               double fuelConsumption, String vin, String registrationNumber, int places, VehicleType vehicleType, boolean arrested, String inspectionDate) {
         super(id, brand, model, colour, mileage, engineCapacity, fuelConsumption, vin, registrationNumber, vehicleType, arrested, inspectionDate);
         this.places = places;
     }
 
-    public Bus(VehicleDataWrapper vehicleDataWrapper, int places) {
-        super(vehicleDataWrapper);
-        this.places = places;
-    }
 
     public Bus(){}
 

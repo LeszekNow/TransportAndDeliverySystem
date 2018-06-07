@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.customerControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBUserHelper;
 import com.leszeknowinski.User.Customer;
+import com.leszeknowinski.User.CustomerType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -48,7 +49,7 @@ public class CustomerAddingController {
     @FXML
     public void createCustomer(){
         Customer customer = new Customer(name.getText(), surname.getText(), pesel.getText(), phone.getText(),
-                username.getText(), password.getText(), "customer");
+                username.getText(), password.getText(), CustomerType.CUSTOMER);
         dbUserHelper.insertCustomer(customer);
         message.setText("New customer added successfully!");
     }

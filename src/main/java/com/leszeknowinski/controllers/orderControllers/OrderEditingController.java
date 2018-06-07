@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.orderControllers;
 
 import com.leszeknowinski.App.UserData;
 import com.leszeknowinski.Cargo.Cargo;
+import com.leszeknowinski.Cargo.CargoType;
 import com.leszeknowinski.DataBaseSupport.DBCargoHelper;
 import com.leszeknowinski.DataBaseSupport.DBHandler;
 import com.leszeknowinski.DataBaseSupport.DBOrderHelper;
@@ -87,7 +88,7 @@ public class OrderEditingController implements Initializable {
             message.setText("Sorry, We don't support such connection!");
         } else {
             int userId = dbHandler.getSthIdFromDB("SELECT id FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");
-            String cargoType = dbHandler.getStringFromDB("SELECT cargoType FROM torder WHERE customerId = " + userId + ";", "cargoType");
+            CargoType cargoType = CargoType.valueOf(dbHandler.getStringFromDB("SELECT cargoType FROM torder WHERE customerId = " + userId + ";", "cargoType"));
             double distance = geoHelper.getDistanceInKM(startLat, endLat, startLon, endLon);
             double price = orderHelper.calculateOrderPrice(distance, cargoType);
             dbHandler.connectToDataBase("UPDATE torder SET startPoint = '" + startPoint.getText() + "', endPoint = '" + endPoint.getText() + "', cargoAmount = " + Integer.parseInt(amount.getText()) + ", distance = " + distance + " WHERE customerId = " + userId + ";");

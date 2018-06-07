@@ -1,10 +1,11 @@
 package com.leszeknowinski.GPS;
 
 public class Location {
-    public int id;
-    public String city;
-    public double longitude;
-    public double latitude;
+    private int id;
+    private String city;
+    private double longitude;
+    private double latitude;
+
 
     public Location(String city, double longitude, double latitude) {
         this.city = city;
@@ -18,6 +19,7 @@ public class Location {
         this.longitude = longitude;
         this.latitude = latitude;
     }
+    
 
     public Location(){}
 

@@ -1,5 +1,6 @@
 package com.leszeknowinski.Order;
 
+import com.leszeknowinski.Cargo.CargoType;
 import com.leszeknowinski.User.CustomerType;
 import com.leszeknowinski.Vehicle.VehicleType;
 
@@ -7,12 +8,12 @@ import java.util.Date;
 
 public class Order {
     private int id;
-    private String cargoType;
-    private String vehicleType;
+    private CargoType cargoType;
+    private VehicleType vehicleType;
     private int vehicleId;
     private int cargoAmount;
     private int customerId;
-    private String customerType;
+    private CustomerType customerType;
     private String startPoint;
     private String endPoint;
     private double distance;
@@ -21,7 +22,7 @@ public class Order {
     private boolean inProgress;
     private int driverId;
 
-    public Order(int id, String cargoType, String vehicleType, int vehicleId, int cargoAmount, int customerId, String customerType, String startPoint, String endPoint, double distance, Date startDate, boolean completed, boolean inProgress, int driverId) {
+    public Order(int id, CargoType cargoType, VehicleType vehicleType, int vehicleId, int cargoAmount, int customerId, CustomerType customerType, String startPoint, String endPoint, double distance, Date startDate, boolean completed, boolean inProgress, int driverId) {
         this.id = id;
         this.cargoType = cargoType;
         this.vehicleType = vehicleType;
@@ -38,7 +39,7 @@ public class Order {
         this.inProgress = inProgress;
     }
 
-    public Order(String cargoType, String vehicleType, int vehicleId, int cargoAmount, int customerId, String customerType, String startPoint, String endPoint, double distance, Date startDate, boolean completed, boolean inProgress, int driverId) {
+    public Order(CargoType cargoType, VehicleType vehicleType, int vehicleId, int cargoAmount, int customerId, CustomerType customerType, String startPoint, String endPoint, double distance, Date startDate, boolean completed, boolean inProgress, int driverId) {
         this.cargoType = cargoType;
         this.vehicleType = vehicleType;
         this.vehicleId = vehicleId;
@@ -54,7 +55,7 @@ public class Order {
         this.inProgress = inProgress;
     }
 
-    public Order(String cargoType, String vehicleType, int vehicleId, int cargoAmount, int customerId, String customerType, String startPoint, String endPoint, double distance, boolean completed, boolean inProgress, int driverId) {
+    public Order(CargoType cargoType, VehicleType vehicleType, int vehicleId, int cargoAmount, int customerId, CustomerType customerType, String startPoint, String endPoint, double distance, boolean completed, boolean inProgress, int driverId) {
         this.cargoType = cargoType;
         this.vehicleType = vehicleType;
         this.vehicleId = vehicleId;
@@ -112,11 +113,11 @@ public class Order {
         this.id = id;
     }
 
-    public String getCargoType() {
+    public CargoType getCargoType() {
         return cargoType;
     }
 
-    public void setCargoType(String cargoType) {
+    public void setCargoType(CargoType cargoType) {
         this.cargoType = cargoType;
     }
 
@@ -137,11 +138,11 @@ public class Order {
 
     }
 
-    public String getCustomerType() {
+    public CustomerType getCustomerType() {
         return customerType;
     }
 
-    public void setCustomerType(String customerType) {
+    public void setCustomerType(CustomerType customerType) {
         this.customerType = customerType;
     }
 
@@ -177,11 +178,11 @@ public class Order {
         this.startDate = startDate;
     }
 
-    public String getVehicleType() {
+    public VehicleType getVehicleType() {
         return vehicleType;
     }
 
-    public void setVehicleType(String vehicleType) {
+    public void setVehicleType(VehicleType vehicleType) {
         this.vehicleType = vehicleType;
     }
 

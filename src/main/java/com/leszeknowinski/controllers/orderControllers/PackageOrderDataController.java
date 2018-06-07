@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.orderControllers;
 
 import com.leszeknowinski.App.UserData;
 import com.leszeknowinski.Cargo.Cargo;
+import com.leszeknowinski.Cargo.CargoType;
 import com.leszeknowinski.DataBaseSupport.DBCargoHelper;
 import com.leszeknowinski.DataBaseSupport.DBHandler;
 import com.leszeknowinski.DataBaseSupport.DBOrderHelper;
@@ -9,6 +10,8 @@ import com.leszeknowinski.GPS.GPSRandomDataGenerator;
 import com.leszeknowinski.GPS.GeoHelper;
 import com.leszeknowinski.Order.Order;
 import com.leszeknowinski.Order.OrderHelper;
+import com.leszeknowinski.User.CustomerType;
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -68,15 +71,15 @@ public class PackageOrderDataController {
 
     @FXML
     public void createOrder() {
-        String vehicleType;
         int adjustedVehicle;
         int adjustedDriver;
+        VehicleType vehicleType;
         if (Integer.parseInt(length.getText()) > 30 || Integer.parseInt(height.getText()) > 6 || Integer.parseInt(width.getText()) > 20 || (Integer.parseInt(amount.getText()) * Integer.parseInt(weight.getText())) > 15) {
-            vehicleType = "van";
+            vehicleType = VehicleType.VAN;
             adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'van' AND arrested = false ORDER BY RAND() LIMIT 1;");
             adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' OR 'A/B' AND arrested = false ORDER BY RAND() LIMIT 1;");
         } else {
-            vehicleType = "motorcycle";
+            vehicleType = VehicleType.MOTORCYCLE;
             adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'motorcycle' AND arrested = false ORDER BY RAND() LIMIT 1;");
             adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' OR 'A/B' OR 'A' AND arrested = false ORDER BY RAND() LIMIT 1;");
         }
@@ -84,7 +87,7 @@ public class PackageOrderDataController {
             message.setText("Sorry, Currently all vehicles or drivers are arrested! Try again later. ");
         } else {
             int customerId = dbHandler.getSthIdFromDB("SELECT id FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';");
-            String customerType = dbHandler.getStringFromDB("SELECT customerType FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';", "customerType");
+            CustomerType customerType = CustomerType.valueOf(dbHandler.getStringFromDB("SELECT customerType FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';", "customerType"));
             double startLat = geoHelper.getLocation(startPoint.getText()).getLatitude();
             double startLon = geoHelper.getLocation(startPoint.getText()).getLongitude();
             double endLat = geoHelper.getLocation(endPoint.getText()).getLatitude();
@@ -93,11 +96,11 @@ public class PackageOrderDataController {
                 message.setText("Sorry, We don't support such connection!");
             } else {
                 double distance = geoHelper.getDistanceInKM(startLat, endLat, startLon, endLon);
-                double price = orderHelper.calculateOrderPrice(distance, "Package");
+                double price = orderHelper.calculateOrderPrice(distance, CargoType.PACKAGE);
                 dbHandler.connectToDataBase("UPDATE tvehicle SET arrested = true WHERE id = " + adjustedVehicle + ";");
                 dbHandler.connectToDataBase("UPDATE tdriver SET arrested = true WHERE id = " + adjustedDriver + ";");
-                Order order = new Order("package", vehicleType, adjustedVehicle, Integer.parseInt(amount.getText()), customerId, customerType, startPoint.getText(), endPoint.getText(), distance, false, false, adjustedDriver);
-                Cargo cargo = new Cargo(customerId, adjustedVehicle, "package", Integer.parseInt(amount.getText()), Integer.parseInt(length.getText()), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()), Integer.parseInt(weight.getText()));
+                Order order = new Order(CargoType.PACKAGE, vehicleType, adjustedVehicle, Integer.parseInt(amount.getText()), customerId, customerType, startPoint.getText(), endPoint.getText(), distance, false, false, adjustedDriver);
+                Cargo cargo = new Cargo(customerId, adjustedVehicle, CargoType.PACKAGE, Integer.parseInt(amount.getText()), Integer.parseInt(length.getText()), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()), Integer.parseInt(weight.getText()));
                 dbOrderHelper.insertOrder(order);
                 dbCargoHelper.insertCargo(cargo);
                 message.setText("New order accepted!");

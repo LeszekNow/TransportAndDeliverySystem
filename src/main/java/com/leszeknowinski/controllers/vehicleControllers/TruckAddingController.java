@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.vehicleControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBVehicleHelper;
 import com.leszeknowinski.Vehicle.Truck;
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -53,7 +54,7 @@ public class TruckAddingController {
     public void createTruck(){
         Truck truck = new Truck(brand.getText(), model.getText(), colour.getText(), Integer.parseInt(mileage.getText()),
                 Integer.parseInt(engineCapacity.getText()), Double.parseDouble(fuelConsumption.getText()),
-                vin.getText(), registrationNumber.getText(), "truck", false);
+                vin.getText(), registrationNumber.getText(), VehicleType.TRUCK, false);
         DBVehicleHelper.insertTruck(truck);
         message.setText("New vehicle added successfully!");
     }
