@@ -64,12 +64,12 @@ public class PeopleOrderDataController {
         int adjustedDriver;
         if (Integer.parseInt(amount.getText()) > 3) {
             vehicleType = VehicleType.BUS;
-            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'bus' AND arrested = false ORDER BY RAND() LIMIT 1;");
-            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' OR 'A/B' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'BUS' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'ABC' OR 'AB' OR 'ALL' AND arrested = false ORDER BY RAND() LIMIT 1;");
         } else {
             vehicleType = VehicleType.CAR;
-            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'car' AND arrested = false ORDER BY RAND() LIMIT 1;");
-            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' OR 'A/B' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'CAR' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'ABC' OR 'AB' OR 'B' AND arrested = false ORDER BY RAND() LIMIT 1;");
         }
         if (adjustedVehicle == 0 || adjustedDriver == 0) {
             message.setText("Sorry, Currently all vehicles or drivers are arrested! Try again later. ");

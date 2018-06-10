@@ -84,7 +84,7 @@ public class UserRepository {
         ArrayList<Customer>list = new ArrayList<Customer>();
         try{
             statement = connect.createStatement();
-            resultSet = statement.executeQuery("SELECT * FROM tclient WHERE customerType = 'customer';");
+            resultSet = statement.executeQuery("SELECT * FROM tclient WHERE customerType = 'CUSTOMER';");
             while(resultSet.next()) {
                 Customer customer = new Customer();
                 customer.setId(resultSet.getInt("id"));
@@ -107,7 +107,7 @@ public class UserRepository {
         ArrayList<CustomerB2B>list = new ArrayList<CustomerB2B>();
         try{
             statement = connect.createStatement();
-            resultSet = statement.executeQuery("SELECT * FROM tclient WHERE customerType = 'customerb2b';");
+            resultSet = statement.executeQuery("SELECT * FROM tclient WHERE customerType = 'CUSTOMERB2B';");
             while(resultSet.next()) {
                 CustomerB2B b2b = new CustomerB2B();
                 b2b.setId(resultSet.getInt("id"));

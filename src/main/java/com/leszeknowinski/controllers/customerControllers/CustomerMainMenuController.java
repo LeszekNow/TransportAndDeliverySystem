@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.customerControllers;
 
 import com.leszeknowinski.App.UserData;
 import com.leszeknowinski.DataBaseSupport.DBHandler;
+import com.leszeknowinski.User.CustomerType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -64,7 +65,7 @@ public class CustomerMainMenuController {
     @FXML
     public void loadAccountEditScreen()throws Exception {
         String customerType = dbHandler.getStringFromDB("SELECT customerType FROM tclient WHERE username = '" + UserData.getInstance().getUsernameMemory() + "';", "customerType");
-        if (customerType.equals("customer")) {
+        if (customerType.equals(String.valueOf(CustomerType.CUSTOMER))) {
             ((Stage) editAccount.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerEditingScreen.fxml"));
         }else{
             ((Stage) editAccount.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerB2BEditingScreen.fxml"));

@@ -1,5 +1,7 @@
 package com.leszeknowinski.controllers.orderControllers;
 
+import com.leszeknowinski.Cargo.CargoType;
+import com.leszeknowinski.User.DrivingLicenceType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,7 +16,7 @@ import java.util.ResourceBundle;
 public class CargoTypeChooseController implements Initializable {
 
     @FXML
-    ChoiceBox<String>cargoType;
+    ChoiceBox<CargoType>cargoType;
 
     @FXML
     Button select;
@@ -33,9 +35,9 @@ public class CargoTypeChooseController implements Initializable {
 
     @FXML
     public void loadOptions(){
-        cargoType.getItems().add("Cargo");
-        cargoType.getItems().add("Package");
-        cargoType.getItems().add("People");
+        cargoType.getItems().add(CargoType.CARGO);
+        cargoType.getItems().add(CargoType.PACKAGE);
+        cargoType.getItems().add(CargoType.PEOPLE);
     }
 
     @FXML
@@ -43,13 +45,13 @@ public class CargoTypeChooseController implements Initializable {
         if(cargoType.getValue() == null){
             message.setText("You have to choose an option before clicking select!");
         }
-        else if(cargoType.getValue().equals("Cargo")) {
+        else if(cargoType.getValue().equals(CargoType.CARGO)) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("orderFXMLs/CargoOrderDataScreen.fxml"));
         }
-        else if(cargoType.getValue().equals("Package")){
+        else if(cargoType.getValue().equals(CargoType.PACKAGE)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("orderFXMLs/PackageOrderDataScreen.fxml"));
         }
-        else if(cargoType.getValue().equals("People")){
+        else if(cargoType.getValue().equals(CargoType.PEOPLE)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("orderFXMLs/PeopleOrderDataScreen.fxml"));
         }
     }

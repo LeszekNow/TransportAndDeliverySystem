@@ -1,19 +1,21 @@
 package com.leszeknowinski.service;
 
+import com.leszeknowinski.Cargo.CargoType;
+
 public class Service {
     private int id;
-    private String category;
+    private CargoType category;
     private String description;
     private double priceKM;
 
-    public Service(int id, String category, String description, double priceKM) {
+    public Service(int id, CargoType category, String description, double priceKM) {
         this.id = id;
         this.description = description;
         this.priceKM = priceKM;
         this.category = category;
     }
 
-    public Service(String category, String description, double priceKM){
+    public Service(CargoType category, String description, double priceKM){
         this.description = description;
         this.priceKM = priceKM;
         this.category = category;
@@ -21,11 +23,11 @@ public class Service {
 
     public Service(){}
 
-    public String getCategory() {
+    public CargoType getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(CargoType category) {
         this.category = category;
     }
 

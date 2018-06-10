@@ -2,165 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d9439a-56c5-41ed-94da-5bfa0c331a1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/DrivingLicenceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/EmployeeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransportAndDeliverySystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TransportAndDeliverySystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Cargo/Cargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Cargo/Cargo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBCargoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBCargoHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBOrderHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBOrderHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBUserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBUserHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBVehicleHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBVehicleHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerB2B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerB2B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Motorcycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Van.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Van.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleDataWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserDataWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/GPSTestsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/GPSTestsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerAddingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BAddingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BRegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/StartMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/StartMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverAddingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderCreationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusAddingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarAddingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleAddingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckAddingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanAddingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/LogIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TransportAndDeliverySystem-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/App/UserData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Cargo/Cargo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Cargo/Cargo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Cargo/CargoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Cargo/CargoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Cargo/CargoType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Cargo/CargoType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBCargoHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBCargoHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBOrderHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBOrderHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBUserHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBUserHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBVehicleHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/DataBaseSupport/DBVehicleHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/GPSRandomDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/GPSRandomDataGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/GeoHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/GeoHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/LocationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/GPS/LocationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/OrderHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/OrderHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Order/OrderRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Admin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/CustomerB2B.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/CustomerB2B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/CustomerType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/CustomerType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserDataWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserDataWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserDataWrapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/User/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Bus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Bus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Motorcycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Motorcycle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Truck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Truck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Van.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/Van.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleDataWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/Vehicle/VehicleType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LatitudeComparatorN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LatitudeComparatorN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LatitudeComparatorS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LatitudeComparatorS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LongitudeComparatorE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LongitudeComparatorE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LongitudeComparatorW.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/comparators/LongitudeComparatorW.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/ControllersHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/ControllersHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/GPSTestsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/GPSTestsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/StartMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/StartMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/AdminAddingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/AdminAddingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/AdminShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/AdminShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/ManagerAddingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/ManagerAddingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/ManagerShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/adminManagerControllers/ManagerShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/AccountDeletingConfirmationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/AccountDeletingConfirmationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerAddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerB2BAddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerB2BEditingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerB2BEditingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerB2BRegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerB2BShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerB2BShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerEditingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerEditingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerLoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerRegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerStartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerStartController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomersB2BDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomersB2BDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomersDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/customerControllers/CustomersDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/AdjustedVehicleShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/AdjustedVehicleShowController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverAddingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverAddingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverOrderAcceptationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverOrderAcceptationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverOrderFinishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverOrderFinishController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/driverControllers/DriverShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/LocationAddingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/LocationAddingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/LocationShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/LocationShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/VehicleTrackChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/locationControllers/VehicleTrackChooseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/OrderCreationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/OrderCreationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/OrderEditingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/OrderSummaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/OrderSummaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/serviceControllers/ServiceDeletingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/serviceControllers/ServiceDeletingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/serviceControllers/ServiceEditingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/serviceControllers/ServiceEditingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusAddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusesDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusesDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusesDisplayCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/BusesDisplayCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarAddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarsDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarsDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarsDisplayCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/CarsDisplayCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcycleAddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcycleShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcyclesDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcyclesDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcyclesDisplayCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/MotorcyclesDisplayCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TruckAddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TruckShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TrucksDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TrucksDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TrucksDisplayCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/TrucksDisplayCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VanAddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VanShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VanShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VansDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VansDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VansDisplayCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VansDisplayCustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehiclesDisplayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehiclesDisplayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehiclesDisplayCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehiclesDisplayCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehiclesShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/controllers/vehicleControllers/VehiclesShowController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/service/Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leszeknowinski/service/ServiceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leszeknowinski/service/ServiceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serviceFXMLs/ServiceAddingScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceFXMLs/ServiceAddingScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -187,11 +108,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="27" selection-start-line="27" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="221">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GPSTestsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/GPSTestsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="101" column="82" selection-start-line="101" selection-start-column="82" selection-end-line="101" selection-end-column="82" />
+              <folding>
+                <element signature="e#8109#8110#0" expanded="true" />
+                <element signature="e#8140#8141#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeoHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="222" column="29" selection-start-line="222" selection-start-column="29" selection-end-line="222" selection-end-column="29" />
+              <folding>
+                <element signature="e#3420#3429#0" expanded="true" />
+                <element signature="e#4000#4010#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/Location.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationRepository.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+              <folding>
+                <element signature="e#568#569#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,9 +183,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -214,57 +196,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverAddingScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/driverFXMLs/DriverMainMenuScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverMainMenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/AllOrdersDisplayController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceAddingScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceEditingController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceEditingScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/adminManagerFXMLs/EmployeeMainMenu.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceDeletingScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceDeletingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/GPSTestsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/Location.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Cargo/Cargo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerB2B.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Bus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Motorcycle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Truck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Van.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBVehicleHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBUserHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBOrderHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBCargoHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerAddingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BAddingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BRegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerRegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusAddingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarAddingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleAddingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckAddingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanAddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerMainMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/DrivingLicenceType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBUserHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/serviceFXMLs/ServiceAddingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/serviceControllers/ServiceAddingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/driverControllers/DriverAddingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerTypeChooseController3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoTypeChooseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderCreationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserDataWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Manager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Admin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/EmployeeType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/StartMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/GPSTestsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java" />
       </list>
     </option>
   </component>
@@ -312,7 +294,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -371,6 +354,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
+              <item name="GPS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="leszeknowinski" type="462c0819:PsiDirectoryNode" />
               <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -380,20 +372,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TransportAndDeliverySystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TransportAndDeliverySystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceFXMLs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -581,6 +564,12 @@
       <workItem from="1528273610600" duration="2874000" />
       <workItem from="1528291612263" duration="4552000" />
       <workItem from="1528350721063" duration="7428000" />
+      <workItem from="1528360927633" duration="9883000" />
+      <workItem from="1528392519428" duration="1685000" />
+      <workItem from="1528438948511" duration="779000" />
+      <workItem from="1528448792125" duration="4430000" />
+      <workItem from="1528457755664" duration="596000" />
+      <workItem from="1528605743969" duration="7570000" />
     </task>
     <task id="LOCAL-00006" summary="Actualised 24.04.2018">
       <created>1524579498249</created>
@@ -929,7 +918,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="641660000" />
+    <option name="totallyTimeSpent" value="666603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -942,6 +931,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32888147" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32554257" />
@@ -952,11 +942,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.20726173" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49621785" weight="0.32888147" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.34557596" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.26711187" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49546143" weight="0.32888147" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3184569" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info anchor="right" id="Database" order="7" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -970,6 +960,34 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.17195326" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20877458" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32888147" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49621785" weight="0.32888147" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49546143" weight="0.32888147" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25542572" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50378215" side_tool="true" weight="0.32888147" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32554257" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.20726173" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1032,335 +1050,200 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VansDisplayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="134" column="42" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
+        <state relative-caret-position="-119">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Bus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VansDisplayCustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="6" column="101" selection-start-line="6" selection-start-column="101" selection-end-line="6" selection-end-column="101" />
+        <state relative-caret-position="-129">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Motorcycle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanShowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="118" selection-start-line="12" selection-start-column="118" selection-end-line="12" selection-end-column="118" />
+        <state relative-caret-position="-459">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Truck.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehiclesDisplayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="-17">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/Van.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehiclesDisplayCustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehiclesShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="63" column="63" lean-forward="true" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseController2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="43" column="52" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="43" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForDisplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="67" column="61" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VehicleTypeChooseForRemoveController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="64" column="61" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/ControllersHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-353">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Vehicle/VehicleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="274" column="55" selection-start-line="274" selection-start-column="55" selection-end-line="274" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="184" column="42" selection-start-line="184" selection-start-column="42" selection-end-line="184" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="57" column="134" selection-start-line="57" selection-start-column="134" selection-end-line="57" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBUserHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="76" column="89" selection-start-line="76" selection-start-column="89" selection-end-line="76" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1662">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBOrderHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="55" column="96" selection-start-line="55" selection-start-column="96" selection-end-line="55" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBCargoHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" column="80" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/LogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/GPSTestsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/AdminAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/AdminShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-401">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/ManagerAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/ManagerShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/AccountDeletingConfirmationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="51" column="77" selection-start-line="51" selection-start-column="77" selection-end-line="51" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerB2BRegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/customerControllers/CustomerRegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/CargoOrderDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="108" column="49" lean-forward="true" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/OrderEditingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="93" column="164" lean-forward="true" selection-start-line="93" selection-start-column="164" selection-end-line="93" selection-end-column="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PackageOrderDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="102" column="86" selection-start-line="102" selection-start-column="86" selection-end-line="102" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/orderControllers/PeopleOrderDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="90" column="85" selection-start-line="90" selection-start-column="85" selection-end-line="90" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/BusAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="60" column="112" selection-start-line="60" selection-start-column="112" selection-end-line="60" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/CarAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/MotorcycleAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="58" column="129" selection-start-line="58" selection-start-column="129" selection-end-line="58" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/TruckAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/vehicleControllers/VanAddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+        <state relative-caret-position="-4246">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="1768">
+          <caret line="109" column="103" selection-start-line="109" selection-start-column="103" selection-end-line="109" selection-end-column="103" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserDataWrapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/CustomerB2B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/service/ServiceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1157">
-          <caret line="100" column="93" selection-start-line="100" selection-start-column="93" selection-end-line="100" selection-end-column="93" />
+        <state relative-caret-position="-1183">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/OrderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Order/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBVehicleHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+        <state relative-caret-position="-1523">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBUserHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBOrderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/DataBaseSupport/DBCargoHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1380,15 +1263,166 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/Cargo/Cargo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/StartMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/User/EmployeeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/AdminAddingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/AdminShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerMainMenuForEmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/CustomerTypeChooseForRemoveController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/DriverMainMenuForEmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="57" column="123" selection-start-line="57" selection-start-column="123" selection-end-line="57" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/EmployeeTypeChooseForRemoveController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/ManagerAddingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/adminManagerControllers/ManagerShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/App/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="27" selection-start-line="27" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="221">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/controllers/GPSTestsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="101" column="82" selection-start-line="101" selection-start-column="82" selection-end-line="101" selection-end-column="82" />
+          <folding>
+            <element signature="e#8109#8110#0" expanded="true" />
+            <element signature="e#8140#8141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/GeoHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="222" column="29" selection-start-line="222" selection-start-column="29" selection-end-line="222" selection-end-column="29" />
+          <folding>
+            <element signature="e#3420#3429#0" expanded="true" />
+            <element signature="e#4000#4010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leszeknowinski/GPS/LocationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

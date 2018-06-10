@@ -14,11 +14,6 @@ public class Customer extends Admin {
         this.customerType = customerType;
     }
 
-    public Customer(UserDataWrapper userDataWrapper, CustomerType customerType) {
-        super(userDataWrapper);
-        this.customerType = customerType;
-    }
-
     public CustomerType getCustomerType() {
         return customerType;
     }

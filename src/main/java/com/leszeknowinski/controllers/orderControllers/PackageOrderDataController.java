@@ -76,12 +76,12 @@ public class PackageOrderDataController {
         VehicleType vehicleType;
         if (Integer.parseInt(length.getText()) > 30 || Integer.parseInt(height.getText()) > 6 || Integer.parseInt(width.getText()) > 20 || (Integer.parseInt(amount.getText()) * Integer.parseInt(weight.getText())) > 15) {
             vehicleType = VehicleType.VAN;
-            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'van' AND arrested = false ORDER BY RAND() LIMIT 1;");
-            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' OR 'A/B' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'VAN' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'ABC' OR 'AB' AND arrested = false ORDER BY RAND() LIMIT 1;");
         } else {
             vehicleType = VehicleType.MOTORCYCLE;
-            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'motorcycle' AND arrested = false ORDER BY RAND() LIMIT 1;");
-            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' OR 'A/B' OR 'A' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'MOTORCYCLE' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'ABC' OR 'AB' OR 'A' AND arrested = false ORDER BY RAND() LIMIT 1;");
         }
         if (adjustedVehicle == 0 || adjustedDriver == 0) {
             message.setText("Sorry, Currently all vehicles or drivers are arrested! Try again later. ");

@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.driverControllers;
 
 import com.leszeknowinski.DataBaseSupport.DBUserHelper;
 import com.leszeknowinski.User.Driver;
+import com.leszeknowinski.User.DrivingLicenceType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -36,7 +37,7 @@ public class DriverAddingController implements Initializable {
     TextField password;
 
     @FXML
-    ChoiceBox<String> drivingLicence;
+    ChoiceBox<DrivingLicenceType> drivingLicence;
 
     @FXML
     ChoiceBox<Integer> experience;
@@ -63,16 +64,16 @@ public class DriverAddingController implements Initializable {
 
     @FXML
     public void loadOptions(){
-        drivingLicence.getItems().add("A");
-        drivingLicence.getItems().add("B");
-        drivingLicence.getItems().add("C");
-        drivingLicence.getItems().add("D");
-        drivingLicence.getItems().add("A/B");
-        drivingLicence.getItems().add("B/C");
-        drivingLicence.getItems().add("A/B/C");
-        drivingLicence.getItems().add("B/C/D");
-        drivingLicence.getItems().add("A/B/C/D");
-        drivingLicence.getItems().add("All");
+        drivingLicence.getItems().add(DrivingLicenceType.A);
+        drivingLicence.getItems().add(DrivingLicenceType.B);
+        drivingLicence.getItems().add(DrivingLicenceType.C);
+        drivingLicence.getItems().add(DrivingLicenceType.D);
+        drivingLicence.getItems().add(DrivingLicenceType.AB);
+        drivingLicence.getItems().add(DrivingLicenceType.BC);
+        drivingLicence.getItems().add(DrivingLicenceType.ABC);
+        drivingLicence.getItems().add(DrivingLicenceType.BCD);
+        drivingLicence.getItems().add(DrivingLicenceType.ABCD);
+        drivingLicence.getItems().add(DrivingLicenceType.ALL);
     }
 
     @FXML

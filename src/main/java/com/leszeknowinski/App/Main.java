@@ -1,6 +1,7 @@
 package com.leszeknowinski.App;
 
 import com.leszeknowinski.DataBaseSupport.DBHandler;
+import com.leszeknowinski.User.EmployeeType;
 import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.application.Application;
@@ -30,15 +31,13 @@ public class Main extends Application {
 
     }
 
-    //pozmieniaj cośType na enumy
     //walidacja wpisywanych w TextFieldy wartości - ustaw na polach Handlery reagujące na przyciśnięcie submit!!
-
-    //refactoring
     //obsłużyć wyjątek jak jakiś username już istnieje w bazie
 
     //modify simple directions such as S, N, E and W - and some kind of factor which won't be still fixed on one Latitude
     //modify midpoints selection using distances between them - two loops probably
     //zmień GPS - http://www.mobility-services.in.tum.de/?p=2335
+    //http://www.baeldung.com/java-dijkstra
 
         public void start (Stage primaryStage) throws Exception {
             FXMLLoader fxmlLoader = new FXMLLoader();

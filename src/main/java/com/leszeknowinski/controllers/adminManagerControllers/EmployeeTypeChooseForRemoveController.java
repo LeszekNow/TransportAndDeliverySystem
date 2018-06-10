@@ -1,5 +1,6 @@
 package com.leszeknowinski.controllers.adminManagerControllers;
 
+import com.leszeknowinski.User.EmployeeType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,7 +15,7 @@ import java.util.ResourceBundle;
 public class EmployeeTypeChooseForRemoveController implements Initializable {
 
     @FXML
-    ChoiceBox<String>employeeType;
+    ChoiceBox<EmployeeType>employeeType;
 
     @FXML
     Button select;
@@ -33,9 +34,9 @@ public class EmployeeTypeChooseForRemoveController implements Initializable {
 
     @FXML
     public void loadOptions(){
-        employeeType.getItems().add("admin");
-        employeeType.getItems().add("driver");
-        employeeType.getItems().add("manager");
+        employeeType.getItems().add(EmployeeType.ADMIN);
+        employeeType.getItems().add(EmployeeType.DRIVER);
+        employeeType.getItems().add(EmployeeType.MANAGER);
     }
 
     @FXML
@@ -44,13 +45,13 @@ public class EmployeeTypeChooseForRemoveController implements Initializable {
         if(employeeType.getValue() == null){
             message.setText("You have to choose an option before clicking select!");
         }
-        else if(employeeType.getValue().equals("admin")) {
+        else if(employeeType.getValue().equals(EmployeeType.ADMIN)) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/AdminShowScreen.fxml"));
         }
-        else if(employeeType.getValue().equals("driver")){
+        else if(employeeType.getValue().equals(EmployeeType.DRIVER)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("driverFXMLs/DriverShowScreen.fxml"));
         }
-        else if(employeeType.getValue().equals("manager")){
+        else if(employeeType.getValue().equals(EmployeeType.MANAGER)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/ManagerShowScreen.fxml"));
         }
     }

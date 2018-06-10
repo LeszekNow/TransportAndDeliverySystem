@@ -18,15 +18,6 @@ public class Admin {
         this.password = password;
     }
 
-    public Admin(UserDataWrapper userDataWrapper) {
-        this.name = userDataWrapper.name;
-        this.surname = userDataWrapper.surname;
-        this.pesel = userDataWrapper.pesel;
-        this.phone = userDataWrapper.phone;
-        this.username = userDataWrapper.username;
-        this.password = userDataWrapper.password;
-    }
-
     public Admin(int id, String name, String surname, String pesel, String phone, String username, String password) {
         this.id = id;
         this.name = name;

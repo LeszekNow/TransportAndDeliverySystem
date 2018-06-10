@@ -1,5 +1,6 @@
 package com.leszeknowinski.controllers;
 
+import com.leszeknowinski.User.UserType;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,7 +17,7 @@ import java.util.ResourceBundle;
 public class StartMenuController implements Initializable {
 
     @FXML
-    ChoiceBox<String>userType;
+    ChoiceBox<UserType>userType;
 
     @FXML
     Button go;
@@ -34,8 +35,8 @@ public class StartMenuController implements Initializable {
 
     @FXML
     public void loadOptions(){
-        userType.getItems().add("Customer");
-        userType.getItems().add("Employee");
+        userType.getItems().add(UserType.CUSTOMER);
+        userType.getItems().add(UserType.EMPLOYEE);
     }
 
     @FXML
@@ -51,13 +52,13 @@ public class StartMenuController implements Initializable {
         if(userType.getValue() == null) {
             message.setText("You have to choose an option before clicking go!");
         }
-        else if(userType.getValue().equals("Customer")){
+        else if(userType.getValue().equals(UserType.CUSTOMER)){
             fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("customerFXMLs/CustomerStartScreen.fxml"));
             pane = fxmlLoader.load();
             scene = new Scene(pane);
             ((Stage)userType.getScene().getWindow()).setScene(scene);
         }
-        else if(userType.getValue().equals("Employee")){
+        else if(userType.getValue().equals(UserType.EMPLOYEE)){
             fxmlLoader = new FXMLLoader(this.getClass().getClassLoader().getResource("adminManagerFXMLs/EmployeeMenu.fxml"));
             pane = fxmlLoader.load();
             scene = new Scene(pane);

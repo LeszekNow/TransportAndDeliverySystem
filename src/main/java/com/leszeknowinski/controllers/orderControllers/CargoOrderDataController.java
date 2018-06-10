@@ -69,7 +69,6 @@ public class CargoOrderDataController {
     DBOrderHelper dbOrderHelper = new DBOrderHelper();
     GPSRandomDataGenerator gpsRandomDataGenerator = new GPSRandomDataGenerator();
     OrderHelper orderHelper = new OrderHelper();
-    UserRepository userRepository = new UserRepository();
 
 
     @FXML
@@ -79,12 +78,12 @@ public class CargoOrderDataController {
         VehicleType vehicleType;
         if (Integer.parseInt(length.getText()) > 500 || Integer.parseInt(height.getText()) > 175 || Integer.parseInt(width.getText()) > 180 || (Integer.parseInt(amount.getText()) * Integer.parseInt(weight.getText())) > 1800) {
             vehicleType = VehicleType.TRUCK;
-            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'truck' AND arrested = false ORDER BY RAND() LIMIT 1;");
-            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'TRUCK' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'ABC' AND arrested = false ORDER BY RAND() LIMIT 1;");
         } else {
             vehicleType = VehicleType.VAN;
-            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'van' AND arrested = false ORDER BY RAND() LIMIT 1;");
-            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'A/B/C' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedVehicle = dbHandler.getSthIdFromDB("SELECT id FROM tvehicle WHERE vehicleType = 'VAN' AND arrested = false ORDER BY RAND() LIMIT 1;");
+            adjustedDriver = dbHandler.getSthIdFromDB("SELECT id FROM tdriver WHERE drivingLicence = 'ABC' AND arrested = false ORDER BY RAND() LIMIT 1;");
         }
         if(adjustedVehicle == 0 || adjustedDriver == 0){
             message.setText("Sorry, Currently all vehicles or drivers are arrested! Try again later. ");
@@ -104,7 +103,7 @@ public class CargoOrderDataController {
                 double price = orderHelper.calculateOrderPrice(distance, CargoType.CARGO);
                 dbHandler.connectToDataBase("UPDATE tvehicle SET arrested = true WHERE id = " + adjustedVehicle + ";");
                 dbHandler.connectToDataBase("UPDATE tdriver SET arrested = true WHERE id = " + adjustedDriver + ";");
-                Order order = new Order(CargoType.CARGO, vehicleType, adjustedVehicle, Integer.parseInt(amount.getText()), customerId, CustomerType.CUSTOMER, startPoint.getText(), endPoint.getText(), distance, false, false, adjustedDriver);
+                Order order = new Order(CargoType.CARGO, vehicleType, adjustedVehicle, Integer.parseInt(amount.getText()), customerId, customerType, startPoint.getText(), endPoint.getText(), distance, false, false, adjustedDriver);
                 Cargo cargo = new Cargo(customerId, adjustedVehicle, CargoType.CARGO, Integer.parseInt(amount.getText()), Integer.parseInt(length.getText()), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()), Integer.parseInt(weight.getText()));
                 dbOrderHelper.insertOrder(order);
                 dbCargoHelper.insertCargo(cargo);

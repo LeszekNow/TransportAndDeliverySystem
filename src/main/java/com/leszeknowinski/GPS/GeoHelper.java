@@ -4,8 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import static com.leszeknowinski.DataBaseSupport.DBHandler.connect;
 
@@ -126,10 +125,10 @@ public class GeoHelper {
         return list;
     }
 
-    public ArrayList<Location> getAllLocations(String sqlQuery) {
+    public List<Location> getAllLocations(String sqlQuery) {
         ResultSet resultSet = null;
         Statement statement = null;
-        ArrayList<Location> list = new ArrayList<Location>();
+        List<Location> list = new ArrayList<>();
         try {
             statement = connect.createStatement();
             resultSet = statement.executeQuery(sqlQuery);
@@ -216,19 +215,66 @@ public class GeoHelper {
     public Location setClosestLocation(List<Location> list, Location start, Location end) {
         double distance;
         Location startLocation = start;
-        Location closestLocation = list.get(0);
+        List<Location>locations = list;
+        Location closestLocation = locations.get(0);
         double minDistance = getDistanceInKM(startLocation.getLatitude(), closestLocation.getLatitude(), startLocation.getLongitude(), closestLocation.getLongitude());
-            for (int i = 1; i < list.size(); i++ ) {
-                distance = getDistanceInKM(startLocation.getLatitude(), list.get(i).getLatitude(), startLocation.getLongitude(), list.get(i).getLongitude());
+            for (int i = 1; i < list.size(); i++) {
+                distance = getDistanceInKM(startLocation.getLatitude(), locations.get(i).getLatitude(), startLocation.getLongitude(), locations.get(i).getLongitude());
                 if (distance < minDistance) {
                     minDistance = distance;
-                    closestLocation = list.get(i);
+                    closestLocation = locations.get(i);
                 }
-        }
+            }
         return closestLocation;
     }
 
-    //metody z Dijkstra algorithm for java
+    public Set<Location> calculateShortestPathFromSource(Set<Location>set, Location start) {
+        start.setDistance(0.0);
+        Set<Location> settledLocations = new HashSet<>();
+        Set<Location> unsettledLocations = new HashSet<>();
+
+        unsettledLocations.add(start);
+
+        while (unsettledLocations.size() != 0) {
+            Location currentLocation = getLowestDistanceNode(unsettledLocations);
+            unsettledLocations.remove(currentLocation);
+            for (Map.Entry< Location, Double> adjacencyPair:
+                    currentLocation.getAdjacentNodes().entrySet()) {
+                Location adjacentLocation = adjacencyPair.getKey();
+                Double edgeWeight = getDistanceInKM(start.getLatitude(), currentLocation.getLatitude(), start.getLongitude(), currentLocation.getLongitude());
+                if (!settledLocations.contains(adjacentLocation)) {
+                    calculateMinimumDistance(adjacentLocation, edgeWeight, currentLocation);
+                    unsettledLocations.add(adjacentLocation);
+                }
+            }
+            settledLocations.add(currentLocation);
+        }
+        return settledLocations;
+    }
+
+    private Location getLowestDistanceNode(Set < Location > unsettledLocations) {
+        Location lowestDistanceLocation = null;
+        Double lowestDistance = Double.MAX_VALUE;
+        for (Location location: unsettledLocations) {
+            double locationDistance = location.getDistance();
+            if (locationDistance < lowestDistance) {
+                lowestDistance = locationDistance;
+                lowestDistanceLocation = location;
+            }
+        }
+        return lowestDistanceLocation;
+    }
+
+    private void calculateMinimumDistance(Location evaluationLocation,
+                                                 Double edgeWeigh, Location start) {
+        Double startDistance = start.getDistance();
+        if (startDistance + edgeWeigh < evaluationLocation.getDistance()) {
+            evaluationLocation.setDistance(startDistance + edgeWeigh);
+            LinkedList<Location> shortestRoute = new LinkedList<>(start.getShortestRoute());
+            shortestRoute.add(start);
+            evaluationLocation.setShortestRoute(shortestRoute);
+        }
+    }
 
 
 }

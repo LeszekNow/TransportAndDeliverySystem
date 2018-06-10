@@ -1,12 +1,12 @@
 package com.leszeknowinski.User;
 
 public class Driver extends Admin {
-    private String drivingLicence;
+    private DrivingLicenceType drivingLicence;
     private int experience;
     private boolean arrested;
 
     public Driver(String name, String surname, String pesel, String phone, String username,
-                  String password, String drivingLicence, int experience, boolean arrested) {
+                  String password, DrivingLicenceType drivingLicence, int experience, boolean arrested) {
         super(name, surname, pesel, phone, username, password);
         this.drivingLicence = drivingLicence;
         this.experience = experience;
@@ -14,19 +14,13 @@ public class Driver extends Admin {
     }
 
     public Driver(int id, String name, String surname, String pesel, String phone,
-                  String username, String password, String drivingLicence, int experience, boolean arrested) {
+                  String username, String password, DrivingLicenceType drivingLicence, int experience, boolean arrested) {
         super(id, name, surname, pesel, phone, username, password);
         this.drivingLicence = drivingLicence;
         this.experience = experience;
         this.arrested = arrested;
     }
 
-    public Driver(UserDataWrapper userDataWrapper, String drivingLicence, int experience, boolean arrested) {
-        super(userDataWrapper);
-        this.drivingLicence = drivingLicence;
-        this.experience = experience;
-        this.arrested = arrested;
-    }
 
     public Driver(){}
 
@@ -39,7 +33,7 @@ public class Driver extends Admin {
         this.arrested = arrested;
     }
 
-    public String getDrivingLicence() {
+    public DrivingLicenceType getDrivingLicence() {
         return drivingLicence;
     }
 
@@ -47,7 +41,7 @@ public class Driver extends Admin {
         return experience;
     }
 
-    public void setDrivingLicence(String drivingLicence) {
+    public void setDrivingLicence(DrivingLicenceType drivingLicence) {
         this.drivingLicence = drivingLicence;
     }
 

@@ -6,6 +6,7 @@ import com.leszeknowinski.DataBaseSupport.DBOrderHelper;
 import com.leszeknowinski.GPS.GPSRandomDataGenerator;
 import com.leszeknowinski.GPS.GeoHelper;
 import com.leszeknowinski.GPS.Location;
+import com.leszeknowinski.GPS.LocationRepository;
 import com.leszeknowinski.comparators.LatitudeComparatorN;
 import com.leszeknowinski.comparators.LatitudeComparatorS;
 import com.leszeknowinski.comparators.LongitudeComparatorE;
@@ -17,9 +18,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class GPSTestsController {
@@ -55,6 +54,7 @@ public class GPSTestsController {
     GeoHelper geoHelper = new GeoHelper();
     DBOrderHelper dbOrderHelper = new DBOrderHelper();
     GPSRandomDataGenerator gpsRandomDataGenerator = new GPSRandomDataGenerator();
+    LocationRepository locationRepository = new LocationRepository();
 
     @FXML
     public void checkGPS() throws Exception {
@@ -73,7 +73,6 @@ public class GPSTestsController {
         double endLat = geoHelper.getLocation(endPoint.getText()).getLatitude();
         double endLon = geoHelper.getLocation(endPoint.getText()).getLongitude();
 
-        ArrayList<Location> distanceWayPoints = new ArrayList<Location>();
         List<Location>locations = new ArrayList<>();
         LatitudeComparatorS latitudeComparatorS = new LatitudeComparatorS();
         if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("SE")) {
@@ -93,15 +92,21 @@ public class GPSTestsController {
         } else if (geoHelper.setDirection(startLat, endLat, startLon, endLon).equals("W")) {
             locations = geoHelper.getAllLocations("SELECT * FROM tlocation WHERE longitude < " + startLon + " AND longitude > " + endLon + ";");
         }
-        List<Location>wayPoints = new ArrayList<>();
-        String start = startPoint.getText();
-        for(int i = 0; i <=5; i++) {
-            wayPoints.add(geoHelper.setClosestLocation(locations, geoHelper.getLocation(start), geoHelper.getLocation(endPoint.getText())));
-            locations.remove(geoHelper.setClosestLocation(locations, geoHelper.getLocation(startPoint.getText()), geoHelper.getLocation(endPoint.getText())));
-            start = geoHelper.setClosestLocation(locations, geoHelper.getLocation(startPoint.getText()), geoHelper.getLocation(endPoint.getText())).getCity();        }
-        for(Location l: wayPoints){
-            summary.appendText(l.toString() + "\n");
+
+        Set<Location>route = new HashSet<>();
+        Location start = geoHelper.getLocation(startPoint.getText());
+        Location end = geoHelper.getLocation(endPoint.getText());
+        for(int i = 0; i < locations.size(); i++){
+            route.add(geoHelper.setClosestLocation(locations, start, end));
+            start = geoHelper.setClosestLocation(locations, start, end);
+            locations.remove(geoHelper.setClosestLocation(locations, start, end));
         }
+
+        for(Location location : route){
+            summary.appendText(location.toString() + "\n");
+        }
+
+
 
 
 //        int start = 0;

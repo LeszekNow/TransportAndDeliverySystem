@@ -1,5 +1,6 @@
 package com.leszeknowinski.controllers.serviceControllers;
 
+import com.leszeknowinski.Cargo.CargoType;
 import com.leszeknowinski.DataBaseSupport.DBUserHelper;
 import com.leszeknowinski.User.Admin;
 import com.leszeknowinski.controllers.ControllersHelper;
@@ -7,15 +8,20 @@ import com.leszeknowinski.service.Service;
 import com.leszeknowinski.service.ServiceRepository;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class ServiceAddingController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class ServiceAddingController implements Initializable {
 
     @FXML
-    TextField category;
+    ChoiceBox<CargoType> category;
 
     @FXML
     TextField description;
@@ -38,9 +44,21 @@ public class ServiceAddingController {
     ControllersHelper controllersHelper = new ControllersHelper();
     ServiceRepository serviceRepository = new ServiceRepository();
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        loadOptions();
+    }
+
+    @FXML
+    public void loadOptions(){
+        category.getItems().add(CargoType.CARGO);
+        category.getItems().add(CargoType.PACKAGE);
+        category.getItems().add(CargoType.PEOPLE);
+    }
+
     @FXML
     public void createService(){
-        Service service = new Service(category.getText(), description.getText(), Double.parseDouble(price.getText()));
+        Service service = new Service(category.getValue(), description.getText(), Double.parseDouble(price.getText()));
         serviceRepository.insertService(service);
         message.setText("New service added successfully!");
     }
@@ -54,6 +72,7 @@ public class ServiceAddingController {
     public void getOut(){
         Platform.exit();
     }
+
 
 
 }

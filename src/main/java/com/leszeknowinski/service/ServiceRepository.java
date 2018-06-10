@@ -1,6 +1,7 @@
 package com.leszeknowinski.service;
 
 
+import com.leszeknowinski.Cargo.CargoType;
 import com.leszeknowinski.Vehicle.Car;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -26,7 +27,7 @@ public class ServiceRepository {
                     "VALUES (?, ?, ?);";
             try {
                 PreparedStatement preparedStatement = connect.prepareStatement(sqlInsert);
-                preparedStatement.setString(1, service.getCategory());
+                preparedStatement.setString(1, String.valueOf(service.getCategory()));
                 preparedStatement.setString(2, service.getDescription());
                 preparedStatement.setDouble(3, service.getPriceKM());
                 preparedStatement.executeUpdate();
@@ -45,7 +46,7 @@ public class ServiceRepository {
             while (resultSet.next()) {
                 Service service = new Service();
                 service.setId(resultSet.getInt("id"));
-                service.setCategory(resultSet.getString("category"));
+                service.setCategory(CargoType.valueOf(resultSet.getString("category")));
                 service.setDescription(resultSet.getString("description"));
                 service.setPriceKM(resultSet.getDouble("price"));
                 serviceList.add(service);

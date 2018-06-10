@@ -1,10 +1,20 @@
 package com.leszeknowinski.GPS;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
 public class Location {
     private int id;
     private String city;
     private double longitude;
     private double latitude;
+
+    private List<Location> shortestRoute = new LinkedList<>();
+    Map<Location, Double> adjacentNodes = new HashMap<>();
+    private double distance = Double.MAX_VALUE;
+
 
 
     public Location(String city, double longitude, double latitude) {
@@ -19,7 +29,30 @@ public class Location {
         this.longitude = longitude;
         this.latitude = latitude;
     }
-    
+
+    public List<Location> getShortestRoute() {
+        return shortestRoute;
+    }
+
+    public void setShortestRoute(List<Location> shortestRoute) {
+        this.shortestRoute = shortestRoute;
+    }
+
+    public Map<Location, Double> getAdjacentNodes() {
+        return adjacentNodes;
+    }
+
+    public void setAdjacentNodes(Map<Location, Double> adjacentNodes) {
+        this.adjacentNodes = adjacentNodes;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
 
     public Location(){}
 

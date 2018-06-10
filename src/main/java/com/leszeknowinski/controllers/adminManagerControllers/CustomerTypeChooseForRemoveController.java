@@ -1,5 +1,6 @@
 package com.leszeknowinski.controllers.adminManagerControllers;
 
+import com.leszeknowinski.User.CustomerType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,7 +15,7 @@ import java.util.ResourceBundle;
 public class CustomerTypeChooseForRemoveController implements Initializable {
 
     @FXML
-    ChoiceBox<String>customerType;
+    ChoiceBox<CustomerType>customerType;
 
     @FXML
     Button select;
@@ -33,8 +34,8 @@ public class CustomerTypeChooseForRemoveController implements Initializable {
 
     @FXML
     public void loadOptions(){
-        customerType.getItems().add("Customer");
-        customerType.getItems().add("Customer B2B / VAT");
+        customerType.getItems().add(CustomerType.CUSTOMER);
+        customerType.getItems().add(CustomerType.CUSTOMERB2B);
     }
 
     @FXML
@@ -42,10 +43,10 @@ public class CustomerTypeChooseForRemoveController implements Initializable {
         if(customerType.getValue() == null){
             message.setText("You have to choose an option before clicking select!");
         }
-        else if(customerType.getValue().equals("Customer")) {
+        else if(customerType.getValue().equals(CustomerType.CUSTOMER)) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerShowScreen.fxml"));
         }
-        else if(customerType.getValue().equals("Customer B2B / VAT")){
+        else if(customerType.getValue().equals(CustomerType.CUSTOMERB2B)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("customerFXMLs/CustomerB2BShowScreen.fxml"));
         }
     }

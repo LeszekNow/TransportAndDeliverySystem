@@ -1,5 +1,6 @@
 package com.leszeknowinski.controllers.vehicleControllers;
 
+import com.leszeknowinski.Vehicle.VehicleType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +18,7 @@ import java.util.ResourceBundle;
 public class VehicleTypeChooseForDisplayController implements Initializable {
 
     @FXML
-    ChoiceBox<String>vehicleType;
+    ChoiceBox<VehicleType>vehicleType;
 
     @FXML
     Button select;
@@ -35,12 +36,12 @@ public class VehicleTypeChooseForDisplayController implements Initializable {
 
     @FXML
     public void loadOptions(){
-        vehicleType.getItems().add("Bus");
-        vehicleType.getItems().add("Car");
-        vehicleType.getItems().add("Motorcycle");
-        vehicleType.getItems().add("Truck");
-        vehicleType.getItems().add("Van");
-        vehicleType.getItems().add("Show all");
+        vehicleType.getItems().add(VehicleType.BUS);
+        vehicleType.getItems().add(VehicleType.CAR);
+        vehicleType.getItems().add(VehicleType.MOTORCYCLE);
+        vehicleType.getItems().add(VehicleType.TRUCK);
+        vehicleType.getItems().add(VehicleType.VAN);
+        vehicleType.getItems().add(VehicleType.ALL);
     }
 
     @FXML
@@ -49,22 +50,22 @@ public class VehicleTypeChooseForDisplayController implements Initializable {
         if(vehicleType.getValue() == null){
             message.setText("You have to choose an option before clicking select!");
         }
-        else if(vehicleType.getValue().equals("Bus")) {
+        else if(vehicleType.getValue().equals(VehicleType.BUS)) {
             ((Stage) select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/BusesDisplayCustomerScreen.fxml"));
         }
-        else if(vehicleType.getValue().equals("Car")){
+        else if(vehicleType.getValue().equals(VehicleType.CAR)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/CarsDisplayCustomerScreen.fxml"));
         }
-        else if(vehicleType.getValue().equals("Motorcycle")){
+        else if(vehicleType.getValue().equals(VehicleType.MOTORCYCLE)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/MotorcyclesDisplayCustomerScreen.fxml"));
         }
-        else if(vehicleType.getValue().equals("Truck")){
+        else if(vehicleType.getValue().equals(VehicleType.TRUCK)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/TrucksDisplayCustomerScreen.fxml"));
         }
-        else if(vehicleType.getValue().equals("Van")){
+        else if(vehicleType.getValue().equals(VehicleType.VAN)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VansDisplayCustomerScreen.fxml"));
         }
-        else if(vehicleType.getValue().equals("Show all")){
+        else if(vehicleType.getValue().equals(VehicleType.ALL)){
             ((Stage)select.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("vehicleFXMLs/VehiclesDisplayCustomerScreen.fxml"));
         }
     }

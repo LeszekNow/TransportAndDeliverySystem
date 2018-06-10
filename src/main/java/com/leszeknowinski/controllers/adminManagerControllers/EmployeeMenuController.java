@@ -2,6 +2,7 @@ package com.leszeknowinski.controllers.adminManagerControllers;
 
 import com.leszeknowinski.App.LogIn;
 import com.leszeknowinski.App.UserData;
+import com.leszeknowinski.User.EmployeeType;
 import com.leszeknowinski.controllers.ControllersHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +19,7 @@ public class EmployeeMenuController implements Initializable {
     //For managers and admins
 
     @FXML
-    ChoiceBox<String> employeeType;
+    ChoiceBox<EmployeeType> employeeType;
 
     @FXML
     TextField username;
@@ -43,9 +44,9 @@ public class EmployeeMenuController implements Initializable {
 
     @FXML
     public void loadOptions() {
-        employeeType.getItems().add("admin");
-        employeeType.getItems().add("driver");
-        employeeType.getItems().add("manager");
+        employeeType.getItems().add(EmployeeType.ADMIN);
+        employeeType.getItems().add(EmployeeType.DRIVER);
+        employeeType.getItems().add(EmployeeType.MANAGER);
     }
 
 
@@ -53,18 +54,18 @@ public class EmployeeMenuController implements Initializable {
     @FXML
     public void login() throws Exception {
         UserData.getInstance().setUsernameMemory(username.getText());
-        UserData.getInstance().setUserTypeMemory(employeeType.getValue());
-        if(LogIn.authenticate(username.getText(), password.getText(), employeeType.getValue())) {
+        UserData.getInstance().setUserTypeMemory(String.valueOf(employeeType.getValue()));
+        if(LogIn.authenticate(username.getText(), password.getText(), String.valueOf(employeeType.getValue()).toLowerCase())) {
             if(employeeType.getValue() == null){
                 message.setText("You have to choose an option and fill form before clicking login!");
             }
-            else if(employeeType.getValue().equals("admin")) {
+            else if(employeeType.getValue().equals(EmployeeType.ADMIN)) {
                 ((Stage)go.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeMainMenu.fxml"));
             }
-            else if(employeeType.getValue().equals("manager")){
+            else if(employeeType.getValue().equals(EmployeeType.MANAGER)){
                 ((Stage)go.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("adminManagerFXMLs/EmployeeMainMenu.fxml"));
             }
-            else if(employeeType.getValue().equals("driver")){
+            else if(employeeType.getValue().equals(EmployeeType.DRIVER)){
                 ((Stage)go.getScene().getWindow()).setScene(controllersHelper.loadFXMLScreen("driverFXMLs/DriverMainMenuScreen.fxml"));
             }
         } else{

@@ -6,37 +6,22 @@ import static com.leszeknowinski.DataBaseSupport.DBHandler.connect;
 
 public class LocationRepository {
 
-    private Set<Location> nodes = new HashSet<>();
+    public Set<Location> locations = new HashSet<>();
 
-    private List<Location> shortestRoute = new LinkedList<>();
-
-    Map<Location, Double>adjacentNodes = new HashMap<>();
-
-    public void addDestination(Location destinationPoint, double distance){
-        adjacentNodes.put(destinationPoint, distance);
-    }
 
     public void addLocation(Location location){
-        nodes.add(location);
+        locations.add(location);
     }
 
-    public void addMidPoint(Location location){
-        shortestRoute.add(location);
+    public Set<Location> getLocations() {
+        return locations;
     }
 
-    public Set<Location> getNodes() {
-        return nodes;
+    public void setNodes(Set<Location> locations) {
+        this.locations = locations;
     }
 
-    public void setNodes(Set<Location> nodes) {
-        this.nodes = nodes;
-    }
-
-    public List<Location> getShortestRoute() {
-        return shortestRoute;
-    }
-
-    public void setShortestRoute(List<Location> shortestRoute) {
-        this.shortestRoute = shortestRoute;
+    public void setLocations(Set<Location> locations) {
+        this.locations = locations;
     }
 }

@@ -92,7 +92,7 @@ public class DBUserHelper {
             preparedStatement.setString(4, driver.getPhone());
             preparedStatement.setString(5, driver.getUsername());
             preparedStatement.setString(6, DigestUtils.md5Hex(driver.getPassword()));
-            preparedStatement.setString(7, driver.getDrivingLicence());
+            preparedStatement.setString(7, String.valueOf(driver.getDrivingLicence()));
             preparedStatement.setInt(8, driver.getExperience());
             preparedStatement.setBoolean(9, driver.getArrested());
             preparedStatement.executeUpdate();

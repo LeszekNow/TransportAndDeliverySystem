@@ -1,12 +1,12 @@
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\GPS\GPSRandomDataGenerator.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomerTypeChooseController2.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\User\EmployeeType.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomerEditingController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomersB2BDisplayController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\GPS\GeoHelper.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\adminManagerControllers\DriverMainMenuForEmployeeController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\BusesDisplayCustomerController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\VehicleTypeChooseController.java
-C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\User\UserDataWrapper.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\orderControllers\CargoTypeChooseController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\orderControllers\OrderEditingController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\GPS\Location.java
@@ -17,6 +17,7 @@ C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\lesze
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\comparators\LongitudeComparatorE.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Vehicle\Truck.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Order\Order.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\service\Service.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\BusAddingController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomerStartController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\driverControllers\DriverAddingController.java
@@ -37,6 +38,7 @@ C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\lesze
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Vehicle\Van.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\adminManagerControllers\CustomerTypeChooseForRemoveController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\DataBaseSupport\DBUserHelper.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\serviceControllers\ServiceDeletingController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\orderControllers\OrderCreationController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Cargo\CargoRepository.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\driverControllers\DriverOrderFinishController.java
@@ -48,10 +50,12 @@ C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\lesze
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Cargo\CargoType.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\adminManagerControllers\ManagerShowController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomerB2BEditingController.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\serviceControllers\ServiceEditingController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\User\Driver.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\VanShowController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\GPSTestsController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\driverControllers\DriverShowController.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\User\DrivingLicenceType.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Vehicle\Car.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Cargo\Cargo.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\DataBaseSupport\DBCargoHelper.java
@@ -69,8 +73,8 @@ C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\lesze
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\locationControllers\LocationAddingController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\driverControllers\AdjustedVehicleShowController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\orderControllers\PackageOrderDataController.java
-C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Vehicle\VehicleDataWrapper.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\MotorcyclesDisplayCustomerController.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\User\UserType.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\User\CustomerType.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\Order\OrderRepository.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomerAddingController.java
@@ -80,6 +84,7 @@ C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\lesze
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomerB2BShowController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\DataBaseSupport\DBVehicleHelper.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\ControllersHelper.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\serviceControllers\ServiceAddingController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\AccountDeletingConfirmationController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\VansDisplayController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\TrucksDisplayController.java
@@ -110,4 +115,5 @@ C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\lesze
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\adminManagerControllers\CustomerMainMenuForEmployeeController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\customerControllers\CustomerRegistrationController.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\orderControllers\OrderSummaryController.java
+C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\service\ServiceRepository.java
 C:\Users\Leszek1\IdeaProjects\TransportAndDeliverySystem\src\main\java\com\leszeknowinski\controllers\vehicleControllers\CarAddingController.java

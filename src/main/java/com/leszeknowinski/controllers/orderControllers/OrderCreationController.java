@@ -1,5 +1,6 @@
 package com.leszeknowinski.controllers.orderControllers;
 
+import com.leszeknowinski.Cargo.CargoType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -12,7 +13,7 @@ import java.util.ResourceBundle;
 public class OrderCreationController implements Initializable {
 
     @FXML
-    ChoiceBox<String>cargoType;
+    ChoiceBox<CargoType>cargoType;
 
 
     @FXML
@@ -24,7 +25,7 @@ public class OrderCreationController implements Initializable {
     }
 
     public void loadChoices(){
-        cargoType.getItems().addAll("Cargo", "Package", "People");
+        cargoType.getItems().addAll(CargoType.CARGO, CargoType.PACKAGE, CargoType.PEOPLE);
 
     }
 }
