@@ -1,19 +1,19 @@
 # TransportAndDeliverySystem
 
-My second project when learning Java programming - Transport Services with GPS vehicles tracking system.
+Application/System simulating Transport Services - My 2nd Java training project.
+In the project simple longitude and latitude random data generator was used to get coordinates of tracking vehicles.
 
-Simple Transport Services Simulation System including GPS Tracking System.
-Technologies used: Java 8, Maven, JavaFX, mySQL.
 
-Registration Panel.
-Login Panel.
-Main Menu - different for different user.
+Technologies: Java 8, Maven, JavaFX, mySQL
 
-System for different users - customers and employees
-Project not finished yet: a lot of code refactoring work to do and still adding new functionalities such as
-variety of calculation options i.e. income, car maintenance etc.
+Projecect includes:
+-) Registration and Login Panel
+-) Access for different type of users(Customers - Normal/B2B and Employees - Driver/Admin)
+-) Main menu which differ according to user type
+-) Many options including: Order creation, Vehicles servicing, Editing orders, Calculation options(not finished)
+-) GPS Panel - random location generator, calculation of distance using coordinates, calculation of delivery time etc.
+-) More in progress - refactoring, change native SQL queries to hibernate, Dijkstra algorithm implementation using Graph data structure
 
-GPS Simulator will include Dijkstra algorythm with graph data structure.
 
 
 
